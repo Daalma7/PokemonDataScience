@@ -1,4 +1,13 @@
-# PokemonDataScience
+<!-- https://play.pokemonshowdown.com/sprites/gen5ani/
+https://www.deviantart.com/mbcmechachu/favourites/70416144/pokemon-animated-sprites-gen-5-style
+-->
+![Title](https://github.com/Daalma7/PokemonDataScience/blob/main/other/decdea790f97636998e28a49597386c6.png)
+
+![Treecko](https://github.com/Daalma7/PokemonDataScience/blob/main/other/treecko.gif)
+![Torchic](https://github.com/Daalma7/PokemonDataScience/blob/main/other/torchic.gif)
+![Mudkip](https://github.com/Daalma7/PokemonDataScience/blob/main/other/mudkip.gif)
+
+![](https://github.com/Your_Repository_Name/Your_GIF_Name.gif)
 ![Python](https://img.shields.io/badge/python-3670A0?logo=python&logoColor=white)
 ![Scikit Learn](https://img.shields.io/badge/scikit--learn-%23F7931E?logo=scikit-learn&logoColor=white)
 ![Numpy](https://img.shields.io/badge/numpy-%23013243?logo=numpy&logoColor=white)
