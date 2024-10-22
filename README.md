@@ -1,26 +1,26 @@
 <!-- https://play.pokemonshowdown.com/sprites/gen5ani/
 https://www.deviantart.com/mbcmechachu/favourites/70416144/pokemon-animated-sprites-gen-5-style
 -->
-![Title](https://github.com/Daalma7/PokemonDataScience/blob/main/other/decdea790f97636998e28a49597386c6.png)
-
-![Treecko](https://github.com/Daalma7/PokemonDataScience/blob/main/other/treecko.gif)
-![Torchic](https://github.com/Daalma7/PokemonDataScience/blob/main/other/torchic.gif)
-![Mudkip](https://github.com/Daalma7/PokemonDataScience/blob/main/other/mudkip.gif)
-![Pancham](https://github.com/Daalma7/PokemonDataScience/blob/main/other/pancham.gif)
-![Rookidee](https://github.com/Daalma7/PokemonDataScience/blob/main/other/rookidee.gif)
-![Gulpin](https://github.com/Daalma7/PokemonDataScience/blob/main/other/gulpin.gif)
-![Phanpy](https://github.com/Daalma7/PokemonDataScience/blob/main/other/phanpy.gif)
-![Nosepass](https://github.com/Daalma7/PokemonDataScience/blob/main/other/nosepass.gif)
-![Caterpie](https://github.com/Daalma7/PokemonDataScience/blob/main/other/caterpie.gif)
-![Misdreavus](https://github.com/Daalma7/PokemonDataScience/blob/main/other/misdreavus.gif)
-![Klink](https://github.com/Daalma7/PokemonDataScience/blob/main/other/klink.gif)
-![Shinx](https://github.com/Daalma7/PokemonDataScience/blob/main/other/shinx.gif)
-![SlowpokeGalar](https://github.com/Daalma7/PokemonDataScience/blob/main/other/slowpoke-galar.gif)
-![VulpixAlola](https://github.com/Daalma7/PokemonDataScience/blob/main/other/vulpix-alola.gif)
-![Dratini](https://github.com/Daalma7/PokemonDataScience/blob/main/other/dratini.gif)
-![Zorua](https://github.com/Daalma7/PokemonDataScience/blob/main/other/zorua.gif)
-![Togepi](https://github.com/Daalma7/PokemonDataScience/blob/main/other/togepi.gif)
-
+<p align="center">
+  <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/decdea790f97636998e28a49597386c6.png" />
+  <br />
+  <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/treecko.gif" alt="animated" />
+  <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/torchic.gif" alt="animated" />
+  <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/mudkip.gif" alt="animated" />
+  <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/pancham.gif" alt="animated" />
+  <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/rookidee.gif" alt="animated" />
+  <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/gulpin.gif" alt="animated" />
+  <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/phanpy.gif" alt="animated" />
+  <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/nosepass.gif" alt="animated" />
+  <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/misdreavus.gif" alt="animated" />
+  <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/klink.gif" alt="animated" />
+  <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/shinx.gif" alt="animated" />
+  <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/slowpoke-galar.gif" alt="animated" />
+  <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/vulpix-alola.gif" alt="animated" />
+  <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/dratini.gif" alt="animated" />
+  <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/zorua.gif" alt="animated" />
+  <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/togepi.gif" alt="animated" />
+</p>
 
 ![](https://github.com/Your_Repository_Name/Your_GIF_Name.gif)
 ![Python](https://img.shields.io/badge/python-3670A0?logo=python&logoColor=white)
