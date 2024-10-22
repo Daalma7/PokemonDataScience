@@ -7,6 +7,7 @@ https://www.deviantart.com/mbcmechachu/favourites/70416144/pokemon-animated-spri
   <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/treecko.gif" alt="animated" />
   <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/torchic.gif" alt="animated" />
   <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/mudkip.gif" alt="animated" />
+  <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/happiny.gif" alt="animated" />
   <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/pancham.gif" alt="animated" />
   <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/rookidee.gif" alt="animated" />
   <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/gulpin.gif" alt="animated" />
