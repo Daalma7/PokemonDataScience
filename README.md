@@ -82,12 +82,17 @@ To generate the Pokémon dataset, a web scraper has been programmed using Python
 - **HasMega**: Has a Mega evolution.
 - **EvoStage**: Evolution Stage of that Pokémon.
 - **TotalEvoStages**: Total evolution stages for that Pokémon.
+- **PreevoName**: Name of the Preevolution (in case that Pokémon has one)
 - **DamageFrom(Type)**: Amount of damage taken for a specific attack type.
 
 Information about Pokémon moves is currently not extracted.
 
 ## Part 2: Dataset cleaning and analysis: Python preprocessing and visualizations
-In progress...
+To continue, further cleaning and visualization techinques are applied in order to deeple understand the dataset extracted from the internet. 2 jupyter notebooks are used in this part: preprocess.ipynb and visualizationsEDA.ipynb.
+
+In preprocess.ipynb, data preprocessing and initial single feature statistics is performed. Apart from that, some attibutes were divided into several ones in order to store atomic information (Type divided in Type1 and Type2, Abilities divided in Ability1, Ability2 and HiddenAbility, EggGroup divided into EggGroup1 and EggGroup2, and finally an additional feature named NoGender indicates wether the Pokémon has Gender or not, which complements GenderProb feature).
+
+In visualizationsEDA.ipynb, containing advanced visualizations, we can extract some impacting conclusions.
 
 ## Part 3: Data Science: Supervised and Unsupervised Learning, higher level information
 In progress...
