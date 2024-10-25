@@ -6,7 +6,7 @@
    Pecharunt (Pokémon) - Bulbapedia, the community-driven Pokémon encyclopedia
   </title>
   <script>
-   document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"512eeb91aea7c8f21ff52725","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Pecharunt_(Pokémon)","wgTitle":"Pecharunt (Pokémon)","wgCurRevisionId":4118204,"wgRevisionId":4118204,"wgArticleId":300802,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pokémon","Generation IX Pokémon","Poison-type Pokémon","Ghost-type Pokémon","Dual-type Pokémon","Gender-unknown Pokémon","Pokémon without Hidden Abilities","Pokémon in the Slow experience group","Purple-colored Pokémon","Body style 01 Pokémon","No Eggs Discovered group Pokémon",
+   document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"6d5e621fe66d872a97a157c1","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Pecharunt_(Pokémon)","wgTitle":"Pecharunt (Pokémon)","wgCurRevisionId":4118204,"wgRevisionId":4118204,"wgArticleId":300802,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pokémon","Generation IX Pokémon","Poison-type Pokémon","Ghost-type Pokémon","Dual-type Pokémon","Gender-unknown Pokémon","Pokémon without Hidden Abilities","Pokémon in the Slow experience group","Purple-colored Pokémon","Body style 01 Pokémon","No Eggs Discovered group Pokémon",
 "Pokémon in the Blueberry Pokédex","Pokémon with a base stat total of 600","Pokémon whose base Defense stat is greater than 100","Pages with broken file links","Pokémon that are not part of an evolutionary line","Pokémon introduced in The Indigo Disk","Mythical Pokémon"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Pecharunt_(Pokémon)","wgRelevantArticleId":300802,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMFDisplayWikibaseDescriptions":{"search":false,"nearby":false,"watchlist":false,"tagline":false},"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgEditSubmitButtonLabelPublish":false};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","mediawiki.page.gallery.styles":"ready",
 "skins.bulbapediamonobook.styles":"ready","jquery.tablesorter.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.ready","jquery.tablesorter","mediawiki.toc","skins.bulbapediamonobook.scripts","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","mmv.head","mmv.bootstrap.autostart"];
   </script>
@@ -37,6 +37,10 @@
   <link href="https://bulbapedia.bulbagarden.net/w/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
   <link href="https://creativecommons.org/licenses/by-nc-sa/2.5/" rel="license"/>
   <link href="https://bulbapedia.bulbagarden.net/wiki/Pecharunt_(Pok%C3%A9mon)" rel="canonical"/>
+  <!---------------------------------->
+  <!-- Google dual analytics : HEAD -->
+  <!---------------------------------->
+  <!-- Google tag (gtag.js) -->
   <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-XCGG53D4E3">
   </script>
   <script>
@@ -47,6 +51,12 @@
   gtag('config', 'G-XCGG53D4E3');
   gtag('config', 'UA-326511-18');
   </script>
+  <!---------------->
+  <!-- Script End -->
+  <!---------------->
+  <!-------------------------->
+  <!-- Adthrive Main : HEAD -->
+  <!-------------------------->
   <script>
    (function(w, d) {
 w.adthrive = w.adthrive || {};
@@ -61,6 +71,9 @@ var n = d.getElementsByTagName('script')[0];
 n.parentNode.insertBefore(s, n);
 })(window, document);
   </script>
+  <!---------------->
+  <!-- Script End -->
+  <!---------------->
   <script src="//ahost.bulbagarden.net/Content/bulbapediascript.js" type="text/javascript">
   </script>
   <meta content="max-image-preview:large" name="robots"/>
@@ -593,6 +606,10 @@ n.parentNode.insertBefore(s, n);
        <div class="sitenotice" dir="ltr" lang="en">
         <div class="noticebar roundy plainlinks" style="padding:0px;">
          Please remember to follow the
+         <a href="/wiki/Bulbapedia:Unreleased_materials_policy" title="Bulbapedia:Unreleased materials policy">
+          unreleased materials policy
+         </a>
+         ,
          <a href="/wiki/Bulbapedia:Manual_of_style" title="Bulbapedia:Manual of style">
           manual of style
          </a>
@@ -640,6 +657,7 @@ n.parentNode.insertBefore(s, n);
       <a class="mw-jump-link" href="#searchInput">
        Jump to search
       </a>
+      <!-- start content -->
       <div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en">
        <div class="mw-parser-output">
         <table style="background: #9141CB; width: 100%; border: 3px solid #492A49; margin-top:1em; margin-bottom:7px; border-radius: 20px; -moz-border-radius: 20px; -webkit-border-radius: 20px; -khtml-border-radius: 20px; -icab-border-radius: 20px; -o-border-radius: 20px;">
@@ -5515,7 +5533,7 @@ n.parentNode.insertBefore(s, n);
               <i>
                Italic
               </i>
-              indicates a move that gets STAB only when used by an Evolution of Pecharunt
+              indicates a move that gets STAB only when used by an Evolution  of Pecharunt
              </li>
             </ul>
            </td>
@@ -6886,7 +6904,7 @@ n.parentNode.insertBefore(s, n);
               <i>
                Italic
               </i>
-              indicates a move that gets STAB only when used by an Evolution or an alternate form of Pecharunt
+              indicates a move that gets STAB only when used by an Evolution or an alternate form  of Pecharunt
              </li>
             </ul>
            </td>
@@ -7032,7 +7050,7 @@ n.parentNode.insertBefore(s, n);
               <i>
                Italic
               </i>
-              indicates a move that gets STAB only when used by an Evolution of Pecharunt
+              indicates a move that gets STAB only when used by an Evolution  of Pecharunt
              </li>
             </ul>
            </td>
@@ -8895,7 +8913,41 @@ n.parentNode.insertBefore(s, n);
           </tr>
          </tbody>
         </table>
+        <!-- 
+NewPP limit report
+Cached time: 20241025010048
+Cache expiry: 86400
+Reduced expiry: false
+Complications: [show‐toc]
+CPU time usage: 0.529 seconds
+Real time usage: 1.403 seconds
+Preprocessor visited node count: 11473/1000000
+Post‐expand include size: 236404/2097152 bytes
+Template argument size: 21506/2097152 bytes
+Highest expansion depth: 8/100
+Expensive parser function count: 1/250
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 6016/5000000 bytes
+-->
+        <!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  739.494      1 -total
+ 20.97%  155.091      1 Template:TypeEffectiveness
+ 17.13%  126.672     72 Template:Type_effectiveness_entry
+  7.80%   57.663      1 Template:Mythical_Pokémon
+  6.94%   51.326      1 Template:Pokémon_Infobox
+  6.42%   47.494      1 Template:Stats
+  6.14%   45.402     16 Template:Learnlist/level9
+  2.48%   18.352      1 Template:Dex/Gen/3
+  2.34%   17.339     23 Template:Learnlist/tm9
+  2.08%   15.408      1 Template:Other_languages
+-->
+        <!-- Saved in parser cache with key themozz_mediawiki:pcache:idhash:300802-0!canonical and timestamp 20241025010046 and revision id 4118204.
+ -->
        </div>
+       <!---------------------------------------------------------------->
+       <!-------- Custom Adthrive Code : BEFORE Adthrive Main ----------->
+       <!---------------------------------------------------------------->
        <script>
         // Initialize elements
 appendElementIf({id: "adthrive-left-s", wAbove: 1520, wBelow: 1699, hAbove: 700});
@@ -8940,6 +8992,9 @@ function createAndAppendElement(id)
 	document.body.appendChild(atEl);
 }
        </script>
+       <!---------------->
+       <!-- Script End -->
+       <!---------------->
        <style>
         /*This styles are to place the close button right above the video without this the close button will be placed below the video.*/
         #pw-close-btn {
@@ -8961,12 +9016,18 @@ function createAndAppendElement(id)
            margin-bottom:90px !important;
         }
        </style>
+       <!--------------------------------------------->
+       <!-- Adthrive Ad Block Recovery : END OF BODY -->
+       <!--------------------------------------------->
        <script>
         !function(){"use strict";!function(e){if(-1===e.cookie.indexOf("__adblocker")){e.cookie="__adblocker=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";var t=new XMLHttpRequest;t.open("GET","https://ads.adthrive.com/abd/abd.js",!0),t.onreadystatechange=function(){if(XMLHttpRequest.DONE===t.readyState)if(200===t.status){var a=e.createElement("script");a.innerHTML=t.responseText,e.getElementsByTagName("head")[0].appendChild(a)}else{var n=new Date;n.setTime(n.getTime()+3e5),e.cookie="__adblocker=true; expires="+n.toUTCString()+"; path=/"}},t.send()}}(document)}();
        </script>
        <script>
         !function(){"use strict";var e;e=document,function(){var t,n;function r(){var t=e.createElement("script");t.src="https://cafemedia-com.videoplayerhub.com/galleryplayer.js",e.head.appendChild(t)}function a(){var t=e.cookie.match("(^|[^;]+)\s*__adblocker\s*=\s*([^;]+)");return t&&t.pop()}function c(){clearInterval(n)}return{init:function(){var e;"true"===(t=a())?r():(e=0,n=setInterval((function(){100!==e&&"false"!==t||c(),"true"===t&&(r(),c()),t=a(),e++}),50))}}}().init()}();
        </script>
+       <!---------------->
+       <!-- Script End -->
+       <!---------------->
        <div class="printfooter" data-nosnippet="">
         Retrieved from "
         <a dir="ltr" href="https://bulbapedia.bulbagarden.net/w/index.php?title=Pecharunt_(Pokémon)&amp;oldid=4118204">
@@ -9075,6 +9136,7 @@ function createAndAppendElement(id)
         </ul>
        </div>
       </div>
+      <!-- end content -->
       <div class="visualClear">
       </div>
      </div>
@@ -9395,6 +9457,7 @@ You can view its source [e]">
     <a class="menu-toggle" href="#globalWrapper" id="globalWrapper-toggle" title="back to top">
     </a>
    </div>
+   <!-- end of the left (by default at least) column -->
    <div class="visualClear">
    </div>
    <div class="mw-footer" id="footer" role="contentinfo">
@@ -9447,7 +9510,7 @@ You can view its source [e]">
    </div>
   </div>
   <script>
-   (RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.536","walltime":"1.348","ppvisitednodes":{"value":11473,"limit":1000000},"postexpandincludesize":{"value":236404,"limit":2097152},"templateargumentsize":{"value":21506,"limit":2097152},"expansiondepth":{"value":8,"limit":100},"expensivefunctioncount":{"value":1,"limit":250},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":6016,"limit":5000000},"timingprofile":["100.00%  751.612      1 -total"," 20.07%  150.884      1 Template:TypeEffectiveness"," 16.31%  122.622     72 Template:Type_effectiveness_entry","  8.52%   64.042      1 Template:Stats","  7.72%   58.013      1 Template:Mythical_Pokémon","  5.96%   44.796      1 Template:Pokémon_Infobox","  5.41%   40.628     16 Template:Learnlist/level9","  3.19%   23.984     23 Template:Learnlist/tm9","  2.45%   18.384      1 Template:Other_languages","  1.95%   14.651      1 Template:Dex/Gen/3"]},"cachereport":{"timestamp":"20241009063328","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":116});});
+   (RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.529","walltime":"1.403","ppvisitednodes":{"value":11473,"limit":1000000},"postexpandincludesize":{"value":236404,"limit":2097152},"templateargumentsize":{"value":21506,"limit":2097152},"expansiondepth":{"value":8,"limit":100},"expensivefunctioncount":{"value":1,"limit":250},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":6016,"limit":5000000},"timingprofile":["100.00%  739.494      1 -total"," 20.97%  155.091      1 Template:TypeEffectiveness"," 17.13%  126.672     72 Template:Type_effectiveness_entry","  7.80%   57.663      1 Template:Mythical_Pokémon","  6.94%   51.326      1 Template:Pokémon_Infobox","  6.42%   47.494      1 Template:Stats","  6.14%   45.402     16 Template:Learnlist/level9","  2.48%   18.352      1 Template:Dex/Gen/3","  2.34%   17.339     23 Template:Learnlist/tm9","  2.08%   15.408      1 Template:Other_languages"]},"cachereport":{"timestamp":"20241025010048","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":253});});
   </script>
  </body>
 </html>

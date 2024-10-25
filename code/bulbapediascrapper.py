@@ -39,6 +39,7 @@ from multiprocessing import Pool
 # - HasMega: Has a Mega evolution
 # - EvoStage: Evolution Stage of that Pokémon
 # - TotalEvoStages: Total evolution stages for that Pokémon
+# - PreevoName: Name of that Pokémon's preevolution
 # - DamageFrom(Type): Amount of damage taken for a specific attack type
 
 INFO = ['DexNumber', 'Name', 'Type', 'Abilities', 'Generation', 'Hp', 'Attack',
@@ -46,7 +47,7 @@ INFO = ['DexNumber', 'Name', 'Type', 'Abilities', 'Generation', 'Hp', 'Attack',
         'TotalStats', 'Weight', 'Height', 'GenderProbM', 'Category',
         'CatchRate', 'EggCycles', 'EggGroup', 'LevelingRate',
         'BaseFriendship', 'IsLegendary', 'IsMythical', 'IsUltraBeast',
-        'HasMega', 'EvoStage', 'TotalEvoStages', 'DamageFromNormal',
+        'HasMega', 'EvoStage', 'TotalEvoStages', 'PreevoName', 'DamageFromNormal',
         'DamageFromFighting', 'DamageFromFlying', 'DamageFromPoison',
         'DamageFromGround', 'DamageFromRock', 'DamageFromBug', 'DamageFromGhost',
         'DamageFromSteel', 'DamageFromFire', 'DamageFromWater', 'DamageFromGrass',
@@ -88,7 +89,7 @@ for elem in INFO:
         'TotalStats', 'Weight', 'Height', 'GenderProbM', 'Category',
         'CatchRate', 'EggCycles', 'EggGroup', 'LevelingRate',
         'BaseFriendship', 'IsLegendary', 'IsMythical', 'IsUltraBeast',
-        'HasMega', 'EvoStage', 'TotalEvoStages', 'DamageFromNormal',
+        'HasMega', 'EvoStage', 'TotalEvoStages', 'PreevoName', 'DamageFromNormal',
         'DamageFromFighting', 'DamageFromFlying', 'DamageFromPoison',
         'DamageFromGround', 'DamageFromRock', 'DamageFromBug', 'DamageFromGhost',
         'DamageFromSteel', 'DamageFromFire', 'DamageFromWater', 'DamageFromGrass',
@@ -96,6 +97,7 @@ for elem in INFO:
         'DamageFromDark', 'DamageFromFairy']
 
 all_pokemon_data = []   # This array will have all Pokémon data
+scrapped_pokemon = []
 
 def getPokémonName(link):
     text = ''
@@ -214,6 +216,10 @@ def typeEffectiveness(types, attacktype):
     return effectiveness
 
 
+def auxEvoInfo():
+    pass
+
+
 
 def getPokemonData(name, inputUrl):   
     """
@@ -224,6 +230,7 @@ def getPokemonData(name, inputUrl):
             - pokemonData: List containing the data for the given Pokémon, in the same order as in INFO
     """
     pokemonData = []                                                            # Initialization
+    scrapped_pokemon.append(name)
     htmlData = requests.get(MAIN_PAGE_URL + inputUrl)                         # Request to that Pokémon's page, returning the result
     soup = bs4.BeautifulSoup(htmlData.text, "html.parser")                    # Returns the document as a nested data structure
 
@@ -277,8 +284,22 @@ def getPokemonData(name, inputUrl):
             pokemonData.append(selected_abilities)
 
         elif elem == 'Generation':
-            generation = soup.find('a', string=lambda t: t and "Generation" in t).get_text()
-            pokemonData.append(generation.split()[1])
+            generation = None
+            regional = form.split()[0]
+            if name == 'Basculin White-Striped Form':                   # only exception as in https://bulbapedia.bulbagarden.net/wiki/Regional_form
+                generation = 'VIII'
+            else:
+                if regional in REGIONAL_VARIATIONS:
+                    if regional == 'Alolan':
+                        generation = 'VII'
+                    elif regional in ['Galarian', 'Hisuian']:
+                        generation = 'VIII'
+                    elif regional == 'Paldean':
+                        generation = 'IX'
+                else:
+                    generation = soup.find('a', string=lambda t: t and "Generation" in t).get_text().split()[1]
+            #print(generation)
+            pokemonData.append(generation)
         
         elif elem == 'Hp':              # Get the base HP stat of that Pokémon
             hp = soup.find_all('a', title=lambda t: t and "HP" in t)      # Filter all the anchor that contains (HP) in the title
@@ -529,6 +550,83 @@ def getPokemonData(name, inputUrl):
                         ret = 1
             pokemonData.append(ret)
 
+        elif elem == 'PreevoName':
+            ret = None
+            posregional = form.split()[0]
+            fullform = None
+            realname = soup.find('title').get_text()[:-66]
+            if posregional in REGIONAL_VARIATIONS:
+                fullform = ' '.join(name.split()[1:]) + ' ' + posregional + ' Form'
+            else:
+                fullform = name
+            found = False
+            possible_stages = ["Unevolved", "First Evolution", "Second Evolution"]
+            stage = None
+            real_j = None
+            k = 0
+            # We first search if that Pokémon and form have a specific evolution chain, if it has, we choose it
+            while k < len(possible_stages) and not found:
+                ts = soup.find_all('small', string=lambda t: t and possible_stages[k] in t)
+                j = 0
+                while not found and j < len(ts):
+                    t = ts[j].find_parent('table').find_parent('table')
+                    if not t is None:
+                        x = t.find('small', string=lambda t: t and possible_stages[k] in t).find_next('span')
+                        if not x is None:
+                            x = x.get_text()
+                            curform = t.find('small', string=lambda t: t and possible_stages[k] in t).find_next('span').find_next('small').get_text()
+                            #print('x: ',x, ', curform: ', curform, ', fullform: ', fullform, ', realname: ', realname)
+                            if x + ' ' + curform == fullform:
+                                found = True
+                                stage = possible_stages[k]
+                                real_j = j
+                    j = j+1
+                k = k+1
+
+            # In case it was not found, we select the first one
+            # In case there is, we choose it
+            if found:
+                search_unevolved = soup.find_all('small', string=lambda t: t and "Unevolved" in t)[real_j]
+            else:
+                search_unevolved = soup.find('small', string=lambda t: t and "Unevolved" in t)
+            
+            if search_unevolved is None: # Phione's case, does not have an evolution chain at all
+                ret = "No Preevolution"
+            else:
+                t = search_unevolved.find_parent('table').find_parent('table')
+                if t is None:
+                    t = search_unevolved.find_parent('table')
+                unevolved = t.find('small', string=lambda t: t and "Unevolved" in t).find_next('span').get_text()
+                if unevolved == realname:
+                    ret = "No Preevolution"
+                else:
+                    if not t.find('small', string=lambda t: t and "First Evolution" in t) is None:
+                        firstevo = t.find('small', string=lambda t: t and "First Evolution" in t).find_next('span')
+                        #print(firstevo)
+                        if firstevo.get_text() == realname:
+                            realname = t.find('small', string=lambda t: t and "Unevolved" in t).find_next('span').get_text()
+                            possible_variation = t.find('small', string=lambda t: t and "Unevolved" in t).find_next('span').find_next('small').get_text()
+                        else:
+                            realname = t.find('small', string=lambda t: t and "First Evolution" in t).find_next('span').get_text()
+                            possible_variation = t.find('small', string=lambda t: t and "First Evolution" in t).find_next('span').find_next('small').get_text()
+
+                        if possible_variation is None:
+                            ret = realname
+                        else:
+                            if possible_variation.split()[0] in REGIONAL_VARIATIONS:
+                                new_name = possible_variation.split()[0] + ' ' + realname
+                            else:
+                                new_name = realname + ' ' + possible_variation
+                            
+                            if new_name in scrapped_pokemon:
+                                ret = new_name
+                            else:
+                                ret = realname
+                    else:
+                        ret = "No Preevolution"
+            #print(ret)
+            pokemonData.append(ret)
+
 
         elif elem == 'DamageFromNormal':
             if pokemontypes is None:                                            # If types have not been calculated yet
@@ -669,12 +767,16 @@ def WriteListToCSV(csv_file,csv_columns,data_list):
 testing = False
 
 if testing:
+
+    getPokemonData('Basculin White-Striped Form', '/wiki/Basculin_(Pokémon)')
+    getPokemonData('Galarian Linoone', '/wiki/Linoone_(Pokémon)')
+    getPokemonData('Obstagoon', '/wiki/Obstagoon_(Pokémon)')
+    getPokemonData('Basculegion', '/wiki/Basculegion_(Pokémon)')
     getPokemonData('Eevee', '/wiki/Eevee_(Pokémon)')
     getPokemonData('Phione', '/wiki/Phione_(Pokémon)')
     getPokemonData('Basculin Red-Striped Form', '/wiki/Basculin_(Pokémon)')
     getPokemonData('Basculin White-Striped Form', '/wiki/Basculin_(Pokémon)')
     getPokemonData('Nihilego', '/wiki/Nihilego_(Pokémon)')
-    getPokemonData('Linoone', '/wiki/Linoone_(Pokémon)')
     getPokemonData('Galarian Linoone', '/wiki/Linoone_(Pokémon)')
     getPokemonData('Nihilego', '/wiki/Nihilego_(Pokémon)')
     getPokemonData('Mew', '/wiki/Mew_(Pokémon)')
