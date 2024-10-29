@@ -779,7 +779,7 @@ def WriteListToCSV(csv_file,csv_columns,data_list):
             writer.writerow(data)                       # Write the data   
 
 # Testing
-testing = False
+testing = True
 
 if testing:
 
