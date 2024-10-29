@@ -1874,7 +1874,7 @@
 555,"Darmanitan Zen Mode","['Fire', 'Psychic']","['Zen Mode']","V",105,30,105,140,105,55,540,92.9,1.3,0.5,"Blazing Pokémon","60","20",['Field'],"Medium Slow
 ","70
 ",0,0,0,0,2,2,"Darumaka",1.0,0.5,1.0,1.0,2.0,2.0,1.0,2.0,0.5,0.5,2.0,0.5,1.0,0.5,0.5,1.0,2.0,0.5
-555,"Galarian Darmanitan","['Fire']","['Zen Mode']","VIII",105,160,55,30,55,135,540,92.9,1.3,0.5,"Zen Charm Pokémon","60","20",['Field'],"Medium Slow
+555,"Galarian Darmanitan","['Fire']","['Zen Mode']","VIII",105,140,55,30,55,95,540,92.9,1.3,0.5,"Zen Charm Pokémon","60","20",['Field'],"Medium Slow
 ","70
 ",0,0,0,0,2,2,"Galarian Darumaka",1.0,1.0,1.0,1.0,2.0,2.0,0.5,1.0,0.5,0.5,2.0,0.5,1.0,1.0,0.5,1.0,1.0,0.5
 555,"Darmanitan Zen Mode(Galarian Form)","['Fire']","['Zen Mode']","V",105,160,55,30,55,135,540,92.9,1.3,0.5,"Blazing Pokémon","60","20",['Field'],"Medium Slow
@@ -2771,10 +2771,10 @@
 800,"Necrozma","['Psychic']","['Prism Armor']","VII",97,107,101,127,89,79,754,230.0,2.4,"-","Prism Pokémon","3","120","-","Slow
 ","0
 ",1,0,0,0,1,1,"No Preevolution",1.0,0.5,1.0,1.0,1.0,1.0,2.0,2.0,1.0,1.0,1.0,1.0,1.0,0.5,1.0,1.0,2.0,1.0
-800,"Necrozma Dusk Mane","['Psychic']","['Prism Armor']","VII",97,167,97,167,97,129,754,230.0,2.4,"-","Prism Pokémon","3","120","-","Slow
+800,"Necrozma Dusk Mane","['Psychic']","['Prism Armor']","VII",97,157,127,113,109,77,754,230.0,2.4,"-","Prism Pokémon","3","120","-","Slow
 ","0
 ",1,0,0,0,1,1,"No Preevolution",1.0,0.5,1.0,1.0,1.0,1.0,2.0,2.0,1.0,1.0,1.0,1.0,1.0,0.5,1.0,1.0,2.0,1.0
-800,"Necrozma Dawn Wings","['Psychic']","['Prism Armor']","VII",97,167,97,167,97,129,754,230.0,2.4,"-","Prism Pokémon","3","120","-","Slow
+800,"Necrozma Dawn Wings","['Psychic']","['Prism Armor']","VII",97,113,109,157,127,77,754,230.0,2.4,"-","Prism Pokémon","3","120","-","Slow
 ","0
 ",1,0,0,0,1,1,"No Preevolution",1.0,0.5,1.0,1.0,1.0,1.0,2.0,2.0,1.0,1.0,1.0,1.0,1.0,0.5,1.0,1.0,2.0,1.0
 801,"Magearna","['Steel', 'Fairy']","['Soul-Heart']","VII",80,95,115,130,115,65,600,80.5,1.0,"-","Artificial Pokémon","3","120","-","Slow
@@ -3014,7 +3014,7 @@
 875,"Eiscue Noice Face","['Ice']","['Ice Face']","VIII",75,80,70,65,50,130,470,89.0,1.4,0.5,"Penguin Pokémon","60","25",['Water 1' 'Field'],"Slow
 ","50
 ",0,0,0,0,1,1,"No Preevolution",1.0,2.0,1.0,1.0,1.0,2.0,1.0,1.0,2.0,2.0,1.0,1.0,1.0,1.0,0.5,1.0,1.0,1.0
-876,"Indeedee Male","['Psychic', 'Normal']","['Psychic Surge']","VIII",70,55,65,95,105,85,475,28.0,0.9,0.5,"Emotion Pokémon","30","40",['Fairy'],"Fast
+876,"Indeedee Male","['Psychic', 'Normal']","['Psychic Surge']","VIII",60,65,55,105,95,95,475,28.0,0.9,0.5,"Emotion Pokémon","30","40",['Fairy'],"Fast
 ","140
 ",0,0,0,0,1,1,"No Preevolution",1.0,1.0,1.0,1.0,1.0,1.0,2.0,0.0,1.0,1.0,1.0,1.0,1.0,0.5,1.0,1.0,2.0,1.0
 876,"Indeedee Female","['Psychic', 'Normal']","['Psychic Surge']","VIII",70,55,65,95,105,85,475,28.0,0.9,0.5,"Emotion Pokémon","30","40",['Fairy'],"Fast
@@ -3098,7 +3098,7 @@
 898,"Calyrex","['Psychic', 'Grass']","['Unnerve']","VIII",100,80,80,80,80,80,680,7.7,1.1,"-","King Pokémon","3","120","-","Slow
 ","100
 ",1,0,0,0,1,1,"No Preevolution",1.0,0.5,2.0,2.0,0.5,1.0,4.0,2.0,1.0,2.0,0.5,0.5,0.5,0.5,2.0,1.0,2.0,1.0
-898,"Calyrex Ice Rider","['Psychic', 'Grass']","['Unnerve']","VIII",100,85,80,165,100,150,680,7.7,1.1,"-","King Pokémon","3","120","-","Slow
+898,"Calyrex Ice Rider","['Psychic', 'Grass']","['Unnerve']","VIII",100,165,150,85,130,50,680,7.7,1.1,"-","King Pokémon","3","120","-","Slow
 ","100
 ",1,0,0,0,1,1,"No Preevolution",1.0,0.5,2.0,2.0,0.5,1.0,4.0,2.0,1.0,2.0,0.5,0.5,0.5,0.5,2.0,1.0,2.0,1.0
 898,"Calyrex Shadow Rider","['Psychic', 'Grass']","['Unnerve']","VIII",100,85,80,165,100,150,680,7.7,1.1,"-","King Pokémon","3","120","-","Slow
@@ -3116,7 +3116,7 @@
 901,"Ursaluna Bloodmoon","['Ground', 'Normal']","['Unnerve', ""Mind's Eye""]","VIII",113,70,120,135,65,52,555,290.0,2.4,0.5,"Peat Pokémon","20","20",['Field'],"Medium Fast
 ","50
 ",0,0,0,0,1,1,"No Preevolution",1.0,2.0,1.0,0.5,1.0,0.5,1.0,0.0,1.0,1.0,2.0,2.0,0.0,1.0,2.0,1.0,1.0,1.0
-902,"Basculegion Male","['Water', 'Ghost']","['Swift Swim', 'Adaptability', 'Mold Breaker']","VIII",120,92,65,100,75,78,530,110.0,3.0,0.5,"Big Fish Pokémon","45","20",['Water 2'],"Medium Fast
+902,"Basculegion Male","['Water', 'Ghost']","['Swift Swim', 'Adaptability', 'Mold Breaker']","VIII",120,112,65,80,75,78,530,110.0,3.0,0.5,"Big Fish Pokémon","45","20",['Water 2'],"Medium Fast
 ","50
 ",0,0,0,0,2,2,"Basculin White-Striped Form",0.0,0.0,1.0,0.5,1.0,1.0,0.5,2.0,0.5,0.5,0.5,2.0,2.0,1.0,0.5,1.0,2.0,1.0
 902,"Basculegion Female","['Water', 'Ghost']","['Swift Swim', 'Adaptability', 'Mold Breaker']","VIII",120,92,65,100,75,78,530,110.0,3.0,0.5,"Big Fish Pokémon","45","20",['Water 2'],"Medium Fast
@@ -3164,7 +3164,7 @@
 915,"Lechonk","['Normal']","['Aroma Veil', 'Gluttony', 'Thick Fat']","IX",54,45,40,35,45,35,254,10.2,0.5,0.5,"Hog Pokémon","255","15",['Field'],"Medium Fast
 ","50
 ",0,0,0,0,1,2,"No Preevolution",1.0,2.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
-916,"Oinkologne Male","['Normal']","['Thick Fat']","IX",115,90,70,59,90,65,489,120.0,1.0,0.5,"Hog Pokémon","100","15",['Field'],"Medium Fast
+916,"Oinkologne Male","['Normal']","['Thick Fat']","IX",110,100,75,59,80,65,489,120.0,1.0,0.5,"Hog Pokémon","100","15",['Field'],"Medium Fast
 ","50
 ",0,0,0,0,2,2,"Lechonk",1.0,2.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
 916,"Oinkologne Female","['Normal']","['Thick Fat']","IX",115,90,70,59,90,65,489,120.0,1.0,0.5,"Hog Pokémon","100","15",['Field'],"Medium Fast

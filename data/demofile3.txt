@@ -6,7 +6,7 @@
    Pecharunt (Pokémon) - Bulbapedia, the community-driven Pokémon encyclopedia
   </title>
   <script>
-   document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"6d5e621fe66d872a97a157c1","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Pecharunt_(Pokémon)","wgTitle":"Pecharunt (Pokémon)","wgCurRevisionId":4118204,"wgRevisionId":4118204,"wgArticleId":300802,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pokémon","Generation IX Pokémon","Poison-type Pokémon","Ghost-type Pokémon","Dual-type Pokémon","Gender-unknown Pokémon","Pokémon without Hidden Abilities","Pokémon in the Slow experience group","Purple-colored Pokémon","Body style 01 Pokémon","No Eggs Discovered group Pokémon",
+   document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"250efc20075a42f7beae0bc2","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Pecharunt_(Pokémon)","wgTitle":"Pecharunt (Pokémon)","wgCurRevisionId":4168078,"wgRevisionId":4168078,"wgArticleId":300802,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pokémon","Generation IX Pokémon","Poison-type Pokémon","Ghost-type Pokémon","Dual-type Pokémon","Gender-unknown Pokémon","Pokémon without Hidden Abilities","Pokémon in the Slow experience group","Purple-colored Pokémon","Body style 01 Pokémon","No Eggs Discovered group Pokémon",
 "Pokémon in the Blueberry Pokédex","Pokémon with a base stat total of 600","Pokémon whose base Defense stat is greater than 100","Pages with broken file links","Pokémon that are not part of an evolutionary line","Pokémon introduced in The Indigo Disk","Mythical Pokémon"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Pecharunt_(Pokémon)","wgRelevantArticleId":300802,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMFDisplayWikibaseDescriptions":{"search":false,"nearby":false,"watchlist":false,"tagline":false},"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgEditSubmitButtonLabelPublish":false};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","mediawiki.page.gallery.styles":"ready",
 "skins.bulbapediamonobook.styles":"ready","jquery.tablesorter.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.ready","jquery.tablesorter","mediawiki.toc","skins.bulbapediamonobook.scripts","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","mmv.head","mmv.bootstrap.autostart"];
   </script>
@@ -81,10 +81,10 @@ n.parentNode.insertBefore(s, n);
   <meta content="Pecharunt (Pokémon)" property="og:title">
    <meta content="Bulbapedia" property="og:site_name"/>
    <meta content="https://bulbapedia.bulbagarden.net/wiki/Pecharunt_(Pok%C3%A9mon)" property="og:url"/>
-   <meta content="2024-09-22T00:43:19Z" property="article:modified_time"/>
-   <meta content="2024-09-22T00:43:19Z" property="article:published_time"/>
+   <meta content="2024-10-26T10:41:01Z" property="article:modified_time"/>
+   <meta content="2024-10-26T10:41:01Z" property="article:published_time"/>
    <script type="application/ld+json">
-    {"@context":"http:\/\/schema.org","@type":"Article","name":"Pecharunt (Pok\u00e9mon) - Bulbapedia, the community-driven Pok\u00e9mon encyclopedia","headline":"Pecharunt (Pok\u00e9mon) - Bulbapedia, the community-driven Pok\u00e9mon encyclopedia","mainEntityOfPage":"<span class=\"mw-page-title-main\">Pecharunt (Pok\u00e9mon)<\/span>","identifier":"https:\/\/bulbapedia.bulbagarden.net\/wiki\/Pecharunt_(Pok%C3%A9mon)","url":"https:\/\/bulbapedia.bulbagarden.net\/wiki\/Pecharunt_(Pok%C3%A9mon)","dateModified":"2024-09-22T00:43:19Z","datePublished":"2024-09-22T00:43:19Z","image":{"@type":"ImageObject","url":"http:\/\/archives.bulbagarden.net\/media\/upload\/2\/25\/Bulbapedia_logo.png"},"author":{"@type":"Organization","name":"Bulbapedia","url":"https:\/\/bulbapedia.bulbagarden.net","logo":{"@type":"ImageObject","url":"http:\/\/archives.bulbagarden.net\/media\/upload\/2\/25\/Bulbapedia_logo.png","caption":"Bulbapedia"}},"publisher":{"@type":"Organization","name":"Bulbapedia","url":"https:\/\/bulbapedia.bulbagarden.net","logo":{"@type":"ImageObject","url":"http:\/\/archives.bulbagarden.net\/media\/upload\/2\/25\/Bulbapedia_logo.png","caption":"Bulbapedia"}},"potentialAction":{"@type":"SearchAction","target":"https:\/\/bulbapedia.bulbagarden.net\/w\/index.php?title=Special:Search&search={search_term}","query-input":"required name=search_term"}}
+    {"@context":"http:\/\/schema.org","@type":"Article","name":"Pecharunt (Pok\u00e9mon) - Bulbapedia, the community-driven Pok\u00e9mon encyclopedia","headline":"Pecharunt (Pok\u00e9mon) - Bulbapedia, the community-driven Pok\u00e9mon encyclopedia","mainEntityOfPage":"<span class=\"mw-page-title-main\">Pecharunt (Pok\u00e9mon)<\/span>","identifier":"https:\/\/bulbapedia.bulbagarden.net\/wiki\/Pecharunt_(Pok%C3%A9mon)","url":"https:\/\/bulbapedia.bulbagarden.net\/wiki\/Pecharunt_(Pok%C3%A9mon)","dateModified":"2024-10-26T10:41:01Z","datePublished":"2024-10-26T10:41:01Z","image":{"@type":"ImageObject","url":"http:\/\/archives.bulbagarden.net\/media\/upload\/2\/25\/Bulbapedia_logo.png"},"author":{"@type":"Organization","name":"Bulbapedia","url":"https:\/\/bulbapedia.bulbagarden.net","logo":{"@type":"ImageObject","url":"http:\/\/archives.bulbagarden.net\/media\/upload\/2\/25\/Bulbapedia_logo.png","caption":"Bulbapedia"}},"publisher":{"@type":"Organization","name":"Bulbapedia","url":"https:\/\/bulbapedia.bulbagarden.net","logo":{"@type":"ImageObject","url":"http:\/\/archives.bulbagarden.net\/media\/upload\/2\/25\/Bulbapedia_logo.png","caption":"Bulbapedia"}},"potentialAction":{"@type":"SearchAction","target":"https:\/\/bulbapedia.bulbagarden.net\/w\/index.php?title=Special:Search&search={search_term}","query-input":"required name=search_term"}}
    </script>
   </meta>
  </head>
@@ -605,18 +605,30 @@ n.parentNode.insertBefore(s, n);
       <div id="localNotice">
        <div class="sitenotice" dir="ltr" lang="en">
         <div class="noticebar roundy plainlinks" style="padding:0px;">
+         Bulbapedia will be locked from editing on Tuesday November 5th from 03:00 UTC while we perform some server maintenance. We expect the maintenance to span a few days. Updates will be provided via our
+         <a class="external text" href="https://x.com/Bulbapedia" rel="nofollow">
+          X
+         </a>
+         account if necessary.
+         <br/>
          Please remember to follow the
-         <a href="/wiki/Bulbapedia:Unreleased_materials_policy" title="Bulbapedia:Unreleased materials policy">
-          unreleased materials policy
-         </a>
+         <b>
+          <a href="/wiki/Bulbapedia:Unreleased_materials_policy" title="Bulbapedia:Unreleased materials policy">
+           unreleased materials policy
+          </a>
+         </b>
          ,
-         <a href="/wiki/Bulbapedia:Manual_of_style" title="Bulbapedia:Manual of style">
-          manual of style
-         </a>
-         and
-         <a href="/wiki/Bulbapedia:Code_of_conduct" title="Bulbapedia:Code of conduct">
-          code of conduct
-         </a>
+         <b>
+          <a href="/wiki/Bulbapedia:Manual_of_style" title="Bulbapedia:Manual of style">
+           manual of style
+          </a>
+         </b>
+         , and
+         <b>
+          <a href="/wiki/Bulbapedia:Code_of_conduct" title="Bulbapedia:Code of conduct">
+           code of conduct
+          </a>
+         </b>
          at all times.
          <br/>
          Check the
@@ -7668,11 +7680,7 @@ n.parentNode.insertBefore(s, n);
           </ul>
          </li>
          <li>
-          Pecharunt and
-          <a href="/wiki/Meltan_(Pok%C3%A9mon)" title="Meltan (Pokémon)">
-           Meltan
-          </a>
-          are the only Mythical Pokémon to have never been made available in a
+          Pecharunt is the only Mythical Pokémon to have never been made available in a
           <a href="/wiki/Cherish_Ball" title="Cherish Ball">
            Cherish Ball
           </a>
@@ -8669,6 +8677,10 @@ n.parentNode.insertBefore(s, n);
                  Zeraora
                 </a>
                 •
+                <a href="/wiki/Meltan_(Pok%C3%A9mon)" title="Meltan (Pokémon)">
+                 Meltan
+                </a>
+                <br/>
                 <a href="/wiki/Melmetal_(Pok%C3%A9mon)" title="Melmetal (Pokémon)">
                  Melmetal
                 </a>
@@ -8676,7 +8688,7 @@ n.parentNode.insertBefore(s, n);
                 <a href="/wiki/Zarude_(Pok%C3%A9mon)" title="Zarude (Pokémon)">
                  Zarude
                 </a>
-                <br/>
+                •
                 <a href="/wiki/Walking_Wake_(Pok%C3%A9mon)" title="Walking Wake (Pokémon)">
                  Walking Wake
                 </a>
@@ -8915,14 +8927,14 @@ n.parentNode.insertBefore(s, n);
         </table>
         <!-- 
 NewPP limit report
-Cached time: 20241025010048
+Cached time: 20241028215124
 Cache expiry: 86400
 Reduced expiry: false
 Complications: [show‐toc]
-CPU time usage: 0.529 seconds
-Real time usage: 1.403 seconds
-Preprocessor visited node count: 11473/1000000
-Post‐expand include size: 236404/2097152 bytes
+CPU time usage: 0.505 seconds
+Real time usage: 0.962 seconds
+Preprocessor visited node count: 11471/1000000
+Post‐expand include size: 236436/2097152 bytes
 Template argument size: 21506/2097152 bytes
 Highest expansion depth: 8/100
 Expensive parser function count: 1/250
@@ -8931,18 +8943,18 @@ Unstrip post‐expand size: 6016/5000000 bytes
 -->
         <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%  739.494      1 -total
- 20.97%  155.091      1 Template:TypeEffectiveness
- 17.13%  126.672     72 Template:Type_effectiveness_entry
-  7.80%   57.663      1 Template:Mythical_Pokémon
-  6.94%   51.326      1 Template:Pokémon_Infobox
-  6.42%   47.494      1 Template:Stats
-  6.14%   45.402     16 Template:Learnlist/level9
-  2.48%   18.352      1 Template:Dex/Gen/3
-  2.34%   17.339     23 Template:Learnlist/tm9
-  2.08%   15.408      1 Template:Other_languages
+100.00%  499.184      1 -total
+ 22.10%  110.331      1 Template:TypeEffectiveness
+ 16.74%   83.587     72 Template:Type_effectiveness_entry
+ 11.93%   59.563      1 Template:Stats
+  9.86%   49.214      1 Template:Mythical_Pokémon
+  5.99%   29.901      1 Template:Pokémon_Infobox
+  5.14%   25.661     16 Template:Learnlist/level9
+  2.75%   13.711     23 Template:Learnlist/tm9
+  2.36%   11.776      1 Template:Other_languages
+  1.93%    9.649    181 Template:Roundy
 -->
-        <!-- Saved in parser cache with key themozz_mediawiki:pcache:idhash:300802-0!canonical and timestamp 20241025010046 and revision id 4118204.
+        <!-- Saved in parser cache with key themozz_mediawiki:pcache:idhash:300802-0!canonical and timestamp 20241028215123 and revision id 4168078.
  -->
        </div>
        <!---------------------------------------------------------------->
@@ -9030,8 +9042,8 @@ function createAndAppendElement(id)
        <!---------------->
        <div class="printfooter" data-nosnippet="">
         Retrieved from "
-        <a dir="ltr" href="https://bulbapedia.bulbagarden.net/w/index.php?title=Pecharunt_(Pokémon)&amp;oldid=4118204">
-         https://bulbapedia.bulbagarden.net/w/index.php?title=Pecharunt_(Pokémon)&amp;oldid=4118204
+        <a dir="ltr" href="https://bulbapedia.bulbagarden.net/w/index.php?title=Pecharunt_(Pokémon)&amp;oldid=4168078">
+         https://bulbapedia.bulbagarden.net/w/index.php?title=Pecharunt_(Pokémon)&amp;oldid=4168078
         </a>
         "
        </div>
@@ -9393,7 +9405,7 @@ You can view its source [e]">
          </a>
         </li>
         <li class="mw-list-item" id="t-permalink">
-         <a href="/w/index.php?title=Pecharunt_(Pok%C3%A9mon)&amp;oldid=4118204" title="Permanent link to this revision of this page">
+         <a href="/w/index.php?title=Pecharunt_(Pok%C3%A9mon)&amp;oldid=4168078" title="Permanent link to this revision of this page">
           Permanent link
          </a>
         </li>
@@ -9403,7 +9415,7 @@ You can view its source [e]">
          </a>
         </li>
         <li class="mw-list-item" id="t-cite">
-         <a href="/w/index.php?title=Special:CiteThisPage&amp;page=Pecharunt_%28Pok%C3%A9mon%29&amp;id=4118204&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">
+         <a href="/w/index.php?title=Special:CiteThisPage&amp;page=Pecharunt_%28Pok%C3%A9mon%29&amp;id=4168078&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">
           Cite this page
          </a>
         </li>
@@ -9473,7 +9485,7 @@ You can view its source [e]">
     </div>
     <ul id="f-list">
      <li id="lastmod">
-      This page was last edited on 22 September 2024, at 00:43.
+      This page was last edited on 26 October 2024, at 10:41.
      </li>
      <li id="copyright">
       Content is available under
@@ -9510,7 +9522,7 @@ You can view its source [e]">
    </div>
   </div>
   <script>
-   (RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.529","walltime":"1.403","ppvisitednodes":{"value":11473,"limit":1000000},"postexpandincludesize":{"value":236404,"limit":2097152},"templateargumentsize":{"value":21506,"limit":2097152},"expansiondepth":{"value":8,"limit":100},"expensivefunctioncount":{"value":1,"limit":250},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":6016,"limit":5000000},"timingprofile":["100.00%  739.494      1 -total"," 20.97%  155.091      1 Template:TypeEffectiveness"," 17.13%  126.672     72 Template:Type_effectiveness_entry","  7.80%   57.663      1 Template:Mythical_Pokémon","  6.94%   51.326      1 Template:Pokémon_Infobox","  6.42%   47.494      1 Template:Stats","  6.14%   45.402     16 Template:Learnlist/level9","  2.48%   18.352      1 Template:Dex/Gen/3","  2.34%   17.339     23 Template:Learnlist/tm9","  2.08%   15.408      1 Template:Other_languages"]},"cachereport":{"timestamp":"20241025010048","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":253});});
+   (RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.505","walltime":"0.962","ppvisitednodes":{"value":11471,"limit":1000000},"postexpandincludesize":{"value":236436,"limit":2097152},"templateargumentsize":{"value":21506,"limit":2097152},"expansiondepth":{"value":8,"limit":100},"expensivefunctioncount":{"value":1,"limit":250},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":6016,"limit":5000000},"timingprofile":["100.00%  499.184      1 -total"," 22.10%  110.331      1 Template:TypeEffectiveness"," 16.74%   83.587     72 Template:Type_effectiveness_entry"," 11.93%   59.563      1 Template:Stats","  9.86%   49.214      1 Template:Mythical_Pokémon","  5.99%   29.901      1 Template:Pokémon_Infobox","  5.14%   25.661     16 Template:Learnlist/level9","  2.75%   13.711     23 Template:Learnlist/tm9","  2.36%   11.776      1 Template:Other_languages","  1.93%    9.649    181 Template:Roundy"]},"cachereport":{"timestamp":"20241028215124","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":155});});
   </script>
  </body>
 </html>

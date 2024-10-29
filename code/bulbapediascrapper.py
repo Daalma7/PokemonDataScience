@@ -133,7 +133,7 @@ def getPokemonUrls():
     return {getPokémonName(link): link.get('href') for link in pkmn_links}                            # Only get the href parameter (URL)
 
 
-def selectCorrectStats(form, stat_list):
+def selectCorrectStats(name, form, stat_list):
     """
     Auxiliary function for selecting the stats from the corrent table in the URL
         Parameters:
@@ -143,14 +143,29 @@ def selectCorrectStats(form, stat_list):
             - selected_index: Index containing the correct statistics location
     """
     # We need to calculate first the list of different possible forms that Pokémon has
-    #print("---")
+
     listforms = []
     for a in stat_list:
         if not a.parent.find_previous('h5') is None:
             listforms.append(a.parent.find_previous('h5').text)
         else:
             listforms.append('')
-    #print(listforms)
+
+    if form == 'Galarian Darmanitan':                   # Exception
+        form = 'Standard Mode'
+    
+    newform = form
+    
+    if not newform in listforms:
+        newform = f"{name.split()[0]} {form}"
+        if not newform in listforms:
+            newform = f"{form} {name.split()[0]}"
+            if not newform in listforms:
+                if newform.split()[0] in REGIONAL_VARIATIONS:
+                    newform = listforms[0]
+
+    form = newform
+    #print(form, listforms)
     #print("---")
     
     # After that, we will select the correct stats, according to its form, comparing the titles of the tables
@@ -171,8 +186,8 @@ def selectCorrectStats(form, stat_list):
                 selected = True
             if not selected:
                 selected_index -= 1
-        
-    #print(stat_list[selected_index].parent.find_next_sibling('div').text)
+
+    print(stat_list[selected_index].parent.find_next_sibling('div').text)
     return selected_index
 
 
@@ -303,32 +318,32 @@ def getPokemonData(name, inputUrl):
         
         elif elem == 'Hp':              # Get the base HP stat of that Pokémon
             hp = soup.find_all('a', title=lambda t: t and "HP" in t)      # Filter all the anchor that contains (HP) in the title
-            index = selectCorrectStats(form, hp)
+            index = selectCorrectStats(name, form, hp)
             pokemonData.append((int) (hp[index].parent.find_next_sibling('div').text))
 
         elif elem == 'Attack':          # Get the base Attack stat of that Pokémon
             attack = soup.find_all('a', href=lambda t: t and "Stat#Attack" in t)      # Filter all the anchor that contains (Attack) in the title
-            index = selectCorrectStats(form, attack)
+            index = selectCorrectStats(name, form, attack)
             pokemonData.append((int) (attack[index].parent.find_next_sibling('div').text))
 
         elif elem == 'Defense':         # Get the base Defense stat of that Pokémon
             defense = soup.find_all('a', href=lambda t: t and "Stat#Defense" in t)      # Filter all the anchor that contains (Defense) in the title
-            index = selectCorrectStats(form, defense)
+            index = selectCorrectStats(name, form, defense)
             pokemonData.append((int) (defense[index].parent.find_next_sibling('div').text))
 
         elif elem == 'SpecialAttack':   # Get the base Special Attack stat of that Pokémon
             specialattack = soup.find_all('a', href=lambda t: t and "Stat#Special_Attack" in t)      # Filter all the anchor that contains (Special_Attack) in the title
-            index = selectCorrectStats(form, specialattack)
+            index = selectCorrectStats(name, form, specialattack)
             pokemonData.append((int) (specialattack[index].parent.find_next_sibling('div').text))
 
         elif elem == 'SpecialDefense':  # Get the base Special Defense stat of that Pokémon
             specialdefense = soup.find_all('a', href=lambda t: t and "Stat#Special_Defense" in t)      # Filter all the anchor that contains (Special_Defense) in the title
-            index = selectCorrectStats(form, specialdefense)
+            index = selectCorrectStats(name, form, specialdefense)
             pokemonData.append((int) (specialdefense[index].parent.find_next_sibling('div').text))
 
         elif elem == 'Speed':           # Get the base Speed stat of that Pokémon
             speed = soup.find_all('a', href=lambda t: t and "Stat#Speed" in t)      # Filter all the anchor that contains (Speed) in the title
-            index = selectCorrectStats(form, speed)
+            index = selectCorrectStats(name, form, speed)
             pokemonData.append((int) (speed[index].parent.find_next_sibling('div').text))
 
         elif elem == 'TotalStats':      # Get the total stats (sum of the previous ones) of that Pokémon
@@ -768,6 +783,14 @@ testing = False
 
 if testing:
 
+    getPokemonData('Galarian Darmanitan', '/wiki/Darmanitan_(Pokémon)')
+    getPokemonData('Darmanitan Zen Mode(Galarian Form)', '/wiki/Darmanitan_(Pokémon)')
+    getPokemonData('Necrozma', '/wiki/Necrozma_(Pokémon)')
+    getPokemonData('Necrozma Dusk Mane', '/wiki/Necrozma_(Pokémon)')
+    getPokemonData('Necrozma Dawn Wings', '/wiki/Necrozma_(Pokémon)')
+    getPokemonData('Zacian Hero of Many Battles', '/wiki/Zacian_(Pokémon)')
+
+    """
     getPokemonData('Basculin White-Striped Form', '/wiki/Basculin_(Pokémon)')
     getPokemonData('Galarian Linoone', '/wiki/Linoone_(Pokémon)')
     getPokemonData('Obstagoon', '/wiki/Obstagoon_(Pokémon)')
@@ -794,6 +817,7 @@ if testing:
     getPokemonData('Rattata', '/wiki/Rattata_(Pokémon)')
     getPokemonData('Charizard', '/wiki/Charizard_(Pokémon)')
     getPokemonData('Zacian Hero of Many Battles', '/wiki/Zacian_(Pokémon)')
+    """
 else:
     allPokemonStats()
     WriteListToCSV(os.path.abspath(os.path.join(CURRENT_FILE_PATH, os.pardir)) + "/data/Pokemon.csv", INFO, all_pokemon_data)
