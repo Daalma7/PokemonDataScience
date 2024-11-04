@@ -2,25 +2,25 @@
 https://www.deviantart.com/mbcmechachu/favourites/70416144/pokemon-animated-sprites-gen-5-style
 -->
 <p align="center">
-  <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/decdea790f97636998e28a49597386c6.png" />
+  <img src="other/decdea790f97636998e28a49597386c6.png" />
   <br />
-  <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/treecko.gif" alt="animated" />
-  <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/torchic.gif" alt="animated" />
-  <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/mudkip.gif" alt="animated" />
-  <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/happiny.gif" alt="animated" />
-  <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/pancham.gif" alt="animated" />
-  <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/rookidee.gif" alt="animated" />
-  <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/gulpin.gif" alt="animated" />
-  <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/phanpy.gif" alt="animated" />
-  <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/nosepass.gif" alt="animated" />
-  <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/misdreavus.gif" alt="animated" />
-  <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/klink.gif" alt="animated" />
-  <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/shinx.gif" alt="animated" />
-  <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/slowpoke-galar.gif" alt="animated" />
-  <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/vulpix-alola.gif" alt="animated" />
-  <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/dratini.gif" alt="animated" />
-  <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/zorua.gif" alt="animated" />
-  <img src="https://github.com/Daalma7/PokemonDataScience/blob/main/other/togepi.gif" alt="animated" />
+  <img src="other/treecko.gif" alt="animated" />
+  <img src="other/torchic.gif" alt="animated" />
+  <img src="other/mudkip.gif" alt="animated" />
+  <img src="other/happiny.gif" alt="animated" />
+  <img src="other/pancham.gif" alt="animated" />
+  <img src="other/rookidee.gif" alt="animated" />
+  <img src="other/gulpin.gif" alt="animated" />
+  <img src="other/phanpy.gif" alt="animated" />
+  <img src="other/nosepass.gif" alt="animated" />
+  <img src="other/misdreavus.gif" alt="animated" />
+  <img src="other/klink.gif" alt="animated" />
+  <img src="other/shinx.gif" alt="animated" />
+  <img src="other/slowpoke-galar.gif" alt="animated" />
+  <img src="other/vulpix-alola.gif" alt="animated" />
+  <img src="other/dratini.gif" alt="animated" />
+  <img src="other/zorua.gif" alt="animated" />
+  <img src="other/togepi.gif" alt="animated" />
 </p>
 
 ![](https://github.com/Your_Repository_Name/Your_GIF_Name.gif)
@@ -93,6 +93,24 @@ To continue, further cleaning and visualization techinques are applied in order 
 In preprocess.ipynb, data preprocessing and initial single feature statistics is performed. Apart from that, some attibutes were divided into several ones in order to store atomic information (Type divided in Type1 and Type2, Abilities divided in Ability1, Ability2 and HiddenAbility, EggGroup divided into EggGroup1 and EggGroup2, and finally an additional feature named NoGender indicates wether the Pokémon has Gender or not, which complements GenderProb feature).
 
 In visualizationsEDA.ipynb, containing advanced visualizations, we can extract some impacting conclusions.
+
+### Some visualizations
+<div align="center">
+    <img src="other/output.png" width="412px"/> 
+</div>
+<!--
+<div align="center">
+    <img src="other/output.png" width="412px"/> 
+</div>
+-->
+
+### Best Pokémons, stat-wise
+
+- Best 5 physically offensive Pokémons (attack and speed): <img src="other/deoxys-attack.gif" alt="animated" /><img src="other/deoxys.gif" alt="animated" /> <img src="other/zacian-crowned.gif" alt="animated" /> <img src="other/darmanitan-galarzen.gif" alt="animated" /> <img src="other/pheromosa.gif" alt="animated" />
+- Best 5 special offensive Pokémons (special attack and speed): <img src="other/deoxys-attack.gif" alt="animated" /><img src="other/calyrex-shadow.gif" alt="animated" /> <img src="other/deoxys.gif" alt="animated" /> <img src="other/pheromosa.gif" alt="animated" /> <img src="other/mewtwo.gif" alt="animated" />
+- Best 5 physically defensive Pokémons (defense and hp): <img src="other/treecko.gif" alt="animated" /><img src="other/torchic.gif" alt="animated" /> <img src="other/mudkip.gif" alt="animated" /> <img src="other/happiny.gif" alt="animated" /> <img src="other/happiny.gif" alt="animated" />
+- Best 5 special defensive Pokémons (special defense and speed): <img src="other/blissey.gif" alt="animated" /><img src="other/chansey.gif" alt="animated" /> <img src="other/zygarde-complete.gif" alt="animated" /> <img src="other/giratina.gif" alt="animated" /> <img src="other/snorlax.gif" alt="animated" />
+
 
 ## Part 3: Data Science: Supervised and Unsupervised Learning, higher level information
 In progress...
