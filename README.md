@@ -140,6 +140,14 @@ But only one stat is not usually enough for a Pokémon to be good or viable, if 
 
   $\sqrt{\text{Hp}\cdot \text{Spe.Defense}}$: Blissey: 185.5398, Chansey: 162.0185, Zygarde Complete: 143.2480, Giratina: 134.1641, Snorlax: 132.6650.
 
+
+### Abilities:
+
+- Most common abilities: Sturdy (46 Pokémon), Swift Swim (45 Pokémon), Keen Eye (41 Pokémon), Levitate (39 Pokémon), Intimidate (39 Pokémon)
+- Unique abilities:
+- Most common abilities in evolution lines: Levitate (in 30 evolution lines), Pressure (in 27 evolution lines), Sturdy (in 26 evolution lines), Swift Swim (in 25 evolution lines), Run Away (in 25 evolution lines).
+- Evolution lines with unique abilities:
+
 ## Part 3: Data Science: Supervised and Unsupervised Learning, higher level information
 In progress...
 
