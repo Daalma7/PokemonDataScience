@@ -106,11 +106,39 @@ In visualizationsEDA.ipynb, containing advanced visualizations, we can extract s
 
 ### Best Pokémons, stat-wise
 
-- Best 5 physically offensive Pokémons (attack and speed): <img src="other/deoxys-attack.gif" alt="animated" /><img src="other/deoxys.gif" alt="animated" /> <img src="other/zacian-crowned.gif" alt="animated" /> <img src="other/darmanitan-galarzen.gif" alt="animated" /> <img src="other/pheromosa.gif" alt="animated" />
-- Best 5 special offensive Pokémons (special attack and speed): <img src="other/deoxys-attack.gif" alt="animated" /><img src="other/calyrex-shadow.gif" alt="animated" /> <img src="other/deoxys.gif" alt="animated" /> <img src="other/pheromosa.gif" alt="animated" /> <img src="other/mewtwo.gif" alt="animated" />
-- Best 5 physically defensive Pokémons (defense and hp): <img src="other/treecko.gif" alt="animated" /><img src="other/torchic.gif" alt="animated" /> <img src="other/mudkip.gif" alt="animated" /> <img src="other/happiny.gif" alt="animated" /> <img src="other/happiny.gif" alt="animated" />
-- Best 5 special defensive Pokémons (special defense and speed): <img src="other/blissey.gif" alt="animated" /><img src="other/chansey.gif" alt="animated" /> <img src="other/zygarde-complete.gif" alt="animated" /> <img src="other/giratina.gif" alt="animated" /> <img src="other/snorlax.gif" alt="animated" />
+- **Top 5 highest Hp Pokémon**: <img src="other/blissey.gif" alt="animated" /><img src="other/chansey.gif" alt="animated" /> <img src="other/guzzlord.gif" alt="animated" /> <img src="other/zygarde-complete.gif" alt="animated" /> <img src="other/regidrago.gif" alt="animated" />
 
+  Blissey: 255, Chansey: 250, Guzzlord: 223, Zygarde Complete: 216, Regidrago: 200.
+- **Top 5 highest Attack Pokémon**: <img src="other/kartana.gif" alt="animated" /><img src="other/deoxys-attack.gif" alt="animated" /> <img src="other/kyurem-black.gif" alt="animated" /> <img src="other/rampardos.gif" alt="animated" /> <img src="other/calyrex-ice.gif" alt="animated" />
+
+  Kartana: 181, Deoxys Attack: 180, Kyurem Black: 170, Rampardos and Calyrex Ice Rider: 165.
+- **Top 5 highest Defense Pokémon**: <img src="other/shuckle.gif" alt="animated" /><img src="other/stakataka.gif" alt="animated" /> <img src="other/regirock.gif" alt="animated" /> <img src="other/steelix.gif" alt="animated" /> <img src="other/avalugg-hisui.gif" alt="animated" />
+
+  Shuckle: 230, Stakataka: 211, Regirock and Steelix: 200, Hisuian Avalugg: 184 (tied with Avalugg).
+- **Top 5 highest Spe.Attack Pokémon**: <img src="other/deoxys-attack.gif" alt="animated" /><img src="other/xurkitree.gif" alt="animated" /> <img src="other/hoopa-unbound.gif" alt="animated" /> <img src="other/kyurem-white.gif" alt="animated" /> <img src="other/calyrex-shadow.gif" alt="animated" />
+
+  Deoxys Attack: 180, Xurkitree: 173, Hoopa Unbound and Kyurem White: 170, Calyrex Shadow Rider: 165).
+- **Top 5 highest Spe.Defense Pokémon**: <img src="other/shuckle.gif" alt="animated" /><img src="other/regice.gif" alt="animated" /> <img src="other/deoxys-defense.gif" alt="animated" /> <img src="other/florges.gif" alt="animated" /> <img src="other/lugia.gif" alt="animated" />
+
+  Shuckle: 230, Regice: 200, Deoxys Defense: 160, Florges and Lugia: 154 (tied with Ho-Oh).
+- **Top 5 highest Speed Pokémon**: <img src="other/regieleki.gif" alt="animated" /><img src="other/deoxys-speed.gif" alt="animated" /> <img src="other/ninjask.gif" alt="animated" /> <img src="other/pheromosa.gif" alt="animated" /> <img src="other/deoxys.gif" alt="animated" />
+
+  Regieleki: 200, Deoxys Speed: 180, Ninjask: 160, Pheromosa: 151, Deoxys: 150 (tied with Deoxys Attack, Calyrex Shadow Rider, Electrode and Hisuian Electrode. 
+
+But only one stat is not usually enough for a Pokémon to be good or viable, if it is bad in any other stat. That is the reason why we will consider the geometric mean of pair of related statistics in order to get the best sweepers (attack x speed and spe.attack x speed) and walls (hp x defense and hp x special defense) Pokémon: 
+
+- **Top 5 physical sweepers Pokémons**: <img src="other/deoxys-attack.gif" alt="animated" /><img src="other/deoxys.gif" alt="animated" /> <img src="other/zacian-crowned.gif" alt="animated" /> <img src="other/darmanitan-galarzen.gif" alt="animated" /> <img src="other/pheromosa.gif" alt="animated" />
+
+  $\sqrt{\text{Attack}\cdot \text{Speed}}$: Deoxys Attack: 164.3168, Deoxys: 150, Galarian Darmanitan Zen: 148.9966, Zygarde Complete: 146.9694, Regidrago: 143.8298.
+- **Top 5 special sweepers Pokémons**: <img src="other/deoxys-attack.gif" alt="animated" /><img src="other/calyrex-shadow.gif" alt="animated" /> <img src="other/deoxys.gif" alt="animated" /> <img src="other/pheromosa.gif" alt="animated" /> <img src="other/mewtwo.gif" alt="animated" />
+
+  $\sqrt{\text{Spe.Attack}\cdot \text{Speed}}$: Deoxys Attack: 164.3168, Calyrex Shadow Rider: 157.3213, Deoxys: 150, Pheromosa: 143.8298, Mewtwo: 141.4920.
+- **Top 5 physical walls Pokémons**: <img src="other/zygarde-complete.gif" alt="animated" /><img src="other/ting-lu.gif" alt="animated" /> <img src="other/melmetal.gif" alt="animated" /> <img src="other/giratina.gif" alt="animated" /> <img src="other/avalugg.gif" alt="animated" />
+
+  $\sqrt{\text{Hp}\cdot \text{Defense}}$: Zygarde Complete: 161.6663, Ting-Lu: 139.1941, Melmetal: 138.9424, Giratina: 134.1641, Avalugg: 132.2120 (tied with Hisuian Avalugg.
+- **Top 5 special walls Pokémons**: <img src="other/blissey.gif" alt="animated" /><img src="other/chansey.gif" alt="animated" /> <img src="other/zygarde-complete.gif" alt="animated" /> <img src="other/giratina.gif" alt="animated" /> <img src="other/snorlax.gif" alt="animated" />
+
+  $\sqrt{\text{Hp}\cdot \text{Spe.Defense}}$: Blissey: 185.5398, Chansey: 162.0185, Zygarde Complete: 143.2480, Giratina: 134.1641, Snorlax: 132.6650.
 
 ## Part 3: Data Science: Supervised and Unsupervised Learning, higher level information
 In progress...
