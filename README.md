@@ -143,10 +143,14 @@ But only one stat is not usually enough for a Pokémon to be good or viable, if 
 
 ### Abilities:
 
-- Most common abilities: Sturdy (46 Pokémon), Swift Swim (45 Pokémon), Keen Eye (41 Pokémon), Levitate (39 Pokémon), Intimidate (39 Pokémon)
-- Unique abilities:
-- Most common abilities in evolution lines: Levitate (in 30 evolution lines), Pressure (in 27 evolution lines), Sturdy (in 26 evolution lines), Swift Swim (in 25 evolution lines), Run Away (in 25 evolution lines).
-- Evolution lines with unique abilities:
+- **Most common abilities**: Sturdy (46 Pokémon), Swift Swim (45 Pokémon), Keen Eye (41 Pokémon), Levitate (39 Pokémon), Intimidate (39 Pokémon)
+- **Examples of Pokémon with unique abilities**: <img src="other/silvally.gif" alt="animated" /> <img src="other/dhelmise.gif" alt="animated" /><img src="other/golisopod.gif" alt="animated" /> <img src="other/stonjourner.gif" alt="animated" /> <img src="other/zangoose.gif" alt="animated" />
+
+  (Silvally: RKS System, Dhelmise: Steelworker, Golisopod: Emergency Exit, Stonjourner: Power Spot, Zangoose: Toxic Boost)
+- **Most common abilities in evolution lines**: Levitate (in 30 evolution lines), Pressure (in 27 evolution lines), Sturdy (in 26 evolution lines), Swift Swim (in 25 evolution lines), Run Away (in 25 evolution lines).
+- **Examples of evolution lines with unique abilities**: <img src="other/applin.gif" alt="animated" /><img src="other/appletun.gif" alt="animated" /> <img src="other/flapple.gif" alt="animated" /> <img src="other/skitty.gif" alt="animated" /> <img src="other/delcatty.gif" alt="animated" /> <img src="other/fletchling.gif" alt="animated" /> <img src="other/fletchinder.gif" alt="animated" /> <img src="other/talonflame.gif" alt="animated" /> <img src="other/koffing.gif" alt="animated" /> <img src="other/weezing.gif" alt="animated" /> <img src="other/weezing-galar.gif" alt="animated" /> <img src="other/silicobra.gif" alt="animated" /> <img src="other/sandaconda.gif" alt="animated" />
+
+  (Applin: Ripen, Skitty: Normalize, Fletchling: Gale Wings, Koffing: Neutralizing Gas, Silicobra: Sand Spit)
 
 ## Part 3: Data Science: Supervised and Unsupervised Learning, higher level information
 In progress...
