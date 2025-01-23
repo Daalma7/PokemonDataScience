@@ -759,7 +759,13 @@ def allPokemonStats():
     Get the stats of every Pokémon by going through every url and getting the info
     """
     pokemonUrls = getPokemonUrls()
-    listkeys = list(pokemonUrls.keys()) 
+    listkeys = list(pokemonUrls.keys())
+    
+    for i in range(len(listkeys)):                      # There are some inconsistencies in some Pokémon Names (Groudon, Kyogre...)
+        namesplitted = listkeys[i].split()
+        if len(namesplitted) == 2 and namesplitted[0] == namesplitted[1]:
+            listkeys[i] = namesplitted[0]
+    
     for i in tqdm(range(len(listkeys))):
         all_pokemon_data.append(getPokemonData(listkeys[i], pokemonUrls[listkeys[i]]))
         
@@ -779,10 +785,11 @@ def WriteListToCSV(csv_file,csv_columns,data_list):
             writer.writerow(data)                       # Write the data   
 
 # Testing
-testing = True
+testing = False
 
 if testing:
 
+    getPokemonData('Groudon', '/wiki/Groudon_(Pokémon)')
     getPokemonData('Galarian Darmanitan', '/wiki/Darmanitan_(Pokémon)')
     getPokemonData('Darmanitan Zen Mode(Galarian Form)', '/wiki/Darmanitan_(Pokémon)')
     getPokemonData('Necrozma', '/wiki/Necrozma_(Pokémon)')
