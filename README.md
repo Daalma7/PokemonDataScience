@@ -96,7 +96,7 @@ In visualizationsEDA.ipynb, containing advanced visualizations, we can extract s
 
 ### Some visualizations
 <div align="center">
-    <img src="Images/Graphics/output.png" width="412px"/> 
+    <img src="Images/Graphics/output2.png" width="412px"/> 
 </div>
 <!--
 <div align="center">
