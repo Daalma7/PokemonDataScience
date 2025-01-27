@@ -3,9 +3,20 @@ import requests
 import bs4
 import csv
 import os
+import re
 import pandas as pd
 from tqdm import tqdm
 from multiprocessing import Pool
+from collections import OrderedDict
+
+
+
+# COSAS A CORREGIR:
+# Paldean Tauros, ver las formas diferentes que tiene
+# Arceus
+# Genesect
+# Type null, silvally
+# Minior
 
 # IMPORTANT NOTE: Each regional variant and other variants (such as Deoxys or Deerling forms) are also included
 
@@ -129,7 +140,7 @@ def getPokemonUrls():
     """
 
     pkmn_links = soup.find_all('a', title=lambda t: t and "(Pokémon)" in t)     # Filter all the anchor that contains (Pokémon) in the title
-        
+
     return {getPokémonName(link): link.get('href') for link in pkmn_links}                            # Only get the href parameter (URL)
 
 
@@ -259,10 +270,10 @@ def getPokemonData(name, inputUrl):
             form = name[len(soup.select('h1#firstHeading')[0].get_text()[:-10])+1:]
     pokemontypes = None
 
-    print("----")
-    print(name)
-    print(form)
-    print("----")
+    #print("----")
+    #print(name)
+    #print(form)
+    #print("----")
 
     # Write the result from soup for testing
     f = open(os.path.abspath(os.path.join(CURRENT_FILE_PATH, os.pardir)) + "/data/demofile3.txt", "w+")
@@ -275,7 +286,21 @@ def getPokemonData(name, inputUrl):
             pokemonData.append((int) (soup.find_all('a', title=lambda t: t and "List of Pokémon by National Pokédex number" in t)[1].findChild().get_text()[1:]))
         
         elif elem == 'Name':             # Get the name of the Pokémon
-            pokemonData.append(name)
+
+            newname = ' '.join((''.join(name.title().split('(')[::-1])).split(')'))               # Remove parenthesis and give better ordering (Genesect, Darmanitan)
+            newname = ' '.join(list(OrderedDict.fromkeys(newname.split()[::-1]))[::-1])                   # Adress inconsistencies in some Pokémon Names (Groudon, Kyogre, Rotom, Kyurem...)
+            newname = newname[:-1] + newname[-1].lower()                                                   # F.I. Farfetch'D => Farfetch'd
+
+            # Individual Fixes
+            if newname == 'Galarian Form Darmanitan Zen Mode':
+                newname = 'Galarian Darmanitan Zen Mode'
+            if newname == 'Porygon-z':
+                newname = 'Porygon-Z'
+            if newname == 'Oricorio Pa\'U Style':
+                newname = 'Oricorio Pa\'u Style'
+
+
+            pokemonData.append(newname)
 
         elif elem == 'Type':            # Get the types of the Pokémon as a list (if it has only 1, the list will only contain 1 element)
             types = getTypes(soup, name, form)
@@ -288,13 +313,13 @@ def getPokemonData(name, inputUrl):
             for elem in abilities:
                 if elem.find_next('small').get_text() in ['', name, form, ' Hidden Ability', name + ' Hidden Ability', form + ' Hidden Ability']:
                     #print('A', elem.get_text(), elem.find_next('small').get_text())
-                    selected_abilities.append(elem.get_text())
+                    selected_abilities.append(elem.get_text().replace('\\', '').replace(u'\xa0', u' '))             # Filtering malicious characters
                 #else:
                     #print(elem.get_text(), elem.find_next('small').get_text())
             selected_abilities = list(filter(('Cacophony').__ne__, selected_abilities))                # Remove noisy Cacophony abilities
             selected_abilities = list(filter(('').__ne__, selected_abilities))
             if len(selected_abilities) == 0:
-                selected_abilities.append(abilities[0].get_text())
+                selected_abilities.append(abilities[0].get_text().replace('\\', ''))
             #print(selected_abilities)
             pokemonData.append(selected_abilities)
 
@@ -750,7 +775,7 @@ def getPokemonData(name, inputUrl):
                 pokemontypes = getTypes(soup, name, form)                       # We calculate them
             pokemonData.append(typeEffectiveness(pokemontypes, 'Fairy'))       # Calculate and assign the effectiveness against the current type
 
-        
+    #print(pokemonData)
     return pokemonData
 
 
@@ -761,12 +786,13 @@ def allPokemonStats():
     pokemonUrls = getPokemonUrls()
     listkeys = list(pokemonUrls.keys())
     
-    for i in range(len(listkeys)):                      # There are some inconsistencies in some Pokémon Names (Groudon, Kyogre...)
-        namesplitted = listkeys[i].split()
-        if len(namesplitted) == 2 and namesplitted[0] == namesplitted[1]:
-            listkeys[i] = namesplitted[0]
-    
     for i in tqdm(range(len(listkeys))):
+        if listkeys[i] == 'Oricorio Pa’u Style':                                # Single detected error
+            pokemonUrls['Oricorio Pa\'u Style'] = pokemonUrls.pop(listkeys[i])
+            listkeys[i] = 'Oricorio Pa\'u Style'
+
+        print(listkeys[i])
+        print(pokemonUrls[listkeys[i]])
         all_pokemon_data.append(getPokemonData(listkeys[i], pokemonUrls[listkeys[i]]))
         
 
@@ -788,9 +814,12 @@ def WriteListToCSV(csv_file,csv_columns,data_list):
 testing = False
 
 if testing:
-
+    getPokemonData('Oricorio Pa\'u Style', '/wiki/Oricorio_(Pokémon)')
+    getPokemonData('Koffing', '/wiki/Koffing_(Pokémon)')
     getPokemonData('Groudon', '/wiki/Groudon_(Pokémon)')
+    getPokemonData('Heat Rotom', '/wiki/Rotom_(Pokémon)')
     getPokemonData('Galarian Darmanitan', '/wiki/Darmanitan_(Pokémon)')
+    getPokemonData('Black Kyurem', '/wiki/Kyurem_(Pokémon)')
     getPokemonData('Darmanitan Zen Mode(Galarian Form)', '/wiki/Darmanitan_(Pokémon)')
     getPokemonData('Necrozma', '/wiki/Necrozma_(Pokémon)')
     getPokemonData('Necrozma Dusk Mane', '/wiki/Necrozma_(Pokémon)')

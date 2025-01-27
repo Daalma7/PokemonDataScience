@@ -80,7 +80,7 @@
 24,"Arbok","['Poison']","['Intimidate', 'Shed Skin', 'Unnerve']","I",60,95,69,65,79,80,448,65.0,3.5,0.5,"Cobra Pokémon","90","20",['Field' 'Dragon'],"Medium Fast
 ","70
 ",0,0,0,0,2,2,"Ekans",1.0,0.5,1.0,0.5,2.0,1.0,0.5,1.0,1.0,1.0,1.0,0.5,1.0,2.0,1.0,1.0,1.0,0.5
-25,"Pikachu","['Electric']","['Lightning Rod']","I",45,80,50,75,60,120,430,6.0,0.4,0.5,"Mouse Pokémon","190","10",['Field' 'Fairy'],"Medium Fast
+25,"Pikachu","['Electric']","['Lightning Rod']","I",35,55,40,50,50,90,430,6.0,0.4,0.5,"Mouse Pokémon","190","10",['Field' 'Fairy'],"Medium Fast
 ","70
 ",0,0,0,0,2,3,"Pichu",1.0,1.0,0.5,1.0,2.0,1.0,1.0,1.0,0.5,1.0,1.0,1.0,0.5,1.0,1.0,1.0,1.0,1.0
 26,"Raichu","['Electric']","['Static', 'Lightning Rod']","I",60,90,55,90,80,110,485,30.0,0.8,0.5,"Mouse Pokémon","75","10",['Field' 'Fairy'],"Medium Fast
@@ -209,7 +209,7 @@
 57,"Primeape","['Fighting']","['Vital Spirit', 'Anger Point', 'Defiant']","I",65,105,60,60,70,95,455,32.0,1.0,0.5,"Pig Monkey Pokémon","75","20",['Field'],"Medium Fast
 ","70
 ",0,0,0,0,2,3,"Mankey",1.0,1.0,2.0,1.0,1.0,0.5,0.5,1.0,1.0,1.0,1.0,1.0,1.0,2.0,1.0,1.0,0.5,2.0
-58,"Growlithe","['Fire']","['Justified']","I",60,75,45,65,50,55,350,19.0,0.7,0.75,"Puppy Pokémon","190","20",['Field'],"Slow
+58,"Growlithe","['Fire']","['Justified']","I",55,70,45,70,50,60,350,19.0,0.7,0.75,"Puppy Pokémon","190","20",['Field'],"Slow
 ","70
 ",0,0,0,0,1,2,"No Preevolution",1.0,1.0,1.0,1.0,2.0,2.0,0.5,1.0,0.5,0.5,2.0,0.5,1.0,1.0,0.5,1.0,1.0,0.5
 58,"Hisuian Growlithe","['Fire', 'Rock']","['Intimidate', 'Flash Fire', 'Rock Head']","VIII",60,75,45,65,50,55,350,19.0,0.7,0.75,"Scout Pokémon","190","20",['Field'],"Slow
@@ -410,7 +410,7 @@
 108,"Lickitung","['Normal']","['Own Tempo', 'Oblivious', 'Cloud Nine']","I",90,55,75,60,75,30,385,65.5,1.2,0.5,"Licking Pokémon","45","20",['Monster'],"Medium Fast
 ","70
 ",0,0,0,0,1,2,"No Preevolution",1.0,2.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
-109,"Koffing","['Poison']","['Levitate', 'Neutralizing\xa0Gas']","I",40,65,95,60,45,35,340,1.0,0.6,0.5,"Poison Gas Pokémon","190","20",['Amorphous'],"Medium Fast
+109,"Koffing","['Poison']","['Levitate', 'Neutralizing Gas']","I",40,65,95,60,45,35,340,1.0,0.6,0.5,"Poison Gas Pokémon","190","20",['Amorphous'],"Medium Fast
 ","70
 ",0,0,0,0,1,2,"No Preevolution",1.0,0.5,1.0,0.5,2.0,1.0,0.5,1.0,1.0,1.0,1.0,0.5,1.0,2.0,1.0,1.0,1.0,0.5
 110,"Weezing","['Poison']","['Levitate']","I",65,90,120,85,70,60,490,9.5,1.2,0.5,"Poison Gas Pokémon","60","20",['Amorphous'],"Medium Fast
@@ -491,7 +491,7 @@
 132,"Ditto","['Normal']","['Limber', 'Imposter']","I",48,48,48,48,48,48,288,4.0,0.3,"-","Transform Pokémon","35","20",['Ditto'],"Medium Fast
 ","70
 ",0,0,0,0,1,1,"No Preevolution",1.0,2.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
-133,"Eevee","['Normal']","['Anticipation']","I",65,75,70,65,85,75,435,6.5,0.3,0.875,"Evolution Pokémon","45","35",['Field'],"Medium Fast
+133,"Eevee","['Normal']","['Anticipation']","I",55,55,50,45,65,55,435,6.5,0.3,0.875,"Evolution Pokémon","45","35",['Field'],"Medium Fast
 ","70
 ",0,0,0,0,1,1,"No Preevolution",1.0,2.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
 134,"Vaporeon","['Water']","['Water Absorb', 'Hydration']","I",130,65,60,110,95,65,525,29.0,1.0,0.875,"Bubble Jet Pokémon","45","35",['Field'],"Medium Fast
@@ -713,7 +713,7 @@
 200,"Misdreavus","['Ghost']","['Levitate']","II",60,60,60,85,85,85,435,1.0,0.7,0.5,"Screech Pokémon","45","25",['Amorphous'],"Fast
 ","35
 ",0,0,0,0,1,2,"No Preevolution",0.0,0.0,1.0,0.5,1.0,1.0,0.5,2.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,2.0,1.0
-201,"Unown One form","['Psychic']","['Levitate']","II",48,72,48,72,48,48,336,5.0,0.5,"-","Symbol Pokémon","225","40","-","Medium Fast
+201,"Unown One Form","['Psychic']","['Levitate']","II",48,72,48,72,48,48,336,5.0,0.5,"-","Symbol Pokémon","225","40","-","Medium Fast
 ","70
 ",0,0,0,0,1,1,"No Preevolution",1.0,0.5,1.0,1.0,1.0,1.0,2.0,2.0,1.0,1.0,1.0,1.0,1.0,0.5,1.0,1.0,2.0,1.0
 202,"Wobbuffet","['Psychic']","['Shadow Tag', 'Telepathy']","II",190,33,58,33,58,33,405,28.5,1.3,0.5,"Patient Pokémon","45","20",['Amorphous'],"Medium Fast
@@ -1031,7 +1031,7 @@
 301,"Delcatty","['Normal']","['Cute Charm', 'Normalize', 'Wonder Skin']","III",70,65,65,55,55,90,400,32.6,1.1,0.25,"Prim Pokémon","60","15",['Field' 'Fairy'],"Fast
 ","70
 ",0,0,0,0,2,2,"Skitty",1.0,2.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
-302,"Sableye","['Dark', 'Ghost']","['Keen Eye', 'Stall', 'Prankster']","III",50,85,125,85,115,20,480,11.0,0.5,0.5,"Darkness Pokémon","45","25",['Human-Like'],"Medium Slow
+302,"Sableye","['Dark', 'Ghost']","['Keen Eye', 'Stall', 'Prankster']","III",50,75,75,65,65,50,480,11.0,0.5,0.5,"Darkness Pokémon","45","25",['Human-Like'],"Medium Slow
 ","35
 ",0,0,0,1,1,1,"No Preevolution",0.0,0.0,1.0,0.5,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,2.0
 303,"Mawile","['Steel', 'Fairy']","['Hyper Cutter', 'Intimidate', 'Sheer Force']","III",50,85,85,55,55,50,480,11.5,0.6,0.5,"Deceiver Pokémon","45","20",['Field' 'Fairy'],"Fast
@@ -1280,10 +1280,10 @@
 381,"Latios","['Dragon', 'Psychic']","['Levitate']","III",80,90,80,130,110,110,700,60.0,2.0,1.0,"Eon Pokémon","3","120","-","Slow
 ","90
 ",1,0,0,1,1,1,"No Preevolution",1.0,0.5,1.0,1.0,1.0,1.0,2.0,2.0,1.0,0.5,0.5,0.5,0.5,0.5,2.0,2.0,2.0,2.0
-382,"Kyogre Kyogre","['Water']","['Drizzle']","III",100,100,90,150,140,90,770,352.0,4.5,"-","Sea Basin Pokémon","3","120","-","Slow
+382,"Kyogre","['Water']","['Drizzle']","III",100,100,90,150,140,90,770,352.0,4.5,"-","Sea Basin Pokémon","3","120","-","Slow
 ","0
 ",1,0,0,0,1,1,"No Preevolution",1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.5,0.5,0.5,2.0,2.0,1.0,0.5,1.0,1.0,1.0
-383,"Groudon Groudon","['Ground']","['Drought']","III",100,150,140,100,90,90,770,950.0,3.5,"-","Continent Pokémon","3","120","-","Slow
+383,"Groudon","['Ground']","['Drought']","III",100,150,140,100,90,90,770,950.0,3.5,"-","Continent Pokémon","3","120","-","Slow
 ","0
 ",1,0,0,0,1,1,"No Preevolution",1.0,1.0,1.0,0.5,1.0,0.5,1.0,1.0,1.0,1.0,2.0,2.0,0.0,1.0,2.0,1.0,1.0,1.0
 384,"Rayquaza","['Dragon', 'Flying']","['Air Lock']","III",105,150,90,150,90,95,780,206.5,7.0,"-","Sky High Pokémon","3","120","-","Slow
@@ -1601,22 +1601,22 @@
 478,"Froslass","['Ice', 'Ghost']","['Snow Cloak', 'Cursed Body']","IV",70,80,70,80,70,110,480,26.6,1.3,0.0,"Snow Land Pokémon","75","20",['Fairy' 'Mineral'],"Medium Fast
 ","70
 ",0,0,0,0,2,2,"Snorunt",0.0,0.0,1.0,0.5,1.0,2.0,0.5,2.0,2.0,2.0,1.0,1.0,1.0,1.0,0.5,1.0,2.0,1.0
-479,"Rotom Rotom","['Electric', 'Ghost']","['Levitate']","IV",50,50,77,95,77,91,520,0.3,0.3,"-","Plasma Pokémon","45","20",['Amorphous'],"Medium Fast
+479,"Rotom","['Electric', 'Ghost']","['Levitate']","IV",50,50,77,95,77,91,520,0.3,0.3,"-","Plasma Pokémon","45","20",['Amorphous'],"Medium Fast
 ","70
 ",0,0,0,0,1,1,"No Preevolution",0.0,0.0,0.5,0.5,2.0,1.0,0.5,2.0,0.5,1.0,1.0,1.0,0.5,1.0,1.0,1.0,2.0,1.0
-479,"Rotom Heat Rotom","['Electric', 'Fire']","['Levitate']","IV",50,65,107,105,107,86,520,0.3,0.3,"-","Plasma Pokémon","45","20",['Amorphous'],"Medium Fast
+479,"Heat Rotom","['Electric', 'Fire']","['Levitate']","IV",50,65,107,105,107,86,520,0.3,0.3,"-","Plasma Pokémon","45","20",['Amorphous'],"Medium Fast
 ","70
 ",0,0,0,0,1,1,"No Preevolution",1.0,1.0,0.5,1.0,4.0,2.0,0.5,1.0,0.25,0.5,2.0,0.5,0.5,1.0,0.5,1.0,1.0,0.5
-479,"Rotom Wash Rotom","['Electric', 'Water']","['Levitate']","IV",50,65,107,105,107,86,520,0.3,0.3,"-","Plasma Pokémon","45","20",['Amorphous'],"Medium Fast
+479,"Wash Rotom","['Electric', 'Water']","['Levitate']","IV",50,65,107,105,107,86,520,0.3,0.3,"-","Plasma Pokémon","45","20",['Amorphous'],"Medium Fast
 ","70
 ",0,0,0,0,1,1,"No Preevolution",1.0,1.0,0.5,1.0,2.0,1.0,1.0,1.0,0.25,0.5,0.5,2.0,1.0,1.0,0.5,1.0,1.0,1.0
-479,"Rotom Frost Rotom","['Electric', 'Ice']","['Levitate']","IV",50,65,107,105,107,86,520,0.3,0.3,"-","Plasma Pokémon","45","20",['Amorphous'],"Medium Fast
+479,"Frost Rotom","['Electric', 'Ice']","['Levitate']","IV",50,65,107,105,107,86,520,0.3,0.3,"-","Plasma Pokémon","45","20",['Amorphous'],"Medium Fast
 ","70
 ",0,0,0,0,1,1,"No Preevolution",1.0,2.0,0.5,1.0,2.0,2.0,1.0,1.0,1.0,2.0,1.0,1.0,0.5,1.0,0.5,1.0,1.0,1.0
-479,"Rotom Fan Rotom","['Electric', 'Flying']","['Levitate']","IV",50,65,107,105,107,86,520,0.3,0.3,"-","Plasma Pokémon","45","20",['Amorphous'],"Medium Fast
+479,"Fan Rotom","['Electric', 'Flying']","['Levitate']","IV",50,65,107,105,107,86,520,0.3,0.3,"-","Plasma Pokémon","45","20",['Amorphous'],"Medium Fast
 ","70
 ",0,0,0,0,1,1,"No Preevolution",1.0,0.5,0.5,1.0,0.0,2.0,0.5,1.0,0.5,1.0,1.0,0.5,1.0,1.0,2.0,1.0,1.0,1.0
-479,"Rotom Mow Rotom","['Electric', 'Grass']","['Levitate']","IV",50,65,107,105,107,86,520,0.3,0.3,"-","Plasma Pokémon","45","20",['Amorphous'],"Medium Fast
+479,"Mow Rotom","['Electric', 'Grass']","['Levitate']","IV",50,65,107,105,107,86,520,0.3,0.3,"-","Plasma Pokémon","45","20",['Amorphous'],"Medium Fast
 ","70
 ",0,0,0,0,1,1,"No Preevolution",1.0,1.0,1.0,2.0,1.0,1.0,2.0,1.0,0.5,2.0,0.5,0.5,0.25,1.0,2.0,1.0,1.0,1.0
 480,"Uxie","['Psychic']","['Levitate']","IV",75,75,130,75,130,95,580,0.3,0.3,"-","Knowledge Pokémon","3","80","-","Slow
@@ -1670,7 +1670,7 @@
 492,"Shaymin Sky Forme","['Grass', 'Flying']","['Serene Grace']","IV",100,103,75,120,75,127,600,2.1,0.2,"-","Gratitude Pokémon","45","120","-","Medium Slow
 ","100
 ",0,1,0,0,1,1,"No Preevolution",1.0,0.5,2.0,2.0,0.0,2.0,1.0,1.0,1.0,2.0,0.5,0.25,1.0,1.0,4.0,1.0,1.0,1.0
-493,"Arceus Arceus","['Normal']","['Multitype']","IV",120,120,120,120,120,120,720,320.0,3.2,"-","Alpha Pokémon","3","120","-","Slow
+493,"Arceus","['Normal']","['Multitype']","IV",120,120,120,120,120,120,720,320.0,3.2,"-","Alpha Pokémon","3","120","-","Slow
 ","0
 ",0,1,0,0,1,1,"No Preevolution",1.0,2.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
 495,"Snivy","['Grass']","['Overgrow', 'Contrary']","V",45,45,55,45,55,63,308,8.1,0.6,0.875,"Grass Snake Pokémon","45","20",['Field' 'Grass'],"Medium Slow
@@ -1877,7 +1877,7 @@
 555,"Galarian Darmanitan","['Fire']","['Zen Mode']","VIII",105,140,55,30,55,95,540,92.9,1.3,0.5,"Zen Charm Pokémon","60","20",['Field'],"Medium Slow
 ","70
 ",0,0,0,0,2,2,"Galarian Darumaka",1.0,1.0,1.0,1.0,2.0,2.0,0.5,1.0,0.5,0.5,2.0,0.5,1.0,1.0,0.5,1.0,1.0,0.5
-555,"Darmanitan Zen Mode(Galarian Form)","['Fire']","['Zen Mode']","V",105,160,55,30,55,135,540,92.9,1.3,0.5,"Blazing Pokémon","60","20",['Field'],"Medium Slow
+555,"Galarian Darmanitan Zen Mode","['Fire']","['Zen Mode']","V",105,160,55,30,55,135,540,92.9,1.3,0.5,"Blazing Pokémon","60","20",['Field'],"Medium Slow
 ","70
 ",0,0,0,0,2,2,"Darumaka",1.0,1.0,1.0,1.0,2.0,2.0,0.5,1.0,0.5,0.5,2.0,0.5,1.0,1.0,0.5,1.0,1.0,0.5
 556,"Maractus","['Grass']","['Water Absorb', 'Chlorophyll', 'Storm Drain']","V",75,86,67,106,67,60,461,28.0,1.0,0.5,"Cactus Pokémon","255","20",['Grass'],"Medium Fast
@@ -2192,13 +2192,13 @@
 645,"Landorus Therian Forme","['Ground', 'Flying']","['Sand Force', 'Sheer Force', 'Intimidate']","V",89,145,90,105,80,91,600,68.0,1.5,1.0,"Abundance Pokémon","3","120","-","Slow
 ","90
 ",1,0,0,0,1,1,"No Preevolution",1.0,0.5,1.0,0.5,0.0,1.0,0.5,1.0,1.0,1.0,2.0,1.0,0.0,1.0,4.0,1.0,1.0,1.0
-646,"Kyurem Kyurem","['Dragon', 'Ice']","['Pressure']","V",125,130,90,130,90,95,700,325.0,3.0,"-","Boundary Pokémon","3","120","-","Slow
+646,"Kyurem","['Dragon', 'Ice']","['Pressure']","V",125,130,90,130,90,95,700,325.0,3.0,"-","Boundary Pokémon","3","120","-","Slow
 ","0
 ",1,0,0,0,1,1,"No Preevolution",1.0,2.0,1.0,1.0,1.0,2.0,1.0,1.0,2.0,1.0,0.5,0.5,0.5,1.0,1.0,2.0,1.0,2.0
-646,"Kyurem White Kyurem","['Dragon', 'Ice']","['Turboblaze']","V",125,120,90,170,100,95,700,325.0,3.0,"-","Boundary Pokémon","3","120","-","Slow
+646,"White Kyurem","['Dragon', 'Ice']","['Turboblaze']","V",125,120,90,170,100,95,700,325.0,3.0,"-","Boundary Pokémon","3","120","-","Slow
 ","0
 ",1,0,0,0,1,1,"No Preevolution",1.0,2.0,1.0,1.0,1.0,2.0,1.0,1.0,2.0,1.0,0.5,0.5,0.5,1.0,1.0,2.0,1.0,2.0
-646,"Kyurem Black Kyurem","['Dragon', 'Ice']","['Teravolt']","V",125,170,100,120,90,95,700,325.0,3.0,"-","Boundary Pokémon","3","120","-","Slow
+646,"Black Kyurem","['Dragon', 'Ice']","['Teravolt']","V",125,170,100,120,90,95,700,325.0,3.0,"-","Boundary Pokémon","3","120","-","Slow
 ","0
 ",1,0,0,0,1,1,"No Preevolution",1.0,2.0,1.0,1.0,1.0,2.0,1.0,1.0,2.0,1.0,0.5,0.5,0.5,1.0,1.0,2.0,1.0,2.0
 647,"Keldeo Ordinary Form","['Water', 'Fighting']","['Justified']","V",91,72,90,129,90,108,580,48.5,1.4,"-","Colt Pokémon","3","80","-","Slow
@@ -2213,19 +2213,19 @@
 648,"Meloetta Pirouette Forme","['Normal', 'Fighting']","['Serene Grace']","V",100,128,90,77,77,128,600,6.5,0.6,"-","Melody Pokémon","3","120","-","Slow
 ","100
 ",0,1,0,0,1,1,"No Preevolution",1.0,2.0,2.0,1.0,1.0,0.5,0.5,0.0,1.0,1.0,1.0,1.0,1.0,2.0,1.0,1.0,0.5,2.0
-649,"Genesect Genesect(no drive)","['Bug', 'Steel']","['Download']","V",71,120,95,120,95,99,600,82.5,1.5,"-","Paleozoic Pokémon","3","120","-","Slow
+649,"No Drive Genesect","['Bug', 'Steel']","['Download']","V",71,120,95,120,95,99,600,82.5,1.5,"-","Paleozoic Pokémon","3","120","-","Slow
 ","0
 ",0,1,0,0,1,1,"No Preevolution",0.5,1.0,1.0,0.0,1.0,1.0,0.5,1.0,0.5,4.0,1.0,0.25,1.0,0.5,0.5,0.5,1.0,0.5
-649,"Genesect Genesect(Douse Drive)","['Bug', 'Steel']","['Download']","V",71,120,95,120,95,99,600,82.5,1.5,"-","Paleozoic Pokémon","3","120","-","Slow
+649,"Douse Drive Genesect","['Bug', 'Steel']","['Download']","V",71,120,95,120,95,99,600,82.5,1.5,"-","Paleozoic Pokémon","3","120","-","Slow
 ","0
 ",0,1,0,0,1,1,"No Preevolution",0.5,1.0,1.0,0.0,1.0,1.0,0.5,1.0,0.5,4.0,1.0,0.25,1.0,0.5,0.5,0.5,1.0,0.5
-649,"Genesect Genesect(Shock Drive)","['Bug', 'Steel']","['Download']","V",71,120,95,120,95,99,600,82.5,1.5,"-","Paleozoic Pokémon","3","120","-","Slow
+649,"Shock Drive Genesect","['Bug', 'Steel']","['Download']","V",71,120,95,120,95,99,600,82.5,1.5,"-","Paleozoic Pokémon","3","120","-","Slow
 ","0
 ",0,1,0,0,1,1,"No Preevolution",0.5,1.0,1.0,0.0,1.0,1.0,0.5,1.0,0.5,4.0,1.0,0.25,1.0,0.5,0.5,0.5,1.0,0.5
-649,"Genesect Genesect(Burn Drive)","['Bug', 'Steel']","['Download']","V",71,120,95,120,95,99,600,82.5,1.5,"-","Paleozoic Pokémon","3","120","-","Slow
+649,"Burn Drive Genesect","['Bug', 'Steel']","['Download']","V",71,120,95,120,95,99,600,82.5,1.5,"-","Paleozoic Pokémon","3","120","-","Slow
 ","0
 ",0,1,0,0,1,1,"No Preevolution",0.5,1.0,1.0,0.0,1.0,1.0,0.5,1.0,0.5,4.0,1.0,0.25,1.0,0.5,0.5,0.5,1.0,0.5
-649,"Genesect Genesect(Chill Drive)","['Bug', 'Steel']","['Download']","V",71,120,95,120,95,99,600,82.5,1.5,"-","Paleozoic Pokémon","3","120","-","Slow
+649,"Chill Drive Genesect","['Bug', 'Steel']","['Download']","V",71,120,95,120,95,99,600,82.5,1.5,"-","Paleozoic Pokémon","3","120","-","Slow
 ","0
 ",0,1,0,0,1,1,"No Preevolution",0.5,1.0,1.0,0.0,1.0,1.0,0.5,1.0,0.5,4.0,1.0,0.25,1.0,0.5,0.5,0.5,1.0,0.5
 650,"Chespin","['Grass']","['Overgrow', 'Bulletproof']","VI",56,61,65,48,45,38,313,9.0,0.4,0.875,"Spiny Nut Pokémon","45","20",['Field'],"Medium Slow
@@ -2495,13 +2495,13 @@
 718,"Zygarde Complete Forme","['Dragon', 'Ground']","['Aura Break']","VI",216,100,121,91,95,85,708,305.0,5.0,"-","Order Pokémon","3","120","-","Slow
 ","0
 ",1,0,0,0,1,1,"No Preevolution",1.0,1.0,1.0,0.5,1.0,0.5,1.0,1.0,1.0,0.5,1.0,1.0,0.0,1.0,4.0,2.0,1.0,2.0
-719,"Diancie","['Rock', 'Fairy']","['Clear Body']","VI",50,160,110,160,110,110,700,8.8,0.7,"-","Jewel Pokémon","3","25","-","Slow
+719,"Diancie","['Rock', 'Fairy']","['Clear Body']","VI",50,100,150,100,150,50,700,8.8,0.7,"-","Jewel Pokémon","3","25","-","Slow
 ","70
 ",0,1,0,1,1,1,"No Preevolution",0.5,1.0,0.5,1.0,2.0,1.0,0.5,1.0,4.0,0.5,2.0,2.0,1.0,1.0,1.0,0.0,0.5,1.0
-720,"Hoopa Hoopa Confined","['Psychic', 'Ghost']","['Magician']","VI",80,110,60,150,130,70,680,9.0,0.5,"-","Mischief Pokémon","3","120","-","Slow
+720,"Hoopa Confined","['Psychic', 'Ghost']","['Magician']","VI",80,110,60,150,130,70,680,9.0,0.5,"-","Mischief Pokémon","3","120","-","Slow
 ","100
 ",0,1,0,0,1,1,"No Preevolution",0.0,0.0,1.0,0.5,1.0,1.0,1.0,4.0,1.0,1.0,1.0,1.0,1.0,0.5,1.0,1.0,4.0,1.0
-720,"Hoopa Hoopa Unbound","['Psychic', 'Dark']","['Magician']","VI",80,160,60,170,130,80,680,9.0,0.5,"-","Djinn Pokémon","3","120","-","Slow
+720,"Hoopa Unbound","['Psychic', 'Dark']","['Magician']","VI",80,160,60,170,130,80,680,9.0,0.5,"-","Djinn Pokémon","3","120","-","Slow
 ","100
 ",0,1,0,0,1,1,"No Preevolution",1.0,1.0,1.0,1.0,1.0,1.0,4.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,2.0
 721,"Volcanion","['Fire', 'Water']","['Water Absorb']","VI",80,110,120,130,90,70,600,195.0,1.7,"-","Steam Pokémon","3","120","-","Slow
@@ -2573,9 +2573,9 @@
 741,"Oricorio Pom-Pom Style","['Electric', 'Flying']","['Dancer']","VII",75,70,70,98,70,93,476,3.4,0.6,0.25,"Dancing Pokémon","45","20",['Flying'],"Medium Fast
 ","70
 ",0,0,0,0,1,1,"No Preevolution",1.0,0.5,0.5,1.0,0.0,2.0,0.5,1.0,0.5,1.0,1.0,0.5,1.0,1.0,2.0,1.0,1.0,1.0
-741,"Oricorio Pa’u Style","['Fire', 'Flying']","['Dancer']","VII",75,70,70,98,70,93,476,3.4,0.6,0.25,"Dancing Pokémon","45","20",['Flying'],"Medium Fast
+741,"Oricorio Pa'u Style","['Psychic', 'Flying']","['Dancer']","VII",75,70,70,98,70,93,476,3.4,0.6,0.25,"Dancing Pokémon","45","20",['Flying'],"Medium Fast
 ","70
-",0,0,0,0,1,1,"No Preevolution",1.0,0.5,1.0,1.0,0.0,4.0,0.25,1.0,0.5,0.5,2.0,0.25,2.0,1.0,1.0,1.0,1.0,0.5
+",0,0,0,0,1,1,"No Preevolution",1.0,0.25,1.0,1.0,0.0,2.0,1.0,2.0,1.0,1.0,1.0,0.5,2.0,0.5,2.0,1.0,2.0,1.0
 741,"Oricorio Sensu Style","['Ghost', 'Flying']","['Dancer']","VII",75,70,70,98,70,93,476,3.4,0.6,0.25,"Dancing Pokémon","45","20",['Flying'],"Medium Fast
 ","70
 ",0,0,0,0,1,1,"No Preevolution",0.0,0.0,1.0,0.5,0.0,2.0,0.25,2.0,1.0,1.0,1.0,0.5,2.0,1.0,2.0,1.0,2.0,1.0
@@ -3056,13 +3056,13 @@
 887,"Dragapult","['Dragon', 'Ghost']","['Clear Body', 'Infiltrator', 'Cursed Body']","VIII",88,120,75,100,75,142,600,50.0,3.0,0.5,"Stealth Pokémon","45","40",['Amorphous' 'Dragon'],"Slow
 ","50
 ",0,0,0,0,3,3,"Drakloak",0.0,0.0,1.0,0.5,1.0,1.0,0.5,2.0,1.0,0.5,0.5,0.5,0.5,1.0,2.0,2.0,2.0,2.0
-888,"Zacian Hero of Many Battles","['Fairy']","['Intrepid Sword']","VIII",92,120,115,80,115,138,700,110.0,2.8,"-","Warrior Pokémon","10","120","-","Slow
+888,"Zacian Hero Of Many Battles","['Fairy']","['Intrepid Sword']","VIII",92,120,115,80,115,138,700,110.0,2.8,"-","Warrior Pokémon","10","120","-","Slow
 ","0
 ",1,0,0,0,1,1,"No Preevolution",1.0,0.5,1.0,2.0,1.0,1.0,0.5,1.0,2.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.5,1.0
 888,"Zacian Crowned Sword","['Fairy', 'Steel']","['Intrepid Sword']","VIII",92,150,115,80,115,148,700,110.0,2.8,"-","Warrior Pokémon","10","120","-","Slow
 ","0
 ",1,0,0,0,1,1,"No Preevolution",0.5,1.0,0.5,0.0,2.0,0.5,0.25,1.0,1.0,2.0,1.0,0.5,1.0,0.5,0.5,0.0,0.5,0.5
-889,"Zamazenta Hero of Many Battles","['Fighting']","['Dauntless Shield']","VIII",92,120,115,80,115,138,700,210.0,2.9,"-","Warrior Pokémon","10","120","-","Slow
+889,"Zamazenta Hero Of Many Battles","['Fighting']","['Dauntless Shield']","VIII",92,120,115,80,115,138,700,210.0,2.9,"-","Warrior Pokémon","10","120","-","Slow
 ","0
 ",1,0,0,0,1,1,"No Preevolution",1.0,1.0,2.0,1.0,1.0,0.5,0.5,1.0,1.0,1.0,1.0,1.0,1.0,2.0,1.0,1.0,0.5,2.0
 889,"Zamazenta Crowned Shield","['Fighting', 'Steel']","['Dauntless Shield']","VIII",92,120,140,80,140,128,700,210.0,2.9,"-","Warrior Pokémon","10","120","-","Slow
@@ -3194,10 +3194,10 @@
 924,"Tandemaus","['Normal']","['Run Away', 'Pickup', 'Own Tempo']","IX",50,50,45,40,45,75,305,1.8,0.3,"-","Couple Pokémon","150","10",['Field' 'Fairy'],"Fast
 ","50
 ",0,0,0,0,1,2,"No Preevolution",1.0,2.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
-925,"Maushold Family of Three","['Normal']","['Friend Guard', 'Cheek Pouch', 'Technician']","IX",74,75,70,65,75,111,470,2.8,0.3,"-","Family Pokémon","75","10",['Field' 'Fairy'],"Fast
+925,"Maushold Family Of Three","['Normal']","['Friend Guard', 'Cheek Pouch', 'Technician']","IX",74,75,70,65,75,111,470,2.8,0.3,"-","Family Pokémon","75","10",['Field' 'Fairy'],"Fast
 ","50
 ",0,0,0,0,2,2,"Tandemaus",1.0,2.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
-925,"Maushold Family of Four","['Normal']","['Technician']","IX",74,75,70,65,75,111,470,2.8,0.3,"-","Family Pokémon","75","10",['Field' 'Fairy'],"Fast
+925,"Maushold Family Of Four","['Normal']","['Technician']","IX",74,75,70,65,75,111,470,2.8,0.3,"-","Family Pokémon","75","10",['Field' 'Fairy'],"Fast
 ","50
 ",0,0,0,0,2,2,"Tandemaus",1.0,2.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
 926,"Fidough","['Fairy']","['Own Tempo', 'Klutz']","IX",37,55,70,30,55,65,312,10.9,0.3,0.5,"Puppy Pokémon","190","20",['Field' 'Mineral'],"Medium Slow

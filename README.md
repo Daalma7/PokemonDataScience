@@ -2,25 +2,25 @@
 https://www.deviantart.com/mbcmechachu/favourites/70416144/pokemon-animated-sprites-gen-5-style
 -->
 <p align="center">
-  <img src="other/decdea790f97636998e28a49597386c6.png" />
+  <img src="Images/Misc/Title.png" />
   <br />
-  <img src="other/treecko.gif" alt="animated" />
-  <img src="other/torchic.gif" alt="animated" />
-  <img src="other/mudkip.gif" alt="animated" />
-  <img src="other/happiny.gif" alt="animated" />
-  <img src="other/pancham.gif" alt="animated" />
-  <img src="other/rookidee.gif" alt="animated" />
-  <img src="other/gulpin.gif" alt="animated" />
-  <img src="other/phanpy.gif" alt="animated" />
-  <img src="other/nosepass.gif" alt="animated" />
-  <img src="other/misdreavus.gif" alt="animated" />
-  <img src="other/klink.gif" alt="animated" />
-  <img src="other/shinx.gif" alt="animated" />
-  <img src="other/slowpoke-galar.gif" alt="animated" />
-  <img src="other/vulpix-alola.gif" alt="animated" />
-  <img src="other/dratini.gif" alt="animated" />
-  <img src="other/zorua.gif" alt="animated" />
-  <img src="other/togepi.gif" alt="animated" />
+  <img src="Images/Gifs/treecko.gif" alt="animated" />
+  <img src="Images/Gifs/torchic.gif" alt="animated" />
+  <img src="Images/Gifs/mudkip.gif" alt="animated" />
+  <img src="Images/Gifs/happiny.gif" alt="animated" />
+  <img src="Images/Gifs/pancham.gif" alt="animated" />
+  <img src="Images/Gifs/rookidee.gif" alt="animated" />
+  <img src="Images/Gifs/gulpin.gif" alt="animated" />
+  <img src="Images/Gifs/phanpy.gif" alt="animated" />
+  <img src="Images/Gifs/nosepass.gif" alt="animated" />
+  <img src="Images/Gifs/misdreavus.gif" alt="animated" />
+  <img src="Images/Gifs/klink.gif" alt="animated" />
+  <img src="Images/Gifs/shinx.gif" alt="animated" />
+  <img src="Images/Gifs/slowpoke-galar.gif" alt="animated" />
+  <img src="Images/Gifs/vulpix-alola.gif" alt="animated" />
+  <img src="Images/Gifs/dratini.gif" alt="animated" />
+  <img src="Images/Gifs/zorua.gif" alt="animated" />
+  <img src="Images/Gifs/togepi.gif" alt="animated" />
 </p>
 
 ![](https://github.com/Your_Repository_Name/Your_GIF_Name.gif)
@@ -96,47 +96,47 @@ In visualizationsEDA.ipynb, containing advanced visualizations, we can extract s
 
 ### Some visualizations
 <div align="center">
-    <img src="other/output.png" width="412px"/> 
+    <img src="Images/Graphics/output.png" width="412px"/> 
 </div>
 <!--
 <div align="center">
-    <img src="other/output.png" width="412px"/> 
+    <img src="Images/Graphics/output2.png" width="412px"/> 
 </div>
 -->
 
 ### Best Pokémons, stat-wise
 
-- **Top 5 highest Hp Pokémon**: <img src="other/blissey.gif" alt="animated" /><img src="other/chansey.gif" alt="animated" /> <img src="other/guzzlord.gif" alt="animated" /> <img src="other/zygarde-complete.gif" alt="animated" /> <img src="other/regidrago.gif" alt="animated" />
+- **Top 5 highest Hp Pokémon**: <img src="Images/Gifs/blissey.gif" alt="animated" /><img src="Images/Gifs/chansey.gif" alt="animated" /> <img src="Images/Gifs/guzzlord.gif" alt="animated" /> <img src="Images/Gifs/zygarde-complete.gif" alt="animated" /> <img src="Images/Gifs/regidrago.gif" alt="animated" />
 
   Blissey: 255, Chansey: 250, Guzzlord: 223, Zygarde Complete: 216, Regidrago: 200.
-- **Top 5 highest Attack Pokémon**: <img src="other/kartana.gif" alt="animated" /><img src="other/deoxys-attack.gif" alt="animated" /> <img src="other/kyurem-black.gif" alt="animated" /> <img src="other/rampardos.gif" alt="animated" /> <img src="other/calyrex-ice.gif" alt="animated" />
+- **Top 5 highest Attack Pokémon**: <img src="Images/Gifs/kartana.gif" alt="animated" /><img src="Images/Gifs/deoxys-attack.gif" alt="animated" /> <img src="Images/Gifs/kyurem-black.gif" alt="animated" /> <img src="Images/Gifs/rampardos.gif" alt="animated" /> <img src="Images/Gifs/calyrex-ice.gif" alt="animated" />
 
   Kartana: 181, Deoxys Attack: 180, Kyurem Black: 170, Rampardos and Calyrex Ice Rider: 165.
-- **Top 5 highest Defense Pokémon**: <img src="other/shuckle.gif" alt="animated" /><img src="other/stakataka.gif" alt="animated" /> <img src="other/regirock.gif" alt="animated" /> <img src="other/steelix.gif" alt="animated" /> <img src="other/avalugg-hisui.gif" alt="animated" />
+- **Top 5 highest Defense Pokémon**: <img src="Images/Gifs/shuckle.gif" alt="animated" /><img src="Images/Gifs/stakataka.gif" alt="animated" /> <img src="Images/Gifs/regirock.gif" alt="animated" /> <img src="Images/Gifs/steelix.gif" alt="animated" /> <img src="Images/Gifs/avalugg-hisui.gif" alt="animated" />
 
   Shuckle: 230, Stakataka: 211, Regirock and Steelix: 200, Hisuian Avalugg: 184 (tied with Avalugg).
-- **Top 5 highest Spe.Attack Pokémon**: <img src="other/deoxys-attack.gif" alt="animated" /><img src="other/xurkitree.gif" alt="animated" /> <img src="other/hoopa-unbound.gif" alt="animated" /> <img src="other/kyurem-white.gif" alt="animated" /> <img src="other/calyrex-shadow.gif" alt="animated" />
+- **Top 5 highest Spe.Attack Pokémon**: <img src="Images/Gifs/deoxys-attack.gif" alt="animated" /><img src="Images/Gifs/xurkitree.gif" alt="animated" /> <img src="Images/Gifs/hoopa-unbound.gif" alt="animated" /> <img src="Images/Gifs/kyurem-white.gif" alt="animated" /> <img src="Images/Gifs/calyrex-shadow.gif" alt="animated" />
 
   Deoxys Attack: 180, Xurkitree: 173, Hoopa Unbound and Kyurem White: 170, Calyrex Shadow Rider: 165).
-- **Top 5 highest Spe.Defense Pokémon**: <img src="other/shuckle.gif" alt="animated" /><img src="other/regice.gif" alt="animated" /> <img src="other/deoxys-defense.gif" alt="animated" /> <img src="other/florges.gif" alt="animated" /> <img src="other/lugia.gif" alt="animated" />
+- **Top 5 highest Spe.Defense Pokémon**: <img src="Images/Gifs/shuckle.gif" alt="animated" /><img src="Images/Gifs/regice.gif" alt="animated" /> <img src="Images/Gifs/deoxys-defense.gif" alt="animated" /> <img src="Images/Gifs/florges.gif" alt="animated" /> <img src="Images/Gifs/lugia.gif" alt="animated" />
 
   Shuckle: 230, Regice: 200, Deoxys Defense: 160, Florges and Lugia: 154 (tied with Ho-Oh).
-- **Top 5 highest Speed Pokémon**: <img src="other/regieleki.gif" alt="animated" /><img src="other/deoxys-speed.gif" alt="animated" /> <img src="other/ninjask.gif" alt="animated" /> <img src="other/pheromosa.gif" alt="animated" /> <img src="other/deoxys.gif" alt="animated" />
+- **Top 5 highest Speed Pokémon**: <img src="Images/Gifs/regieleki.gif" alt="animated" /><img src="Images/Gifs/deoxys-speed.gif" alt="animated" /> <img src="Images/Gifs/ninjask.gif" alt="animated" /> <img src="Images/Gifs/pheromosa.gif" alt="animated" /> <img src="Images/Gifs/deoxys.gif" alt="animated" />
 
   Regieleki: 200, Deoxys Speed: 180, Ninjask: 160, Pheromosa: 151, Deoxys: 150 (tied with Deoxys Attack, Calyrex Shadow Rider, Electrode and Hisuian Electrode. 
 
 But only one stat is not usually enough for a Pokémon to be good or viable, if it is bad in any other stat. That is the reason why we will consider the geometric mean of pair of related statistics in order to get the best sweepers (attack x speed and spe.attack x speed) and walls (hp x defense and hp x special defense) Pokémon: 
 
-- **Top 5 physical sweepers Pokémons**: <img src="other/deoxys-attack.gif" alt="animated" /><img src="other/deoxys.gif" alt="animated" /> <img src="other/zacian-crowned.gif" alt="animated" /> <img src="other/darmanitan-galarzen.gif" alt="animated" /> <img src="other/pheromosa.gif" alt="animated" />
+- **Top 5 physical sweepers Pokémons**: <img src="Images/Gifs/deoxys-attack.gif" alt="animated" /><img src="Images/Gifs/deoxys.gif" alt="animated" /> <img src="Images/Gifs/zacian-crowned.gif" alt="animated" /> <img src="Images/Gifs/darmanitan-galarzen.gif" alt="animated" /> <img src="Images/Gifs/pheromosa.gif" alt="animated" />
 
   $\sqrt{\text{Attack}\cdot \text{Speed}}$: Deoxys Attack: 164.3168, Deoxys: 150, Galarian Darmanitan Zen: 148.9966, Zygarde Complete: 146.9694, Regidrago: 143.8298.
-- **Top 5 special sweepers Pokémons**: <img src="other/deoxys-attack.gif" alt="animated" /><img src="other/calyrex-shadow.gif" alt="animated" /> <img src="other/deoxys.gif" alt="animated" /> <img src="other/pheromosa.gif" alt="animated" /> <img src="other/mewtwo.gif" alt="animated" />
+- **Top 5 special sweepers Pokémons**: <img src="Images/Gifs/deoxys-attack.gif" alt="animated" /><img src="Images/Gifs/calyrex-shadow.gif" alt="animated" /> <img src="Images/Gifs/deoxys.gif" alt="animated" /> <img src="Images/Gifs/pheromosa.gif" alt="animated" /> <img src="Images/Gifs/mewtwo.gif" alt="animated" />
 
   $\sqrt{\text{Spe.Attack}\cdot \text{Speed}}$: Deoxys Attack: 164.3168, Calyrex Shadow Rider: 157.3213, Deoxys: 150, Pheromosa: 143.8298, Mewtwo: 141.4920.
-- **Top 5 physical walls Pokémons**: <img src="other/zygarde-complete.gif" alt="animated" /><img src="other/ting-lu.gif" alt="animated" /> <img src="other/melmetal.gif" alt="animated" /> <img src="other/giratina.gif" alt="animated" /> <img src="other/avalugg.gif" alt="animated" />
+- **Top 5 physical walls Pokémons**: <img src="Images/Gifs/zygarde-complete.gif" alt="animated" /><img src="Images/Gifs/ting-lu.gif" alt="animated" /> <img src="Images/Gifs/melmetal.gif" alt="animated" /> <img src="Images/Gifs/giratina.gif" alt="animated" /> <img src="Images/Gifs/avalugg.gif" alt="animated" />
 
   $\sqrt{\text{Hp}\cdot \text{Defense}}$: Zygarde Complete: 161.6663, Ting-Lu: 139.1941, Melmetal: 138.9424, Giratina: 134.1641, Avalugg: 132.2120 (tied with Hisuian Avalugg.
-- **Top 5 special walls Pokémons**: <img src="other/blissey.gif" alt="animated" /><img src="other/chansey.gif" alt="animated" /> <img src="other/zygarde-complete.gif" alt="animated" /> <img src="other/giratina.gif" alt="animated" /> <img src="other/snorlax.gif" alt="animated" />
+- **Top 5 special walls Pokémons**: <img src="Images/Gifs/blissey.gif" alt="animated" /><img src="Images/Gifs/chansey.gif" alt="animated" /> <img src="Images/Gifs/zygarde-complete.gif" alt="animated" /> <img src="Images/Gifs/giratina.gif" alt="animated" /> <img src="Images/Gifs/snorlax.gif" alt="animated" />
 
   $\sqrt{\text{Hp}\cdot \text{Spe.Defense}}$: Blissey: 185.5398, Chansey: 162.0185, Zygarde Complete: 143.2480, Giratina: 134.1641, Snorlax: 132.6650.
 
@@ -144,11 +144,11 @@ But only one stat is not usually enough for a Pokémon to be good or viable, if 
 ### Abilities:
 
 - **Most common abilities**: Sturdy (46 Pokémon), Swift Swim (45 Pokémon), Keen Eye (41 Pokémon), Levitate (39 Pokémon), Intimidate (39 Pokémon)
-- **Examples of Pokémon with unique abilities**: <img src="other/silvally.gif" alt="animated" /> <img src="other/dhelmise.gif" alt="animated" /><img src="other/golisopod.gif" alt="animated" /> <img src="other/stonjourner.gif" alt="animated" /> <img src="other/zangoose.gif" alt="animated" />
+- **Examples of Pokémon with unique abilities**: <img src="Images/Gifs/silvally.gif" alt="animated" /> <img src="Images/Gifs/dhelmise.gif" alt="animated" /><img src="Images/Gifs/golisopod.gif" alt="animated" /> <img src="Images/Gifs/stonjourner.gif" alt="animated" /> <img src="Images/Gifs/zangoose.gif" alt="animated" />
 
   (Silvally: RKS System, Dhelmise: Steelworker, Golisopod: Emergency Exit, Stonjourner: Power Spot, Zangoose: Toxic Boost)
 - **Most common abilities in evolution lines**: Levitate (in 30 evolution lines), Pressure (in 27 evolution lines), Sturdy (in 26 evolution lines), Swift Swim (in 25 evolution lines), Run Away (in 25 evolution lines).
-- **Examples of evolution lines with unique abilities**: <img src="other/applin.gif" alt="animated" /><img src="other/appletun.gif" alt="animated" /> <img src="other/flapple.gif" alt="animated" /> <img src="other/skitty.gif" alt="animated" /> <img src="other/delcatty.gif" alt="animated" /> <img src="other/fletchling.gif" alt="animated" /> <img src="other/fletchinder.gif" alt="animated" /> <img src="other/talonflame.gif" alt="animated" /> <img src="other/koffing.gif" alt="animated" /> <img src="other/weezing.gif" alt="animated" /> <img src="other/weezing-galar.gif" alt="animated" /> <img src="other/silicobra.gif" alt="animated" /> <img src="other/sandaconda.gif" alt="animated" />
+- **Examples of evolution lines with unique abilities**: <img src="Images/Gifs/applin.gif" alt="animated" /><img src="Images/Gifs/appletun.gif" alt="animated" /> <img src="Images/Gifs/flapple.gif" alt="animated" /> <img src="Images/Gifs/skitty.gif" alt="animated" /> <img src="Images/Gifs/delcatty.gif" alt="animated" /> <img src="Images/Gifs/fletchling.gif" alt="animated" /> <img src="Images/Gifs/fletchinder.gif" alt="animated" /> <img src="Images/Gifs/talonflame.gif" alt="animated" /> <img src="Images/Gifs/koffing.gif" alt="animated" /> <img src="Images/Gifs/weezing.gif" alt="animated" /> <img src="Images/Gifs/weezing-galar.gif" alt="animated" /> <img src="Images/Gifs/silicobra.gif" alt="animated" /> <img src="Images/Gifs/sandaconda.gif" alt="animated" />
 
   (Applin: Ripen, Skitty: Normalize, Fletchling: Gale Wings, Koffing: Neutralizing Gas, Silicobra: Sand Spit)
 
