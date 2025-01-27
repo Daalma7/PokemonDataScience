@@ -156,4 +156,10 @@ But only one stat is not usually enough for a Pokémon to be good or viable, if 
 In progress...
 
 ## Credits
-David Villar Martos
+**Author: David Villar Martos** (https://github.com/Daalma7)
+
+Todas las imágenes de Pokémons extraídas para realizar este estudio fuero extraídas de las siguientes fuentes:
+- Showdown (https://play.pokemonshowdown.com/sprites/)
+- Pokémon Sprite Project (https://www.smogon.com/forums/threads/smogon-sprite-project.3647722/)
+- Pacck de sprites de Pokémon estilo pixelart animados (https://www.youtube.com/watch?v=ltk8qxSpKlU)
+- Generation 9 Resource Pack [v21.1] (https://www.pokecommunity.com/threads/generation-9-resource-pack-v21-1.527398/)
