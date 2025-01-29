@@ -96,30 +96,22 @@ In visualizationsEDA.ipynb, containing advanced visualizations, we can extract s
 
 ### Some visualizations
 <div align="center">
-    <img src="Images/Graphics/Chord.png" width="412px"/> 
-</div>
-<div align="center">
+    <img src="Images/Graphics/Chord.png" width="412px"/>
     <img src="Images/Graphics/TotalStatsType.png" width="412px"/> 
 </div>
 
 <div align="center">
     <img src="Images/Graphics/PCA.png" width="412px"/> 
-</div>
-<div align="center">
     <img src="Images/Graphics/PCA_expvar.png" width="412px"/> 
 </div>
 
 <div align="center">
     <img src="Images/Graphics/Physical Offensiveness.png" width="412px"/> 
-</div>
-<div align="center">
     <img src="Images/Graphics/Special Offensiveness.png" width="412px"/> 
 </div>
 
 <div align="center">
-    <img src="Images/Graphics/Physical Defensiveness.png" width="412px"/> 
-</div>
-<div align="center">
+    <img src="Images/Graphics/Physical Defensiveness.png" width="412px"/>
     <img src="Images/Graphics/Special Defensiveness.png" width="412px"/> 
 </div>
 
