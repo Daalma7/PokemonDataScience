@@ -98,16 +98,10 @@ In visualizationsEDA.ipynb, containing advanced visualizations, we can extract s
 <div align="center">
     <img src="Images/Graphics/output2.png" width="412px"/> 
 </div>
-
-<div class="flourish-embed flourish-chord" data-src="visualisation/21356852"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/21356852/thumbnail" width="100%" alt="chord visualization" /></noscript></div>
-
-
 <!--
 <div align="center">
     <img src="Images/Graphics/output2.png" width="412px"/> 
 </div>
-
-
 -->
 
 ### Best Pokémons, stat-wise
