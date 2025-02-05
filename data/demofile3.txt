@@ -6,7 +6,7 @@
    Pecharunt (Pokémon) - Bulbapedia, the community-driven Pokémon encyclopedia
   </title>
   <script>
-   document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"38ed2c6de0465bf2ce827c37","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Pecharunt_(Pokémon)","wgTitle":"Pecharunt (Pokémon)","wgCurRevisionId":4224207,"wgRevisionId":4224207,"wgArticleId":300802,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pokémon","Generation IX Pokémon","Poison-type Pokémon","Ghost-type Pokémon","Dual-type Pokémon","Gender-unknown Pokémon","Pokémon without Hidden Abilities","Pokémon in the Slow experience group","Purple-colored Pokémon","Body style 01 Pokémon","No Eggs Discovered group Pokémon",
+   document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"c107c11bc4ba029c57502ff2","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Pecharunt_(Pokémon)","wgTitle":"Pecharunt (Pokémon)","wgCurRevisionId":4224207,"wgRevisionId":4224207,"wgArticleId":300802,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pokémon","Generation IX Pokémon","Poison-type Pokémon","Ghost-type Pokémon","Dual-type Pokémon","Gender-unknown Pokémon","Pokémon without Hidden Abilities","Pokémon in the Slow experience group","Purple-colored Pokémon","Body style 01 Pokémon","No Eggs Discovered group Pokémon",
 "Pokémon in the Blueberry Pokédex","Pokémon with a base stat total of 600","Pokémon whose base Defense stat is greater than 100","Pages with broken file links","Pokémon that are not part of an evolutionary line","Pokémon introduced in The Indigo Disk","Mythical Pokémon"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Pecharunt_(Pokémon)","wgRelevantArticleId":300802,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMFDisplayWikibaseDescriptions":{"search":false,"nearby":false,"watchlist":false,"tagline":false},"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgEditSubmitButtonLabelPublish":false};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","mediawiki.page.gallery.styles":"ready",
 "skins.bulbapediamonobook.styles":"ready","jquery.tablesorter.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.ready","jquery.tablesorter","mediawiki.toc","skins.bulbapediamonobook.scripts","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","mmv.head","mmv.bootstrap.autostart"];
   </script>
@@ -49,7 +49,6 @@
   gtag('js', new Date());
 
   gtag('config', 'G-XCGG53D4E3');
-  gtag('config', 'UA-326511-18');
   </script>
   <!---------------->
   <!-- Script End -->
@@ -8830,12 +8829,12 @@ n.parentNode.insertBefore(s, n);
         </table>
         <!-- 
 NewPP limit report
-Cached time: 20250127130214
+Cached time: 20250205013841
 Cache expiry: 86400
 Reduced expiry: false
 Complications: [show‐toc]
-CPU time usage: 0.484 seconds
-Real time usage: 0.798 seconds
+CPU time usage: 0.475 seconds
+Real time usage: 0.825 seconds
 Preprocessor visited node count: 11351/1000000
 Post‐expand include size: 233755/2097152 bytes
 Template argument size: 21322/2097152 bytes
@@ -8846,18 +8845,18 @@ Unstrip post‐expand size: 6016/5000000 bytes
 -->
         <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%  403.945      1 -total
- 22.78%   92.010      1 Template:TypeEffectiveness
- 17.58%   71.009     72 Template:Type_effectiveness_entry
-  8.33%   33.654      1 Template:Mythical_Pokémon
-  7.61%   30.759      1 Template:Pokémon_Infobox
-  6.68%   26.966      1 Template:Stats
-  6.38%   25.769     16 Template:Learnlist/level9
-  3.48%   14.061     23 Template:Learnlist/tm9
-  2.78%   11.239      1 Template:Other_languages
-  2.33%    9.395    175 Template:Roundy
+100.00%  423.684      1 -total
+ 22.35%   94.691      1 Template:TypeEffectiveness
+ 17.37%   73.603     72 Template:Type_effectiveness_entry
+  8.29%   35.133      1 Template:Pokémon_Infobox
+  8.14%   34.502      1 Template:Mythical_Pokémon
+  6.72%   28.482      1 Template:Stats
+  6.47%   27.409     16 Template:Learnlist/level9
+  3.38%   14.308     23 Template:Learnlist/tm9
+  2.69%   11.398      1 Template:Other_languages
+  2.35%    9.943    175 Template:Roundy
 -->
-        <!-- Saved in parser cache with key themozz_mediawiki:pcache:idhash:300802-0!canonical and timestamp 20250127130213 and revision id 4224207.
+        <!-- Saved in parser cache with key themozz_mediawiki:pcache:idhash:300802-0!canonical and timestamp 20250205013840 and revision id 4224207.
  -->
        </div>
        <!---------------------------------------------------------------->
@@ -9439,10 +9438,10 @@ You can view its source [e]">
    </div>
   </div>
   <script>
-   (RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.484","walltime":"0.798","ppvisitednodes":{"value":11351,"limit":1000000},"postexpandincludesize":{"value":233755,"limit":2097152},"templateargumentsize":{"value":21322,"limit":2097152},"expansiondepth":{"value":8,"limit":100},"expensivefunctioncount":{"value":1,"limit":250},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":6016,"limit":5000000},"timingprofile":["100.00%  403.945      1 -total"," 22.78%   92.010      1 Template:TypeEffectiveness"," 17.58%   71.009     72 Template:Type_effectiveness_entry","  8.33%   33.654      1 Template:Mythical_Pokémon","  7.61%   30.759      1 Template:Pokémon_Infobox","  6.68%   26.966      1 Template:Stats","  6.38%   25.769     16 Template:Learnlist/level9","  3.48%   14.061     23 Template:Learnlist/tm9","  2.78%   11.239      1 Template:Other_languages","  2.33%    9.395    175 Template:Roundy"]},"cachereport":{"timestamp":"20250127130214","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":94});});
+   (RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.475","walltime":"0.825","ppvisitednodes":{"value":11351,"limit":1000000},"postexpandincludesize":{"value":233755,"limit":2097152},"templateargumentsize":{"value":21322,"limit":2097152},"expansiondepth":{"value":8,"limit":100},"expensivefunctioncount":{"value":1,"limit":250},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":6016,"limit":5000000},"timingprofile":["100.00%  423.684      1 -total"," 22.35%   94.691      1 Template:TypeEffectiveness"," 17.37%   73.603     72 Template:Type_effectiveness_entry","  8.29%   35.133      1 Template:Pokémon_Infobox","  8.14%   34.502      1 Template:Mythical_Pokémon","  6.72%   28.482      1 Template:Stats","  6.47%   27.409     16 Template:Learnlist/level9","  3.38%   14.308     23 Template:Learnlist/tm9","  2.69%   11.398      1 Template:Other_languages","  2.35%    9.943    175 Template:Roundy"]},"cachereport":{"timestamp":"20250205013841","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":92});});
   </script>
   <script>
-   (function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'908a3fa20b3bf767',t:'MTczNzk5NjY5OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();
+   (function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'90d1b75e5b2daefd',t:'MTczODc0NjA5MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();
   </script>
  </body>
 </html>
