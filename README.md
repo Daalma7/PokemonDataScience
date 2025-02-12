@@ -16,7 +16,7 @@ https://www.deviantart.com/mbcmechachu/favourites/70416144/pokemon-animated-spri
   <img src="Images/Gifs/misdreavus.gif" alt="animated" />
   <img src="Images/Gifs/klink.gif" alt="animated" />
   <img src="Images/Gifs/shinx.gif" alt="animated" />
-  <img src="Images/Gifs/slowpoke-galar.gif" alt="animated" />
+  <img src="Images/Gifs/solosis.gif" alt="animated" />
   <img src="Images/Gifs/vulpix-alola.gif" alt="animated" />
   <img src="Images/Gifs/dratini.gif" alt="animated" />
   <img src="Images/Gifs/zorua.gif" alt="animated" />
