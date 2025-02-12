@@ -163,10 +163,10 @@ def selectCorrectStats(name, form, stat_list):
         else:
             listforms.append('')
 
-    #print(f"{name}, {form}, {listforms}")
-    if form == 'Galarian Form':                   # Exception
+    if name == 'Galarian Darmanitan':                   # Exception
         form = 'Standard Mode'
     
+    #print(f"{name}, {form}, {listforms}")
     """
     newform = form
     
@@ -180,12 +180,14 @@ def selectCorrectStats(name, form, stat_list):
 
     form = newform
     """
+
+    #print(listforms)
     
     # After that, we will select the correct stats, according to its form, comparing the titles of the tables
     selected = False
     selected_index = len(listforms)-1
     while not selected and selected_index > -1:
-        if form == listforms[selected_index]:
+        if listforms[selected_index] in [form, name]:
             if not(stat_list[selected_index].parent.find_next_sibling('div') is None) and not(len(stat_list[selected_index].parent.find_next_sibling('div').text) < 1) and not(len(stat_list[selected_index].parent.find_next_sibling('div').text) > 3):
                 selected = True
         if not selected:
@@ -224,11 +226,11 @@ def getTypes(s, name, basename, form):
     types_occurrencies = s.find_all('a', href=lambda t: t and "(type)" in t)
     types = []
     j = 0
-    print(f'${name}${basename}${newform}$')
-    print('\t', types_occurrencies[j].find_next('small').get_text())
+    #print(f'${name}${basename}${newform}$')
+    #print('\t', types_occurrencies[j].find_next('small').get_text())
     #while not (types_occurrencies[j].find_next('small') is None or types_occurrencies[j].find_next('small').get_text() in [None, '', name, form]):
     while not types_occurrencies[j].find_next('small').get_text().replace(u'\xa0', u' ') in [None, '', name, newform, f"{basename} {newform}", f"{newform} {basename}"]:
-        print('\t', types_occurrencies[j].find_next('small').get_text().replace(u'\xa0', u' '))
+        #print('\t', types_occurrencies[j].find_next('small').get_text().replace(u'\xa0', u' '))
         j = j+1
     types.append(types_occurrencies[j].get_text().replace(u'\xa0', u' '))
     if types_occurrencies[j+1].get_text() != 'Unknown':
@@ -237,7 +239,7 @@ def getTypes(s, name, basename, form):
         types = [types_occurrencies[0].get_text().replace(u'\xa0', u' ')]
         if types_occurrencies[1].get_text() != 'Unknown':
             types.append(types_occurrencies[1].get_text().replace(u'\xa0', u' '))
-    print(types)
+    #print(types)
     return types
 
 def typeEffectiveness(types, attacktype):
@@ -268,7 +270,7 @@ def getPokemonData(name, inputUrl):
         Returns:
             - pokemonData: List containing the data for the given Pokémon, in the same order as in INFO
     """
-    print(f"{name}, {inputUrl}")
+    #print(f"{name}, {inputUrl}")
     pokemonData = []
     scrapped_pokemon.append(name)                                                        # Initialization
     htmlData = requests.get(MAIN_PAGE_URL + inputUrl)                         # Request to that Pokémon's page, returning the result
@@ -299,7 +301,7 @@ def getPokemonData(name, inputUrl):
     else:                                                   # or (more usually) in '_(Pok%C3%A9mon)'
         basename = '\''.join(' '.join(inputUrl[6:-15].split('_')).split('%27'))         # For some names as Mr._Mime
 
-    print(basename)
+    #print(basename)
     if basename + ' ' in name:
         form = name.replace(basename + ' ', "")
     elif ' ' + basename in name:
@@ -365,7 +367,7 @@ def getPokemonData(name, inputUrl):
                     existborder = False
                     passread = False
 
-                    print(newname, newform)
+                    #print(newname, newform)
 
                     for row in soup.find('a', href=lambda t: t and "/wiki/Ability" in t).find_parent('tr').find_all('tr'):
                         if not row.find('td', style=lambda t: t and "border-top" in t) is None:
@@ -407,7 +409,7 @@ def getPokemonData(name, inputUrl):
                                         else:
                                             abforms2 = [abform]
                                         for abform2 in abforms2:
-                                            print('||', abform2, abname, '||')
+                                            #print('||', abform2, abname, '||')
                                             if abform2 in ['', newname, newform, f"({newname})", f"({newform})", f"( {newname} )", f"( {newform} )", f"{newform} {basename}"]:                           # (...) Meowth's case, newform + basename Indeedee's case
                                                 readenabilities.append(abname)
                                             if abform2 in [f"{newname} Hidden Ability", f"{newform} Hidden Ability", 'Hidden Ability', 'Gen IV+ Hidden Ability', 'Gen V+ Hidden Ability', 'Gen VI+ Hidden Ability', 'Gen VII+ Hidden Ability', 'Gen VIII+ Hidden Ability', 'Gen IX+ Hidden Ability', f"{newname} Gen IV+ Hidden Ability", f"{newname} Gen V+ Hidden Ability", f"{newname} Gen VI+ Hidden Ability", f"{newname} Gen VII+ Hidden Ability", f"{newname} Gen VIII+ Hidden Ability", f"{newname} Gen IX+ Hidden Ability", f"{newform} Gen IV+ Hidden Ability", f"{newform} Gen V+ Hidden Ability", f"{newform} Gen VI+ Hidden Ability", f"{newform} Gen VII+ Hidden Ability", f"{newform} Gen VIII+ Hidden Ability", f"{newform} Gen IX+ Hidden Ability",  f"Gen IV+ {newname} Hidden Ability", f"Gen V+ {newname} Hidden Ability", f"Gen VI+ {newname} Hidden Ability", f"Gen VII+ {newname} Hidden Ability", f"Gen VIII+ {newname} Hidden Ability", f"Gen IX+ {newname} Hidden Ability", f"Gen IV+ {newform} Hidden Ability", f"Gen V+ {newform} Hidden Ability", f"Gen VI+ {newform} Hidden Ability", f"Gen VII+ {newform} Hidden Ability", f"Gen VIII+ {newform} Hidden Ability", f"Gen IX+ {newform} Hidden Ability"]:
@@ -419,8 +421,8 @@ def getPokemonData(name, inputUrl):
                     readenhidden = list(filter(('Cacophony').__ne__, readenhidden))                # Remove noisy Cacophony abilities
                     readenhidden = list(filter(('').__ne__, readenhidden))
 
-            print(readenabilities)
-            print(readenhidden)
+            #(readenabilities)
+            #print(readenhidden)
 
             if elem == 'Abilities':
                 pokemonData.append(readenabilities)
@@ -448,32 +450,32 @@ def getPokemonData(name, inputUrl):
         
         elif elem == 'Hp':              # Get the base HP stat of that Pokémon
             hp = soup.find_all('a', title=lambda t: t and "HP" in t)      # Filter all the anchor that contains (HP) in the title
-            index = selectCorrectStats(name, form, hp)
+            index = selectCorrectStats(newname, form, hp)
             pokemonData.append((int) (hp[index].parent.find_next_sibling('div').text))
 
         elif elem == 'Attack':          # Get the base Attack stat of that Pokémon
             attack = soup.find_all('a', href=lambda t: t and "Stat#Attack" in t)      # Filter all the anchor that contains (Attack) in the title
-            index = selectCorrectStats(name, form, attack)
+            index = selectCorrectStats(newname, form, attack)
             pokemonData.append((int) (attack[index].parent.find_next_sibling('div').text))
 
         elif elem == 'Defense':         # Get the base Defense stat of that Pokémon
             defense = soup.find_all('a', href=lambda t: t and "Stat#Defense" in t)      # Filter all the anchor that contains (Defense) in the title
-            index = selectCorrectStats(name, form, defense)
+            index = selectCorrectStats(newname, form, defense)
             pokemonData.append((int) (defense[index].parent.find_next_sibling('div').text))
 
         elif elem == 'SpecialAttack':   # Get the base Special Attack stat of that Pokémon
             specialattack = soup.find_all('a', href=lambda t: t and "Stat#Special_Attack" in t)      # Filter all the anchor that contains (Special_Attack) in the title
-            index = selectCorrectStats(name, form, specialattack)
+            index = selectCorrectStats(newname, form, specialattack)
             pokemonData.append((int) (specialattack[index].parent.find_next_sibling('div').text))
 
         elif elem == 'SpecialDefense':  # Get the base Special Defense stat of that Pokémon
             specialdefense = soup.find_all('a', href=lambda t: t and "Stat#Special_Defense" in t)      # Filter all the anchor that contains (Special_Defense) in the title
-            index = selectCorrectStats(name, form, specialdefense)
+            index = selectCorrectStats(newname, form, specialdefense)
             pokemonData.append((int) (specialdefense[index].parent.find_next_sibling('div').text))
 
         elif elem == 'Speed':           # Get the base Speed stat of that Pokémon
             speed = soup.find_all('a', href=lambda t: t and "Stat#Speed" in t)      # Filter all the anchor that contains (Speed) in the title
-            index = selectCorrectStats(name, form, speed)
+            index = selectCorrectStats(newname, form, speed)
             pokemonData.append((int) (speed[index].parent.find_next_sibling('div').text))
 
         elif elem == 'TotalStats':      # Get the total stats (sum of the previous ones) of that Pokémon
@@ -901,8 +903,8 @@ def allPokemonStats():
             pokemonUrls['Oricorio Pa\'u Style'] = pokemonUrls.pop(listkeys[i])
             listkeys[i] = 'Oricorio Pa\'u Style'
 
-        print(listkeys[i])
-        print(pokemonUrls[listkeys[i]])
+        #print(listkeys[i])
+        #print(pokemonUrls[listkeys[i]])
         all_pokemon_data.append(getPokemonData(listkeys[i], pokemonUrls[listkeys[i]]))
         
 
@@ -924,13 +926,17 @@ def WriteListToCSV(csv_file,csv_columns,data_list):
 testing = False
 
 if testing:
+    getPokemonData('Darmanitan Galarian Form', '/wiki/Darmanitan_(Pokémon)')
+    getPokemonData('Hoopa Confined', '/wiki/Hoopa_(Pokémon)')
+    getPokemonData('Hoopa Unbound', '/wiki/Hoopa_(Pokémon)')
+    getPokemonData('Meowth', '/wiki/Meowth_(Pokémon)')
+    getPokemonData('Alolan Meowth', '/wiki/Meowth_(Pokémon)')
+    getPokemonData('Galarian Meowth', '/wiki/Meowth_(Pokémon)')
+    """
     getPokemonData('Ogerpon Teal Mask', '/wiki/Ogerpon_(Pokémon)')
     getPokemonData('Ogerpon Wellspring Mask', '/wiki/Ogerpon_(Pokémon)')
     getPokemonData('Ogerpon Hearthflame Mask', '/wiki/Ogerpon_(Pokémon)')
     getPokemonData('Ogerpon Cornerstone Mask', '/wiki/Ogerpon_(Pokémon)')
-    getPokemonData('Meowth', '/wiki/Meowth_(Pokémon)')
-    getPokemonData('Alolan Meowth', '/wiki/Meowth_(Pokémon)')
-    getPokemonData('Galarian Meowth', '/wiki/Meowth_(Pokémon)')
     getPokemonData('Thundurus Incarnate Forme', '/wiki/Thundurus_(Pokémon)')
     getPokemonData('Thundurus Therian Forme', '/wiki/Thundurus_(Pokémon)')
     getPokemonData('Shaymin Land Forme', '/wiki/Shaymin_(Pokémon)')
@@ -962,9 +968,6 @@ if testing:
     getPokemonData('Necrozma', '/wiki/Necrozma_(Pokémon)')
     getPokemonData('Necrozma Dusk Mane', '/wiki/Necrozma_(Pokémon)')
     getPokemonData('Necrozma Dawn Wings', '/wiki/Necrozma_(Pokémon)')
-
-
-    """
     getPokemonData('Ursaluna', '/wiki/Ursaluna_(Pokémon)')
     getPokemonData('Bloodmoon Ursaluna', '/wiki/Ursaluna_(Pokémon)')
     getPokemonData('Calyrex', '/wiki/Calyrex_(Pokémon)')
