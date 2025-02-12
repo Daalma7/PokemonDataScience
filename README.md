@@ -157,7 +157,6 @@ But only one stat is not usually enough for a Pokémon to be good or viable, if 
 
   $\sqrt{\text{Hp}\cdot \text{Spe.Defense}}$: Blissey: 185.5398, Chansey: 162.0185, Zygarde Complete: 143.2480, Giratina: 134.1641, Snorlax: 132.6650.
 
-
 ### Abilities:
 
 - **Most common abilities**: Sturdy (46 Pokémon), Swift Swim (45 Pokémon), Keen Eye (41 Pokémon), Levitate (39 Pokémon), Intimidate (39 Pokémon)
@@ -171,17 +170,131 @@ But only one stat is not usually enough for a Pokémon to be good or viable, if 
 
 <h1>$${\color{red}\textbf{Part 3: Machine Learning, AI, CV}}$$  <img src="Images/Gifs/moltres.gif" alt="animated" /></h1>
 
-En esta última parte del proyecto, utilizando el dataset obtenido y procesándolo para la correcta aplicación de técnicas de inteligencia artificial, se han realizado una serie de preguntas para las cuales se ha obtenido respuesta mediante su aplicación. Las preguntas han sido las siguientes:
+En esta última parte del proyecto, utilizando el dataset obtenido y procesándolo para la correcta aplicación de técnicas de inteligencia artificial, (sólo se han considerado atributos numéricos, por ejemplo se ha descartado información sobre habilidades) y se han realizado una serie de preguntas para las cuales se ha obtenido respuesta mediante su aplicación. Las preguntas han sido las siguientes: ¿Se puede...
 
-## ¿Se puede predecir si un Pokémon es Legendario/Mítico/Ultraente?
-<h2>$${\color{red}\textbf{¿Se puede predecir si un Pokémon es Legendario/Mítico/Ultraente?}}$$</h2>
+<h2>$${\color{red}\textbf{Predecir si un Pokémon es Legendario?}}$$</h2>
 
-<h2>$${\color{red}\textbf{¿Se puede predecir su exp. a nivel 100 (leveling rate)?}}$$</h2>
+Para ello se ha utilizado un conjunto de clasificadores (**DecisionTreeClassifier , RandomForestClassifier, GradientBoostingClassifier, AdaBoostClassifier, LightGBM**) con el objetivo de predecirlo. Puesto que el conjunto de datos es **desbalanceado** (91.77% no legendarios, 8.23% legendarios) en lugar de utilizar técnicas de downsampling o upsampling, se ha decidido utilizar métricas que tengan en cuenta dicho desbalanceo y que sirvan para guiar a los clasificadores. Éstas son:
 
-<h2>$${\color{red}\textbf{¿Podemos encontrar grupos de Pokémon similares?}}$$</h2>
+- **Matthews Correlation Coefficient (MCC)**, which is a good metric for these cases of unbalance. $$MCC = \frac{TP \cdot TN - FP \cdot FN}{\sqrt{(TP + FP)(TP + FN)(TN + FP)(TN + FN)}}$$ This metric ranges from -1 (totally incorrect classification) to 1 (perfect prediction), being a value of 0 a prediction no better than random prediction.
 
-<h2>$${\color{red}\textbf{¿Podemos saber el tipo primario de un Pokémon sólo viéndolo?}}$$</h2>
+- **Area under Precision-Recall Curve (PR-AUC)**, considers both precision and recall, being these: $$\text{Precision =} \frac{TP}{TP+FP},\ \text{Recall =} \frac{TP}{TP+FN} $$ Precision and recall are usually inversely related (not always necesarily. Recall is monotonically increasing with an increasing classification threshold, but precision not always decreases), and we will study the area under the curve of both metrics varying the classification threshold.
 
+Utilizando estas métricas y un total de 20 semillas distintas para partición training-test, se han calculado resultados de validación para dichos modelos utilizando un KFold cross validation de 10 folds, los cuales han servido para ponderar pesos de un **clasificador ensemble** utilizando todos los modelos anteriores. Con todos estos modelos hemos obtenido los resultados de test, y los promedios han sido:
+
+|        | DecisionTree | RandomForest | GradientBoosting | AdaBoost | LightGBM | EnsembleModel |
+|:------:|:------------:|:------------:|:----------------:|:--------:|:--------:|:-------------:|
+|   **MCC**  |    0.88301   |    0.89351   |      0.94704     |  0.89696 |  0.94557 |    0.96252    |
+| **PR-AUC** |    0.90107   |    0.97087   |      0.97567     |  0.96252 |  0.98308 |    0.98620    |
+
+
+Por lo que el clasificador **ensemble ha sido el que mejor resultado ha obtenido**, haciendo una clasificación con **métricas casi perfectas**.
+
+De igual manera se ha hecho para predecir si un Pokémon es mítico, con los siguientes resultados:
+
+|        | DecisionTree | RandomForest | GradientBoosting | AdaBoost | LightGBM | EnsembleModel |
+|:------:|:------------:|:------------:|:----------------:|:--------:|:--------:|:-------------:|
+|   **MCC**  |    0.76962   |    0.73779   |      0.89320     |  0.87060 |  0.88605 |    0.89786    |
+| **PR-AUC** |    0.79357   |    0.94953   |      0.95229     |  0.93086 |  0.95058 |    0.95475    |
+
+La cual ha sido una tarea **más difícil pero con resultados igualmente buenos**.
+
+Y para predecir si es Ultraente o no:
+
+|        | DecisionTree | RandomForest | GradientBoosting | AdaBoost | LightGBM | EnsembleModel |
+|:------:|:------------:|:------------:|:----------------:|:--------:|:--------:|:-------------:|
+|   **MCC**  |    0.56900   |    0.00000   |      0.73477     |  0.92040 |  1.00000 |    1.00000    |
+| **PR-AUC** |    0.73481   |    1.00000   |      0.85000     |  1.00000 |  1.00000 |    1.00000    |
+
+Vemos que este último caso es más extremo, pero se consigue una **clasificación perfecta** (sin utilizar ninguna información sobre habilidades u otros predictores directos).
+
+<h2>$${\color{red}\textbf{Predecir su exp. a nivel 100?}}$$</h2>
+
+En este caso se ha considerado un problema de **regresión** (inicialmente clasificación ordinaria pero se decidió pasar a regresión por utilizar un paradigma distinto, aunque se plantea volver a clasificación ordinaria si el tiempo me lo permite) en el que se plantea **predecir la cantidad de experiencia que necesita un Pokémon para subir a nivel 100** (asociado a LevelingRate).
+
+La métrica que se ha utilizado en este caso es el **error cuadrático medio (RMSE)**. Los clasificadores que se han decidido emplear han sido **LinearRegression, DecisionTreeRegressor, RandomForestRegressor, GradientBoostingRegressor, AdaBoostRegressor** y de nuevo se ha considerado un **modelo ensemble** de la misma manera que en el apartado anterior, teniendo en cuenta que RMSE es una métrica que cuanto más baja sea, mejor.
+
+Los resultados obtenidos han sido los siguientes (normalizando el atributo a predecir al rango [0,1], siendo 0 la experiencia mínima 600k, y 1 la experiencia máxima 1.64M:
+
+|        | LinearRegression | DecisionTree | RandomForest | GradientBoosting | AdaBoost | EnsembleModel |
+|:------:|:----------------:|:------------:|:------------:|:----------------:|:--------:|:-------------:|
+|   **RMSE**  |    0.12295   |    0.15491   |      0.10239     |  0.10990 |  0.15054 |    0.11290    |
+
+En general la **predicción es bastante buena** de igual manera, y en este caso no ha ganado el modelo ensemble, sino RandomForestRegression.
+
+<h2>$${\color{red}\textbf{Encontrar grupos de Pokémon similares?}}$$</h2>
+
+Nos preguntamos si se pueden **agrupar a los Pokémon de manera automática** en grupos similares en función de sus características, de manera que estén lo más agrupados posible dentro de su grupo y lo más separados posible con respecto al resto de los grupos. Para ello utilizaremos técnicas de **aprendizaje no supervisado**, en este caso usaremos **clústering jerárquico** para encontrar dichos grupos. El resultado lo **visualizaremos** con una técnica de **reducción de dimensionalidad** llamada t-SNE (t-distributed Stochastic Neighbor Embedding). Se eligió realizar un total de 16 grupos, los cuales se muestran a continuación:
+
+<div align="center">
+    <img src="Images/Graphics/Clustering.png" width="824px"/>
+</div>
+
+Visualizando los grupos encontrados, se puede ver que corresponden a las siguientes características:
+- **Class 1**: Ice- and Rock-type Pokémon.
+- **Class 2**: Water-type and fossil Pokémon.
+- **Class 3**: Normal-type Pokémon.
+- **Class 4**: Fire-, Ground-, Electric- and Poison-type Pokémon.
+- **Class 5**: Legendary and Paradox Pokémon.
+- **Class 6**: Grass-type Pokémon.
+- **Class 7**: Steel-type Pokémon.
+- **Class 8**: Other Legendary and Mythical Pokémon.
+- **Class 9**: Dragon-type Pokémon.
+- **Class 10**: Ghost-type Pokémon.
+- **Class 11**: Fighting-type Pokémon.
+- **Class 12**: Bug-type Pokémon.
+- **Class 13**: Psychic-type Pokémon.
+- **Class 14**: Flying-type Pokémon.
+- **Class 15**: Ultrabeasts.
+- **Class 16**: Fairy-type Pokémon.
+
+Es muy interesante ver cómo hay tipos de Pokémon que tienen su propia clase diferenciada de las demás (tipo planta, bicho o dragón) además de ver qué Pokémons con dos tipos caen en cada una (Togekiss en hada, Hydrapple en dragón). La clase 4 aglutina muchos tipos, y los Pokémon Legendarios están divididos en dos clases diferenciadas. Además hay excepciones como Drapion, que es más parecido a los Pokémon de la clase 2 (por eso está allí) que a los de la clase 4. Este gráfico tiene muchas conclusiones interesantes, y ahí van sólo algunas de ellas. 
+
+<h2>$${\color{red}\textbf{Saber el tipo primario de un Pokémon sólo viéndolo?}}$$</h2>
+
+Esta es una tarea de **Visión por Computador**. El problema es por tanto un problema de **clasificación multiclase** donde hay **18 clases** posibles. Para ello, y como los minisprites eran muy pequeños, se ha decidido utilizar los sprites de 5ª generación (sin animar en este caso) de los Pokémon.
+
+<div align="center">
+    <img src="Images/Graphics/CVicons.png" width="824px"/>
+</div>
+
+ Como métrica de pérdida se ha usado la **categorical crossentropy**. Se han utilizado diferentes modelos en **keras** como **extractores de características** (**DenseNet121, Xception**) y después se ha entrenado una **red densa** con dichas características de 500, 200 y 18, neuronas. Además se han aplicado técnicas de **data augmentation** mediante traslaciones, rotaciones o flips horizontales y **normalización de imágenes**, así como un **peso** a las imágenes en función de su clase, pues el problema es desbalanceado (descartado, pues funcionaba mejor sin pesos), así como capas de **regularización** para evitar sobreajuste (Dropout y BatchNormalization, así como L2 kernel regularization), así como **early stopping** restaurando los mejores pesos encontrados. Además de ello, posteriormente se ha hecho **fine tuning** con las últimas capas de DenseNet, y como última técnica se ha probado a añadir a los modelos **histogramas de color en formato HSV**, pues se entiende que el tipo estará correlacionado con el color de los Pokémon.
+ 
+ Por último, la división de los datos ha sido 80%-20% en training test y un 10% de los datos de training para validación. Los resultados han sido los siguientes:
+
+|          | DenseNetFeatExt | XceptionFeatExt | DenseNetFineTuning | DenseNetFeatExt+Hist |
+|:--------:|:---------------:|:---------------:|:------------------:|:--------------------:|
+| **Accuracy** |     0.33050     |     0.22457     |       0.30932      |        0.30508       |
+
+Curiosamente el mejor resultado en test lo ha dado DenseNet con extracción de características. Puede parecer un accuracy en test bastante bajo, pero hay que tener en cuenta que hay 18 clases, y que un predictor aleatorio en caso de que las clases estuvieran balanceadas tendría un accuracy de aproximadamente 1/18 aprox. 0.05, luego podemos afirmar que **nuestros modelos han aprendido a identificar patrones y a clasificar, aunque queda un gran margen de mejora**. Además, viendo las curvas de aprendizaje del mejor modelo:
+
+<div align="center">
+    <img src="Images/Graphics/DenseNetFeatExtAccuracy.png" width="412px"/>
+    <img src="Images/Graphics/DenseNetFeatExtLoss.png" width="412px"/>
+</div>
+
+Podemos ver que se produce realmente sobreajuste, con lo que se poría seguir ahondando en por qué ocurre.
+
+|      | Bug | Dark | Dragon | Electric | Fairy | Fighting | Fire | Flying | Ghost | Grass | Ground | Ice | Normal | Poison | Psychic | Rock | Steel | Water |
+|:----:|:---:|:----:|:------:|:--------:|:-----:|:--------:|:----:|:------:|:-----:|:-----:|:------:|:---:|:------:|:------:|:-------:|:----:|:-----:|:-----:|
+| **Bug**     | $${\color{green} 3}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 1}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 2}$$  | $${\color{black} 0}$$  | $${\color{red} 1}$$  | $${\color{red} 1}$$  | $${\color{red} 1}$$  | $${\color{red} 1}$$  | $${\color{red} 2}$$  | $${\color{black} 0}$$  | $${\color{red} 1}$$  | $${\color{red} 1}$$  | $${\color{black} 0}$$  | $${\color{red} 4}$$  |
+| **Dark**     | $${\color{black} 0}$$  | $${\color{green} 1}$$  | $${\color{red} 1}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 2}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 0}$$  | $${\color{red} 0}$$  | $${\color{red} 4}$$  | $${\color{red} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 0}$$  | $${\color{red} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 3}$$  |
+| **Dragon**     | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{green} 1}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 1}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 1}$$  | $${\color{red} 2}$$  | $${\color{red} 4}$$  |
+| **Electric**     | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{green} 1}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 10}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 3}$$  |
+| **Fairy**     | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 1}$$  | $${\color{green} 4}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 1}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 2}$$  | $${\color{black} 0}$$  | $${\color{reblackd} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 1}$$  |
+| **Fighting**     | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 1}$$  | $${\color{black} 0}$$  | $${\color{red} 1}$$  | $${\color{green} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 3}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 1}$$  | $${\color{red} 3}$$  |
+| **Fire**     | $${\color{black} 0}$$  | $${\color{red} 1}$$  | $${\color{black} 0}$$  | $${\color{red} 2}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{green} 7}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 5}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  |
+| **Flying**     | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 1}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{green} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 1}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  |
+| **Ghost**     | $${\color{black} 0}$$  | $${\color{red} 1}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 1}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{green} 3}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 1}$$  | $${\color{red} 2}$$  | $${\color{black} 0}$$  | $${\color{rblacked} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 0}$$  |
+| **Grass**     | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{green} 12}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 6}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 1}$$  | $${\color{red} 2}$$  | $${\color{red} 1}$$  |
+| **Ground**     | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 1}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 1}$$  | $${\color{black} 0}$$  | $${\color{green} 3}$$  | $${\color{black} 0}$$  | $${\color{red} 3}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 1}$$  |
+| **Ice**     | $${\color{red} 1}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{green} 2}$$  | $${\color{red} 2}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 3}$$  |
+| **Normal**     | $${\color{black} 0}$$  | $${\color{red} 1}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 2}$$  | $${\color{black} 0}$$  | $${\color{red} 1}$$  | $${\color{black} 0}$$  | $${\color{red} 1}$$  | $${\color{black} 0}$$  | $${\color{green} 18}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 2}$$  | $${\color{black} 0}$$  | $${\color{red} 2}$$  |
+| **Poison**     | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 1}$$  | $${\color{red} 1}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 1}$$  | $${\color{black} 0}$$  | $${\color{red} 1}$$  | $${\color{red} 1}$$  | $${\color{green} 1}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 4}$$  |
+| **Psychic**     | $${\color{black} 3}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 1}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 2}$$  | $${\color{black} 0}$$  | $${\color{red} 1}$$  | $${\color{red} 1}$$  | $${\color{red} 1}$$  | $${\color{red} 1}$$  | $${\color{red} 2}$$  | $${\color{black} 0}$$  | $${\color{green} 1}$$  | $${\color{red} 1}$$  | $${\color{black} 0}$$  | $${\color{red} 4}$$  |
+| **Rock**     | $${\color{black} 3}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 1}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 2}$$  | $${\color{black} 0}$$  | $${\color{red} 1}$$  | $${\color{red} 1}$$  | $${\color{red} 1}$$  | $${\color{red} 1}$$  | $${\color{red} 2}$$  | $${\color{black} 0}$$  | $${\color{red} 1}$$  | $${\color{green} 1}$$  | $${\color{black} 0}$$  | $${\color{red} 4}$$  |
+| **Steel**     | $${\color{black} 3}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 1}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 2}$$  | $${\color{black} 0}$$  | $${\color{red} 1}$$  | $${\color{red} 1}$$  | $${\color{red} 1}$$  | $${\color{red} 1}$$  | $${\color{red} 2}$$  | $${\color{black} 0}$$  | $${\color{red} 1}$$  | $${\color{red} 1}$$  | $${\color{green} 0}$$  | $${\color{red} 4}$$  |
+| **Water**     | $${\color{black} 3}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 1}$$  | $${\color{black} 0}$$  | $${\color{black} 0}$$  | $${\color{red} 2}$$  | $${\color{black} 0}$$  | $${\color{red} 1}$$  | $${\color{red} 1}$$  | $${\color{red} 1}$$  | $${\color{red} 1}$$  | $${\color{red} 2}$$  | $${\color{black} 0}$$  | $${\color{red} 1}$$  | $${\color{red} 1}$$  | $${\color{black} 0}$$  | $${\color{green} 4}$$  |
 
 ## Credits
 **Author: David Villar Martos** (https://github.com/Daalma7)
