@@ -53,7 +53,7 @@ This is a Data Science project, whose 3 main objectives are:
 
 
 
-<h1>$${\color{royalblue}\textbf{Part 1: Dataset creation: Web scraping from Bulbapedia}}$$  <img src="Images/Gifs/articuno.gif" alt="animated" /></h1>
+<h1>$${\color{royalblue}\textbf{Part 1: Dataset creation, web scraping from Bulbapedia}}$$  <img src="Images/Gifs/articuno.gif" alt="animated" /></h1>
 
 To generate the Pokémon dataset, a web scraper has been programmed using Python, to get all the information required from [Bulbapedia](https://bulbapedia.bulbagarden.net/wiki/Main_Page). The information is stored in a csv file, in which, for each Pokémon and form in rows, the following information is extracted:
 - **DexNumber**: Number of the National Pokédex for that Pokémon.
@@ -95,7 +95,7 @@ Information about Pokémon moves is currently not extracted.
 
 
 
-<h1>$${\color{gold}\textbf{Part 2: Dataset cleaning, analysis, preprocessing and visualizations}}$$  <img src="Images/Gifs/zapdos.gif" alt="animated" /></h1>
+<h1>$${\color{gold}\textbf{Part 2: Preprocessing, analysis and visualizations}}$$  <img src="Images/Gifs/zapdos.gif" alt="animated" /></h1>
 
 
 To continue, further cleaning and visualization techinques are applied in order to deeple understand the dataset extracted from the internet. 2 jupyter notebooks are used in this part: preprocess.ipynb and visualizationsEDA.ipynb.
@@ -174,7 +174,7 @@ But only one stat is not usually enough for a Pokémon to be good or viable, if 
 
   (Applin: Ripen, Skitty: Normalize, Fletchling: Gale Wings, Koffing: Neutralizing Gas, Silicobra: Sand Spit)
 
-<h1>$${\color{red}\textbf{Part 3: Data Science: Supervised \& Unsupervised Learning, CV}}$$  <img src="Images/Gifs/moltres.gif" alt="animated" /></h1>
+<h1>$${\color{red}\textbf{Part 3: Supervised and Unsupervised Learning, AI, CV}}$$  <img src="Images/Gifs/moltres.gif" alt="animated" /></h1>
 
 
 In progress...
