@@ -255,7 +255,7 @@ Es muy interesante ver cómo hay tipos de Pokémon que tienen su propia clase di
 Esta es una tarea de **Visión por Computador**. El problema es por tanto un problema de **clasificación multiclase** donde hay **18 clases** posibles. Para ello, y como los minisprites eran muy pequeños, se ha decidido utilizar los sprites de 5ª generación (sin animar en este caso) de los Pokémon.
 
 <div align="center">
-    <img src="Images/Graphics/CVicons.png" width="824px"/>
+    <img src="Images/Graphics/CVIcons.png" width="412px"/>
 </div>
 
  Como métrica de pérdida se ha usado la **categorical crossentropy**. Se han utilizado diferentes modelos en **keras** como **extractores de características** (**DenseNet121, Xception**) y después se ha entrenado una **red densa** con dichas características de 500, 200 y 18, neuronas. Además se han aplicado técnicas de **data augmentation** mediante traslaciones, rotaciones o flips horizontales y **normalización de imágenes**, así como un **peso** a las imágenes en función de su clase, pues el problema es desbalanceado (descartado, pues funcionaba mejor sin pesos), así como capas de **regularización** para evitar sobreajuste (Dropout y BatchNormalization, así como L2 kernel regularization), así como **early stopping** restaurando los mejores pesos encontrados. Además de ello, posteriormente se ha hecho **fine tuning** con las últimas capas de DenseNet, y como última técnica se ha probado a añadir a los modelos **histogramas de color en formato HSV**, pues se entiende que el tipo estará correlacionado con el color de los Pokémon.
