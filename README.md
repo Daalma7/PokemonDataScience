@@ -55,7 +55,7 @@ This is a Data Science project, whose 3 main objectives are:
 
 <h1>$${\color{royalblue}\textbf{Part 1: Dataset creation, web scraping}}$$  <img src="Images/Gifs/articuno.gif" alt="animated" /></h1>
 
-To generate the Pokémon dataset, a web scraper has been programmed using Python, to get all the information required from [Bulbapedia](https://bulbapedia.bulbagarden.net/wiki/Main_Page). The information is stored in a csv file, in which, for each Pokémon and form in rows, the following information is extracted:
+To generate the Pokémon dataset, a web scraper has been programmed using Python, to get all the information required from [Bulbapedia](https://bulbapedia.bulbagarden.net/wiki/Main_Page). Information is extracted for every Pokémon and variation in the [List of Pokémon by National Pokédex Number](https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_National_Pok%C3%A9dex_number) (so information for regional variations and alternate forms is extracted, not for Mega evolutions or Dynamax forms) The information is stored in a .csv file, in which, for each Pokémon and form in rows, the following information is extracted:
 - **DexNumber**: Number of the National Pokédex for that Pokémon.
 - **Name**: Name of the Pokémon.
 - **Type**: Pokémon's typing as a list.
@@ -87,18 +87,13 @@ To generate the Pokémon dataset, a web scraper has been programmed using Python
 - **PreevoName**: Name of the Preevolution (in case that Pokémon has one)
 - **DamageFrom(Type)**: Amount of damage taken for a specific attack type.
 
-Information about Pokémon moves is currently not extracted.
-
-
-
-
-
+Information about Pokémon moves is currently not extracted, but intended to in a further iteration of the project.
 
 
 <h1>$${\color{gold}\textbf{Part 2: Preprocessing, analysis, visualizations}}$$  <img src="Images/Gifs/zapdos.gif" alt="animated" /></h1>
 
 
-To continue, further cleaning and visualization techinques are applied in order to deeple understand the dataset extracted from the internet. 2 jupyter notebooks are used in this part: preprocess.ipynb and visualizationsEDA.ipynb.
+To continue, further cleaning and visualization techinques are applied in order to deeply understand the dataset extracted from the internet. 2 Jupyter notebooks are used in this part: preprocess.ipynb and visualizationsEDA.ipynb.
 
 In preprocess.ipynb, data preprocessing and initial single feature statistics is performed. Apart from that, some attibutes were divided into several ones in order to store atomic information (Type divided in Type1 and Type2, Abilities divided in Ability1, Ability2 and HiddenAbility, EggGroup divided into EggGroup1 and EggGroup2, and finally an additional feature named NoGender indicates wether the Pokémon has Gender or not, which complements GenderProb feature).
 
@@ -176,8 +171,17 @@ But only one stat is not usually enough for a Pokémon to be good or viable, if 
 
 <h1>$${\color{red}\textbf{Part 3: Machine Learning, AI, CV}}$$  <img src="Images/Gifs/moltres.gif" alt="animated" /></h1>
 
+En esta última parte del proyecto, utilizando el dataset obtenido y procesándolo para la correcta aplicación de técnicas de inteligencia artificial, se han realizado una serie de preguntas para las cuales se ha obtenido respuesta mediante su aplicación. Las preguntas han sido las siguientes:
 
-In progress...
+## ¿Se puede predecir si un Pokémon es Legendario/Mítico/Ultraente?
+<h2>$${\color{red}\textbf{¿Se puede predecir si un Pokémon es Legendario/Mítico/Ultraente?}}$$</h2>
+
+<h2>$${\color{red}\textbf{¿Se puede predecir su exp. a nivel 100 (leveling rate)?}}$$</h2>
+
+<h2>$${\color{red}\textbf{¿Podemos encontrar grupos de Pokémon similares?}}$$</h2>
+
+<h2>$${\color{red}\textbf{¿Podemos saber el tipo primario de un Pokémon sólo viéndolo?}}$$</h2>
+
 
 ## Credits
 **Author: David Villar Martos** (https://github.com/Daalma7)
