@@ -44,15 +44,17 @@ https://www.deviantart.com/mbcmechachu/favourites/70416144/pokemon-animated-spri
 ![License](https://img.shields.io/badge/license-MIT-red)
 
 
-
-
 This is a Data Science project, whose 3 main objectives are:
 1. Generation of a dataset containing information about all Pokémons (until generation IX) including all variants and forms.
 2. Preprocessing of that dataset, extraction of basic information and visualizations.
 3. Apply Data Science Techniques in order to calculate higher level information and visualizations.
 
 
-## Part 1: Dataset creation: Web scraping from Bulbapedia
+
+
+
+<h1>${\color{royalblue}\textbf{Part 1: Dataset creation: Web scraping from Bulbapedia}}$  <img src="Images/Gifs/articuno.gif" alt="animated" /></h1>
+
 To generate the Pokémon dataset, a web scraper has been programmed using Python, to get all the information required from [Bulbapedia](https://bulbapedia.bulbagarden.net/wiki/Main_Page). The information is stored in a csv file, in which, for each Pokémon and form in rows, the following information is extracted:
 - **DexNumber**: Number of the National Pokédex for that Pokémon.
 - **Name**: Name of the Pokémon.
@@ -87,7 +89,15 @@ To generate the Pokémon dataset, a web scraper has been programmed using Python
 
 Information about Pokémon moves is currently not extracted.
 
-## Part 2: Dataset cleaning and analysis: Python preprocessing and visualizations
+
+
+
+
+
+
+<h1>${\color{gold}\textbf{Part 2: Dataset cleaning, analysis, preprocessing and visualizations}}$  <img src="Images/Gifs/zapdos.gif" alt="animated" /></h1>
+
+
 To continue, further cleaning and visualization techinques are applied in order to deeple understand the dataset extracted from the internet. 2 jupyter notebooks are used in this part: preprocess.ipynb and visualizationsEDA.ipynb.
 
 In preprocess.ipynb, data preprocessing and initial single feature statistics is performed. Apart from that, some attibutes were divided into several ones in order to store atomic information (Type divided in Type1 and Type2, Abilities divided in Ability1, Ability2 and HiddenAbility, EggGroup divided into EggGroup1 and EggGroup2, and finally an additional feature named NoGender indicates wether the Pokémon has Gender or not, which complements GenderProb feature).
@@ -164,7 +174,9 @@ But only one stat is not usually enough for a Pokémon to be good or viable, if 
 
   (Applin: Ripen, Skitty: Normalize, Fletchling: Gale Wings, Koffing: Neutralizing Gas, Silicobra: Sand Spit)
 
-## Part 3: Data Science: Supervised and Unsupervised Learning, higher level information
+<h1>${\color{red}\textbf{Part 3: Data Science: Supervised \& Unsupervised Learning, CV}}$  <img src="Images/Gifs/moltres.gif" alt="animated" /></h1>
+
+
 In progress...
 
 ## Credits
