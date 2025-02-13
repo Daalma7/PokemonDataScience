@@ -107,44 +107,33 @@ Se crearon **dos conjuntos de datos preprocesados**, uno preparado para realizar
 
 In visualizationsEDA.ipynb, containing advanced visualizations, we can extract some impacting conclusions.
 
-<h3>$${\color{gold}\textbf{Información sobre tipos}}$$</h3>
+<h3>$${\color{orange}\textbf{Información sobre tipos}}$$</h3>
 
 La información sobre tipos es muy interesante y nos permite hacer muchas visualizaciones que nos den datos curiosos
 
 <div align="center">
-    <img src="Images/Graphics/Chord.png" width="824px"/>
+    <img src="Images/Graphics/Chord.png" width="1000px"/>
 </div>
 
 En este diagrama de cuerdas se puede ver las "relaciones entre tipos" entendiendo una relación entre tipos cuando un Pokémon tiene 2 tipos. Así, habrá tipos que estén más relacionados entre sí (normal y volador) y otros que estén menos relacioados (eléctrico y hada) u otros que ni siquiera están relacionados (bicho y dragón).
 
 <div align="center">
-      <img src="Images/Graphics/NumPokGen.png" width="618px"/>
+      <img src="Images/Graphics/NumPokGen.png" width="718px"/>
       <img src="Images/Graphics/OffensiveType.png" width="206px"/> 
 </div>
 
 En estos gráficos podemos ver, por un lado, la cantidad de Pokémons de cada tipo que han ido saliendo en cada generación (en la sexta hay una gran inflación de Pokémon de tipo hada no porque el tipo se introdujera en esta generación, sino porque se tiene en cuenta todas las formas de Flabébé, Floette y Florges). Cada Pokémon cuenta como 1 luego si un Pokémon tiene dos tipos suma 0.5 a cada tipo en el gráfico. Se puede ver también aquí qué generación introdujo más Pokémon y cuál menos claramente (5ª y 6ª respectivamente). El segundo gráfico es un gráfico muy informativo sobre qué tipo es mejor ofensivamente hablando, no sólo teniendo en cuenta la tabla de tipos, sino también cual sería el multiplicador de daño a cada Pokémon en particular de todos los que hay, haciendo una kernel density estimation, así como un valor medio del multiplicador, viendo que el mejor tipo ofensivameante hablando en promedio es el tipo roca con un valor medio de multiplicador de daño de x1.22, y el menos efectivo es el normal, con un x0.86 (normal porque no es superefectivo a ningún tipo pero tiene resistencias e inmunidades). 
 
-<p align="center">
-    <img src="Images/Graphics/TotalStatsType.png" width="618px"/> 
-    <img src="Images/Graphics/MeanStatsType.png" width="206px"/> 
-</p>
-
-
-<table border="0">
-  <tr>
-    <td valign="middle"><img src="Images/Graphics/TotalStatsType.png" width="618px"></td>
-    <td valign="middle"><img src="Images/Graphics/MeanStatsType.png" width="206px"/></td>
-  </tr>
-</table>  
-
-Este último gráficos podemos ver dos aspectos relevantes, el primero responde a la pregunta ¿Hay tipos "más fuertes que otros"?, cuya respuesta es que sí, 
-
-
 <div align="center">
-    <img src="Images/Graphics/PCA.png" width="412px"/> 
-    <img src="Images/Graphics/PCA_expvar.png" width="412px"/> 
+    <img src="Images/Graphics/TotalStatsType.png" width="618px" alt="image" align="left"/> 
+    <img src="Images/Graphics/MeanStatsType.png" width="306px" height="300px"/> 
 </div>
 
+Este último gráficos podemos ver dos aspectos relevantes, el primero responde a la pregunta ¿Hay tipos "más fuertes que otros"?, cuya respuesta es que sí, en general las estadísticas medias (cada rectángulo es una estadística, de abajo a arriba, Hp, Attack, Defense, SpecialAttack, SpecialDefense, Speed) del tipo acero son mayores que las del tipo hielo. El tipo más fuerte en promedio es el dragón y el más débil es el bicho, lo cual tiene sentido puesto que hay muchos Pokémon legendarios y pseudolegendarios de tipo dragón, mientras que hay muchos Pokémons muy débiles de rutas iniciales de tipo bicho. Además se muestran de forma más detallada estos valores medios por estadística, lo cual nos lleva al siguiente punto de visualización:
+
+<h3>$${\color{orange}\textbf{Estadísticas de los Pokémon}}$$</h3>
+
+Para ello se han llevado análisis, en primer lugar se ha hecho un análisis completo de distribución bidimensional de estadísticas ofensivas (ataque y velocidad) (ataque especial y velocidad) y defensivas (hp y defensa) (hp y defensa especial) de los Pokémon, incluyendo zonas de alta densidad y visualizaciones que incluyen los minisprites de Pokémon para más claridad (para verlas de manera interactiva, entrar en el cuaderno)
 
 <div align="center">
     <img src="Images/Graphics/Physical Offensiveness.png" width="412px"/> 
@@ -156,55 +145,54 @@ Este último gráficos podemos ver dos aspectos relevantes, el primero responde 
     <img src="Images/Graphics/Special Defensiveness.png" width="412px"/> 
 </div>
 
-Veamos ahora algunos diagramas de sectores conteniendo información sobre algunos atributos de Pokémon curiosos:
+Estos gráficos son extremadamente llamativos, puesto que podemos ver los Pokémon que destacan o que están en la media en términos defensivos y ofensivos. Además incluyen histogramas marginales para que se pueda ver la distribución de cada estadística individualmente.
 
-<div align="center">
-    <img src="Images/Graphics/EvoStages.png" width="412px"/>
-    <img src="Images/Graphics/Gender.png" width="412px"/> 
-</div>
-
-<div align="center">
-    <img src="Images/Graphics/LevelingRate.png" width="412px"/>
-    <img src="Images/Graphics/Rarity.png" width="412px"/> 
-</div>
-
-### Best Pokémons, stat-wise
+Además de ello, se ha hecho un ranking de los mejores Pokémon en función de cada estadística:
 
 - **Top 5 highest Hp Pokémon**: <img src="Images/Gifs/blissey.gif" alt="animated" /><img src="Images/Gifs/chansey.gif" alt="animated" /> <img src="Images/Gifs/guzzlord.gif" alt="animated" /> <img src="Images/Gifs/zygarde-complete.gif" alt="animated" /> <img src="Images/Gifs/regidrago.gif" alt="animated" />
 
   Blissey: 255, Chansey: 250, Guzzlord: 223, Zygarde Complete: 216, Regidrago: 200.
-- **Top 5 highest Attack Pokémon**: <img src="Images/Gifs/kartana.gif" alt="animated" /><img src="Images/Gifs/deoxys-attack.gif" alt="animated" /> <img src="Images/Gifs/kyurem-black.gif" alt="animated" /> <img src="Images/Gifs/rampardos.gif" alt="animated" /> <img src="Images/Gifs/calyrex-ice.gif" alt="animated" />
+- **Top 5 highest Attack Pokémon**: <img src="Images/Gifs/kartana.gif" alt="animated" /><img src="Images/Gifs/deoxys-attack.gif" alt="animated" /> <img src="Images/Gifs/kyurem-black.gif" alt="animated" /> <img src="Images/Gifs/duskmane.gif" alt="animated" /> <img src="Images/Gifs/dawnwings.gif" alt="animated" />
 
-  Kartana: 181, Deoxys Attack: 180, Kyurem Black: 170, Rampardos and Calyrex Ice Rider: 165.
-- **Top 5 highest Defense Pokémon**: <img src="Images/Gifs/shuckle.gif" alt="animated" /><img src="Images/Gifs/stakataka.gif" alt="animated" /> <img src="Images/Gifs/regirock.gif" alt="animated" /> <img src="Images/Gifs/steelix.gif" alt="animated" /> <img src="Images/Gifs/avalugg-hisui.gif" alt="animated" />
+  Kartana: 181, Deoxys Attack: 180, Kyurem Black: 170, Necrozma Dawn Wings and Dusk Mane: 167.
+- **Top 5 highest Defense Pokémon**: <img src="Images/Gifs/shuckle.gif" alt="animated" /><img src="Images/Gifs/stakataka.gif" alt="animated" /> <img src="Images/Gifs/steelix.gif" alt="animated" /> <img src="Images/Gifs/regirock.gif" alt="animated" /> <img src="Images/Gifs/avalugg-hisui.gif" alt="animated" />
 
   Shuckle: 230, Stakataka: 211, Regirock and Steelix: 200, Hisuian Avalugg: 184 (tied with Avalugg).
-- **Top 5 highest Spe.Attack Pokémon**: <img src="Images/Gifs/deoxys-attack.gif" alt="animated" /><img src="Images/Gifs/xurkitree.gif" alt="animated" /> <img src="Images/Gifs/hoopa-unbound.gif" alt="animated" /> <img src="Images/Gifs/kyurem-white.gif" alt="animated" /> <img src="Images/Gifs/calyrex-shadow.gif" alt="animated" />
+- **Top 5 highest Spe.Attack Pokémon**: <img src="Images/Gifs/deoxys-attack.gif" alt="animated" /><img src="Images/Gifs/xurkitree.gif" alt="animated" /> <img src="Images/Gifs/hoopa-unbound.gif" alt="animated" /> <img src="Images/Gifs/kyurem-white.gif" alt="animated" /> <img src="Images/Gifs/dawnwings.gif" alt="animated" />
 
-  Deoxys Attack: 180, Xurkitree: 173, Hoopa Unbound and Kyurem White: 170, Calyrex Shadow Rider: 165).
+  Deoxys Attack: 180, Xurkitree: 173, Hoopa Unbound and Kyurem White: 170, Necrozma Dawn Wings (tied with Dusk Mane): 167.
 - **Top 5 highest Spe.Defense Pokémon**: <img src="Images/Gifs/shuckle.gif" alt="animated" /><img src="Images/Gifs/regice.gif" alt="animated" /> <img src="Images/Gifs/deoxys-defense.gif" alt="animated" /> <img src="Images/Gifs/florges.gif" alt="animated" /> <img src="Images/Gifs/lugia.gif" alt="animated" />
 
   Shuckle: 230, Regice: 200, Deoxys Defense: 160, Florges and Lugia: 154 (tied with Ho-Oh).
-- **Top 5 highest Speed Pokémon**: <img src="Images/Gifs/regieleki.gif" alt="animated" /><img src="Images/Gifs/deoxys-speed.gif" alt="animated" /> <img src="Images/Gifs/ninjask.gif" alt="animated" /> <img src="Images/Gifs/pheromosa.gif" alt="animated" /> <img src="Images/Gifs/deoxys.gif" alt="animated" />
+- **Top 5 highest Speed Pokémon**: <img src="Images/Gifs/regieleki.gif" alt="animated" /><img src="Images/Gifs/deoxys-speed.gif" alt="animated" /> <img src="Images/Gifs/ninjask.gif" alt="animated" /> <img src="Images/Gifs/pheromosa.gif" alt="animated" /> <img src="Images/Gifs/calyrex-shadow.gif" alt="animated" />
 
-  Regieleki: 200, Deoxys Speed: 180, Ninjask: 160, Pheromosa: 151, Deoxys: 150 (tied with Deoxys Attack, Calyrex Shadow Rider, Electrode and Hisuian Electrode. 
+  Regieleki: 200, Deoxys Speed: 180, Ninjask: 160, Pheromosa: 151, Calyrex Shadow Rider: 150 (tied with Deoxys Attack, Deoxys, Electrode and Hisuian Electrode.
 
 But only one stat is not usually enough for a Pokémon to be good or viable, if it is bad in any other stat. That is the reason why we will consider the geometric mean of pair of related statistics in order to get the best sweepers (attack x speed and spe.attack x speed) and walls (hp x defense and hp x special defense) Pokémon: 
 
-- **Top 5 physical sweepers Pokémons**: <img src="Images/Gifs/deoxys-attack.gif" alt="animated" /><img src="Images/Gifs/deoxys.gif" alt="animated" /> <img src="Images/Gifs/zacian-crowned.gif" alt="animated" /> <img src="Images/Gifs/darmanitan-galarzen.gif" alt="animated" /> <img src="Images/Gifs/pheromosa.gif" alt="animated" />
+- **Top 5 physical sweepers Pokémons**: <img src="Images/Gifs/deoxys-attack.gif" alt="animated" /><img src="Images/Gifs/deoxys.gif" alt="animated" /> <img src="Images/Gifs/zacian-crowned.gif" alt="animated" /> <img src="Images/Gifs/darmanitan-galarzen.gif" alt="animated" /> <img src="Images/Gifs/duskmane.gif" alt="animated" />
 
-  $\sqrt{\text{Attack}\cdot \text{Speed}}$: Deoxys Attack: 164.3168, Deoxys: 150, Galarian Darmanitan Zen: 148.9966, Zygarde Complete: 146.9694, Regidrago: 143.8298.
-- **Top 5 special sweepers Pokémons**: <img src="Images/Gifs/deoxys-attack.gif" alt="animated" /><img src="Images/Gifs/calyrex-shadow.gif" alt="animated" /> <img src="Images/Gifs/deoxys.gif" alt="animated" /> <img src="Images/Gifs/pheromosa.gif" alt="animated" /> <img src="Images/Gifs/mewtwo.gif" alt="animated" />
+  $\sqrt{\text{Attack}\cdot \text{Speed}}$: Deoxys Attack: 164.3168, Deoxys: 150, Zacian Crowned Sword: 148.9966, Galarian Darmanitan Zen Mode: 146.9693, Necrozma Dusk Mane (tied with Dawn Wings): 146.7753.
+- **Top 5 special sweepers Pokémons**: <img src="Images/Gifs/deoxys-attack.gif" alt="animated" /><img src="Images/Gifs/calyrex-shadow.gif" alt="animated" />  <img src="Images/Gifs/calyrex-shadow.gif" alt="animated" /> <img src="Images/Gifs/deoxys.gif" alt="animated" /> <img src="Images/Gifs/dawnwings.gif" alt="animated" /> 
 
-  $\sqrt{\text{Spe.Attack}\cdot \text{Speed}}$: Deoxys Attack: 164.3168, Calyrex Shadow Rider: 157.3213, Deoxys: 150, Pheromosa: 143.8298, Mewtwo: 141.4920.
+  $\sqrt{\text{Spe.Attack}\cdot \text{Speed}}$: Deoxys Attack: 164.3168, Calyrex Shadow Rider: 157.3213 (tied with Ice Rider), Deoxys: 150, Necrozma Dawn Wings (tied with Dusk Mane): 146.7753
 - **Top 5 physical walls Pokémons**: <img src="Images/Gifs/zygarde-complete.gif" alt="animated" /><img src="Images/Gifs/ting-lu.gif" alt="animated" /> <img src="Images/Gifs/melmetal.gif" alt="animated" /> <img src="Images/Gifs/giratina.gif" alt="animated" /> <img src="Images/Gifs/avalugg.gif" alt="animated" />
 
-  $\sqrt{\text{Hp}\cdot \text{Defense}}$: Zygarde Complete: 161.6663, Ting-Lu: 139.1941, Melmetal: 138.9424, Giratina: 134.1641, Avalugg: 132.2120 (tied with Hisuian Avalugg.
+  $\sqrt{\text{Hp}\cdot \text{Defense}}$: Zygarde Complete: 161.6663, Ting-Lu: 139.1941, Melmetal: 138.9424, Giratina: 134.1641, Avalugg: 132.2120 (tied with Hisuian Avalugg).
 - **Top 5 special walls Pokémons**: <img src="Images/Gifs/blissey.gif" alt="animated" /><img src="Images/Gifs/chansey.gif" alt="animated" /> <img src="Images/Gifs/zygarde-complete.gif" alt="animated" /> <img src="Images/Gifs/giratina.gif" alt="animated" /> <img src="Images/Gifs/snorlax.gif" alt="animated" />
 
   $\sqrt{\text{Hp}\cdot \text{Spe.Defense}}$: Blissey: 185.5398, Chansey: 162.0185, Zygarde Complete: 143.2480, Giratina: 134.1641, Snorlax: 132.6650.
 
-### Abilities:
+
+<h3>$${\color{orange}\textbf{Información de habilidades}}$$</h3>
+
+He decidido también extraer información sobre habilidades, en este caso sobre la frecuencia de las mismas. Se han hecho histogramas sobre habilidades más comúnes y menos comunes, así como extraído alguna información llamativa:
+
+<div align="center">
+    <img src="Images/Graphics/AbilityPokémon.png" width="412px"/>
+    <img src="Images/Graphics/AbilityLines.png" width="412px"/> 
+</div>
+
 
 - **Most common abilities**: Sturdy (46 Pokémon), Swift Swim (45 Pokémon), Keen Eye (41 Pokémon), Levitate (39 Pokémon), Intimidate (39 Pokémon)
 - **Examples of Pokémon with unique abilities**: <img src="Images/Gifs/silvally.gif" alt="animated" /> <img src="Images/Gifs/dhelmise.gif" alt="animated" /><img src="Images/Gifs/golisopod.gif" alt="animated" /> <img src="Images/Gifs/stonjourner.gif" alt="animated" /> <img src="Images/Gifs/zangoose.gif" alt="animated" />
@@ -215,11 +203,44 @@ But only one stat is not usually enough for a Pokémon to be good or viable, if 
 
   (Applin: Ripen, Skitty: Normalize, Fletchling: Gale Wings, Koffing: Neutralizing Gas, Silicobra: Sand Spit)
 
+<h3>$${\color{orange}\textbf{Relación entre grupos huevo}}$$</h3>
+
+Se ha hecho un diagrama de cuerdas como el primero sobre tipos también para grupos huevo (información sobre cómo los Pokémons se pueden reproducir) en función de los Pokémons que comparten grupo huevo:
+
+<div align="center">
+    <img src="Images/Graphics/ChordEggGroups.png" width="824px"/>
+</div>
+
+
+<h3>$${\color{orange}\textbf{Diagramas de sectores}}$$</h3>
+
+Veamos ahora algunos diagramas de sectores conteniendo información sobre algunos atributos de Pokémon curiosos:
+
+<div align="center">
+    <img src="Images/Graphics/EvoStages.png" width="412px"/>
+    <img src="Images/Graphics/Gender.png" width="412px"/> 
+</div>
+
+<div align="center">
+    <img src="Images/Graphics/Levelingrate.png" width="412px"/>
+    <img src="Images/Graphics/Rarity.png" width="412px"/> 
+</div>
+
+<h3>$${\color{orange}\textbf{Reducción de dimensionalidad}}$$</h3>
+
+Por último me gustaría terminar con una visualización de todo el conjunto de datos 
+<div align="center">
+    <img src="Images/Graphics/PCA.png" width="1000px"/> 
+</div>
+
+
+
+
 <h1>$${\color{red}\textbf{Part 3: Machine Learning, AI, CV}}$$  <img src="Images/Gifs/moltres.gif" alt="animated" /></h1>
 
 En esta última parte del proyecto, utilizando el dataset obtenido y procesándolo para la correcta aplicación de técnicas de inteligencia artificial, (sólo se han considerado atributos numéricos, por ejemplo se ha descartado información sobre habilidades) y se han realizado una serie de preguntas para las cuales se ha obtenido respuesta mediante su aplicación. Las preguntas han sido las siguientes: ¿Se puede...
 
-<h2>$${\color{red}\textbf{Predecir si un Pokémon es Legendario?}}$$</h2>
+<h2>$${\color{crimson}\textbf{Predecir si un Pokémon es Legendario?}}$$</h2>
 
 Para ello se ha utilizado un conjunto de clasificadores (**DecisionTreeClassifier , RandomForestClassifier, GradientBoostingClassifier, AdaBoostClassifier, LightGBM**) con el objetivo de predecirlo. Puesto que el conjunto de datos es **desbalanceado** (91.77% no legendarios, 8.23% legendarios) en lugar de utilizar técnicas de downsampling o upsampling, se ha decidido utilizar métricas que tengan en cuenta dicho desbalanceo y que sirvan para guiar a los clasificadores. Éstas son:
 
@@ -255,7 +276,7 @@ Y para predecir si es Ultraente o no:
 
 Vemos que este último caso es más extremo, pero se consigue una **clasificación perfecta** (sin utilizar ninguna información sobre habilidades u otros predictores directos).
 
-<h2>$${\color{red}\textbf{Predecir su exp. a nivel 100?}}$$</h2>
+<h2>$${\color{crimson}\textbf{Predecir su exp. a nivel 100?}}$$</h2>
 
 En este caso se ha considerado un problema de **regresión** (inicialmente clasificación ordinaria pero se decidió pasar a regresión por utilizar un paradigma distinto, aunque se plantea volver a clasificación ordinaria si el tiempo me lo permite) en el que se plantea **predecir la cantidad de experiencia que necesita un Pokémon para subir a nivel 100** (asociado a LevelingRate).
 
@@ -269,12 +290,12 @@ Los resultados obtenidos han sido los siguientes (normalizando el atributo a pre
 
 En general la **predicción es bastante buena** de igual manera, y en este caso no ha ganado el modelo ensemble, sino RandomForestRegression.
 
-<h2>$${\color{red}\textbf{Encontrar grupos de Pokémon similares?}}$$</h2>
+<h2>$${\color{crimson}\textbf{Encontrar grupos de Pokémon similares?}}$$</h2>
 
 Nos preguntamos si se pueden **agrupar a los Pokémon de manera automática** en grupos similares en función de sus características, de manera que estén lo más agrupados posible dentro de su grupo y lo más separados posible con respecto al resto de los grupos. Para ello utilizaremos técnicas de **aprendizaje no supervisado**, en este caso usaremos **clústering jerárquico** para encontrar dichos grupos. El resultado lo **visualizaremos** con una técnica de **reducción de dimensionalidad** llamada t-SNE (t-distributed Stochastic Neighbor Embedding). Se eligió realizar un total de 16 grupos, los cuales se muestran a continuación:
 
 <div align="center">
-    <img src="Images/Graphics/Clustering.png" width="824px"/>
+    <img src="Images/Graphics/Clustering.png" width="1000px"/>
 </div>
 
 Visualizando los grupos encontrados, se puede ver que corresponden a las siguientes características:
@@ -297,7 +318,7 @@ Visualizando los grupos encontrados, se puede ver que corresponden a las siguien
 
 Es muy interesante ver cómo hay tipos de Pokémon que tienen su propia clase diferenciada de las demás (tipo planta, bicho o dragón) además de ver qué Pokémons con dos tipos caen en cada una (Togekiss en hada, Hydrapple en dragón). La clase 4 aglutina muchos tipos, y los Pokémon Legendarios están divididos en dos clases diferenciadas. Además hay excepciones como Drapion, que es más parecido a los Pokémon de la clase 2 (por eso está allí) que a los de la clase 4. Este gráfico tiene muchas conclusiones interesantes, y ahí van sólo algunas de ellas. 
 
-<h2>$${\color{red}\textbf{Saber el tipo primario de un Pokémon sólo viéndolo?}}$$</h2>
+<h2>$${\color{crimson}\textbf{Saber el tipo primario de un Pokémon sólo viéndolo?}}$$</h2>
 
 Esta es una tarea de **Visión por Computador**. El problema es por tanto un problema de **clasificación multiclase** donde hay **18 clases** posibles. Para ello, y como los minisprites eran muy pequeños, se ha decidido utilizar los sprites de 5ª generación (sin animar en este caso) de los Pokémon.
 
