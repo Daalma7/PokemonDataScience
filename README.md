@@ -113,7 +113,7 @@ In `preprocess.ipynb`, data preprocessing and initial **single feature statistic
 
 In `visualizationsEDA.ipynb`, which contains advanced visualizations, we can extract some impactful conclusions. Here, I will present some of the most interesting plots, although there are more within the code itself. I will divide them into subsections:
 
-<h3>$${\color{orange}\textbf{Información sobre tipos}}$$</h3>
+<h3>$${\color{orange}\textbf{Types}}$$</h3>
 
 The information about types is very interesting and allows us to create many visualizations that provide curious insights.
 
@@ -179,7 +179,7 @@ But a single stat is usually not enough for a Pokémon to be good or viable if i
 - **Top 5 physical sweepers Pokémons**: <img src="Images/Gifs/deoxys-attack.gif" alt="animated" /><img src="Images/Gifs/deoxys.gif" alt="animated" /> <img src="Images/Gifs/zacian-crowned.gif" alt="animated" /> <img src="Images/Gifs/darmanitan-galarzen.gif" alt="animated" /> <img src="Images/Gifs/duskmane.gif" alt="animated" />
 
   $\sqrt{\text{Attack}\cdot \text{Speed}}$: Deoxys Attack: 164.3168, Deoxys: 150, Zacian Crowned Sword: 148.9966, Galarian Darmanitan Zen Mode: 146.9693, Necrozma Dusk Mane (tied with Dawn Wings): 146.7753.
-- **Top 5 special sweepers Pokémons**: <img src="Images/Gifs/deoxys-attack.gif" alt="animated" /><img src="Images/Gifs/calyrex-shadow.gif" alt="animated" />  <img src="Images/Gifs/calyrex-shadow.gif" alt="animated" /> <img src="Images/Gifs/deoxys.gif" alt="animated" /> <img src="Images/Gifs/dawnwings.gif" alt="animated" /> 
+- **Top 5 special sweepers Pokémons**: <img src="Images/Gifs/deoxys-attack.gif" alt="animated" /><img src="Images/Gifs/calyrex-shadow.gif" alt="animated" />  <img src="Images/Gifs/calyrex-ice.gif" alt="animated" /> <img src="Images/Gifs/deoxys.gif" alt="animated" /> <img src="Images/Gifs/dawnwings.gif" alt="animated" /> 
 
   $\sqrt{\text{Spe.Attack}\cdot \text{Speed}}$: Deoxys Attack: 164.3168, Calyrex Shadow Rider: 157.3213 (tied with Ice Rider), Deoxys: 150, Necrozma Dawn Wings (tied with Dusk Mane): 146.7753
 - **Top 5 physical walls Pokémons**: <img src="Images/Gifs/zygarde-complete.gif" alt="animated" /><img src="Images/Gifs/ting-lu.gif" alt="animated" /> <img src="Images/Gifs/melmetal.gif" alt="animated" /> <img src="Images/Gifs/giratina.gif" alt="animated" /> <img src="Images/Gifs/avalugg.gif" alt="animated" />
