@@ -118,7 +118,7 @@ La información sobre tipos es muy interesante y nos permite hacer muchas visual
 En este diagrama de cuerdas se puede ver las "relaciones entre tipos" entendiendo una relación entre tipos cuando un Pokémon tiene 2 tipos. Así, habrá tipos que estén más relacionados entre sí (normal y volador) y otros que estén menos relacioados (eléctrico y hada) u otros que ni siquiera están relacionados (bicho y dragón).
 
 <div align="center">
-      <img src="Images/Graphics/NumPokGen.png" width="718px"/>
+      <img src="Images/Graphics/NumPokGen.png" width="618px"/>
       <img src="Images/Graphics/OffensiveType.png" width="206px"/> 
 </div>
 
@@ -126,7 +126,7 @@ En estos gráficos podemos ver, por un lado, la cantidad de Pokémons de cada ti
 
 <div align="center">
     <img src="Images/Graphics/TotalStatsType.png" width="618px" alt="image" align="left"/> 
-    <img src="Images/Graphics/MeanStatsType.png" width="306px" height="300px"/> 
+    <img src="Images/Graphics/MeanStatsType.png" width="206px" height="300px"/> 
 </div>
 
 Este último gráficos podemos ver dos aspectos relevantes, el primero responde a la pregunta ¿Hay tipos "más fuertes que otros"?, cuya respuesta es que sí, en general las estadísticas medias (cada rectángulo es una estadística, de abajo a arriba, Hp, Attack, Defense, SpecialAttack, SpecialDefense, Speed) del tipo acero son mayores que las del tipo hielo. El tipo más fuerte en promedio es el dragón y el más débil es el bicho, lo cual tiene sentido puesto que hay muchos Pokémon legendarios y pseudolegendarios de tipo dragón, mientras que hay muchos Pokémons muy débiles de rutas iniciales de tipo bicho. Además se muestran de forma más detallada estos valores medios por estadística, lo cual nos lleva al siguiente punto de visualización:
@@ -189,10 +189,11 @@ But only one stat is not usually enough for a Pokémon to be good or viable, if 
 He decidido también extraer información sobre habilidades, en este caso sobre la frecuencia de las mismas. Se han hecho histogramas sobre habilidades más comúnes y menos comunes, así como extraído alguna información llamativa:
 
 <div align="center">
-    <img src="Images/Graphics/AbilityPokémon.png" width="412px"/>
+    <img src="Images/Graphics/AbilityPokemon.png" width="412px"/>
     <img src="Images/Graphics/AbilityLines.png" width="412px"/> 
 </div>
 
+Por lo que podemos ver que hay muchas habilidades "únicas" o que las poseen pocos Pokémon / lineas evolutivas, mientras que hay menos habilidades más populares. Fijémonos en algunas de éstas habilidades:
 
 - **Most common abilities**: Sturdy (46 Pokémon), Swift Swim (45 Pokémon), Keen Eye (41 Pokémon), Levitate (39 Pokémon), Intimidate (39 Pokémon)
 - **Examples of Pokémon with unique abilities**: <img src="Images/Gifs/silvally.gif" alt="animated" /> <img src="Images/Gifs/dhelmise.gif" alt="animated" /><img src="Images/Gifs/golisopod.gif" alt="animated" /> <img src="Images/Gifs/stonjourner.gif" alt="animated" /> <img src="Images/Gifs/zangoose.gif" alt="animated" />
@@ -208,7 +209,7 @@ He decidido también extraer información sobre habilidades, en este caso sobre 
 Se ha hecho un diagrama de cuerdas como el primero sobre tipos también para grupos huevo (información sobre cómo los Pokémons se pueden reproducir) en función de los Pokémons que comparten grupo huevo:
 
 <div align="center">
-    <img src="Images/Graphics/ChordEggGroups.png" width="824px"/>
+    <img src="Images/Graphics/ChordEggGroups.png" width="618px"/>
 </div>
 
 
@@ -226,12 +227,16 @@ Veamos ahora algunos diagramas de sectores conteniendo información sobre alguno
     <img src="Images/Graphics/Rarity.png" width="412px"/> 
 </div>
 
+Podemos deducir con estos gráficos, por ejemplo, que hay más Pokémon en el final de su etapa evolutiva que en el algún punto previo (si lo tienen) que en general hay muchos Pokémon con igual probabilidad de géneros, pero de entre los que no se tiende al masculino, que hay muchos Pokémon con una cantidad necesaria de puntos de experiencia para subir a nivel 100 "estándar" o que hay unas 2.5 veces más Pokémon legendarios que míticos, y que el total de lengarios, míticos y ultraentes supone el 12% del total de Pokémon (considerando formas alternativas en todos los grupos).
+
 <h3>$${\color{orange}\textbf{Reducción de dimensionalidad}}$$</h3>
 
-Por último me gustaría terminar con una visualización de todo el conjunto de datos 
+Por último me gustaría terminar con una visualización de todo el conjunto de datos, realizada con PCA (Principal Component Analysis) que resumen bastante bien la información en atributos creados de manera lineal a partir de los atributos (numéricos) base del problema, de forma que expliquen la máxima varianza posible y que sean todos ortogonales. Puesto que se ha usado información numérica y no categórica, no se ha usado el tipo de los Pokémon, (aunque sí sus debilidades a cada tipo). Los resultados, junto con una sombra en función de los tipos de los Pokémon, los podemos observar en el siguiente gráfico:
 <div align="center">
     <img src="Images/Graphics/PCA.png" width="1000px"/> 
 </div>
+
+Se puede comprobar cómo la primera componente principal tiene más que ver con las estadísticas (izquierda Pokémons "bebé" y a la derecha legendarios o con estadísticas más altas) pero la seguna componente principal ha inferido de cierta manera el tipo de los Pokémons, ya que se pueden ver bandas de Pokémon de tipo planta (arriba), de tipo agua (medio) o fantasma (abajo).
 
 
 
