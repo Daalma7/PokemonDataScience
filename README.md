@@ -93,22 +93,58 @@ Information about Pokémon moves is currently not extracted, but intended to in 
 <h1>$${\color{gold}\textbf{Part 2: Preprocessing, analysis, visualizations}}$$  <img src="Images/Gifs/zapdos.gif" alt="animated" /></h1>
 
 
-To continue, further cleaning and visualization techinques are applied in order to deeply understand the dataset extracted from the internet. 2 Jupyter notebooks are used in this part: preprocess.ipynb and visualizationsEDA.ipynb.
+In this second part of the project, further **cleaning and visualization** techniques are applied in order to deeply understand the dataset extracted from the internet. 2 Jupyter notebooks are used in this part: preprocess.ipynb and visualizationsEDA.ipynb.
 
-In preprocess.ipynb, data preprocessing and initial single feature statistics is performed. Apart from that, some attibutes were divided into several ones in order to store atomic information (Type divided in Type1 and Type2, Abilities divided in Ability1, Ability2 and HiddenAbility, EggGroup divided into EggGroup1 and EggGroup2, and finally an additional feature named NoGender indicates wether the Pokémon has Gender or not, which complements GenderProb feature).
+<h2>$${\color{gold}\textbf{Limpieza de datos}}$$</h2>
+
+
+In preprocess.ipynb, data preprocessing and initial **single feature statistics** is performed. Apart from that, some **attibutes** were divided into several ones in order to store **atomic information** (Type divided in Type1 and Type2, Abilities divided in Ability1, Ability2 and HiddenAbility, EggGroup divided into EggGroup1 and EggGroup2, or the creation of an additional feature named NoGender indicates wether the Pokémon has Gender or not, which complements GenderProb feature).
+
+Se crearon **dos conjuntos de datos preprocesados**, uno preparado para realizar **visualizaciones** (siguiente apartado en esta parte) y otro para aplicar técnicas de **aprendizaje automático** que se usará en la parte 3.
+
+
+<h2>$${\color{gold}\textbf{Visualizaciones de datos}}$$</h2>
 
 In visualizationsEDA.ipynb, containing advanced visualizations, we can extract some impacting conclusions.
 
-### Some visualizations
+<h3>$${\color{gold}\textbf{Información sobre tipos}}$$</h3>
+
+La información sobre tipos es muy interesante y nos permite hacer muchas visualizaciones que nos den datos curiosos
+
 <div align="center">
-    <img src="Images/Graphics/Chord.png" width="412px"/>
-    <img src="Images/Graphics/TotalStatsType.png" width="412px"/> 
+    <img src="Images/Graphics/Chord.png" width="824px"/>
 </div>
+
+En este diagrama de cuerdas se puede ver las "relaciones entre tipos" entendiendo una relación entre tipos cuando un Pokémon tiene 2 tipos. Así, habrá tipos que estén más relacionados entre sí (normal y volador) y otros que estén menos relacioados (eléctrico y hada) u otros que ni siquiera están relacionados (bicho y dragón).
+
+<div align="center">
+      <img src="Images/Graphics/NumPokGen.png" width="618px"/>
+      <img src="Images/Graphics/OffensiveType.png" width="206px"/> 
+</div>
+
+En estos gráficos podemos ver, por un lado, la cantidad de Pokémons de cada tipo que han ido saliendo en cada generación (en la sexta hay una gran inflación de Pokémon de tipo hada no porque el tipo se introdujera en esta generación, sino porque se tiene en cuenta todas las formas de Flabébé, Floette y Florges). Cada Pokémon cuenta como 1 luego si un Pokémon tiene dos tipos suma 0.5 a cada tipo en el gráfico. Se puede ver también aquí qué generación introdujo más Pokémon y cuál menos claramente (5ª y 6ª respectivamente). El segundo gráfico es un gráfico muy informativo sobre qué tipo es mejor ofensivamente hablando, no sólo teniendo en cuenta la tabla de tipos, sino también cual sería el multiplicador de daño a cada Pokémon en particular de todos los que hay, haciendo una kernel density estimation, así como un valor medio del multiplicador, viendo que el mejor tipo ofensivameante hablando en promedio es el tipo roca con un valor medio de multiplicador de daño de x1.22, y el menos efectivo es el normal, con un x0.86 (normal porque no es superefectivo a ningún tipo pero tiene resistencias e inmunidades). 
+
+<p align="center">
+    <img src="Images/Graphics/TotalStatsType.png" width="618px"/> 
+    <img src="Images/Graphics/MeanStatsType.png" width="206px"/> 
+</p>
+
+
+<table border="0">
+  <tr>
+    <td valign="middle"><img src="Images/Graphics/TotalStatsType.png" width="618px"></td>
+    <td valign="middle"><img src="Images/Graphics/MeanStatsType.png" width="206px"/></td>
+  </tr>
+</table>  
+
+Este último gráficos podemos ver dos aspectos relevantes, el primero responde a la pregunta ¿Hay tipos "más fuertes que otros"?, cuya respuesta es que sí, 
+
 
 <div align="center">
     <img src="Images/Graphics/PCA.png" width="412px"/> 
     <img src="Images/Graphics/PCA_expvar.png" width="412px"/> 
 </div>
+
 
 <div align="center">
     <img src="Images/Graphics/Physical Offensiveness.png" width="412px"/> 
@@ -120,6 +156,17 @@ In visualizationsEDA.ipynb, containing advanced visualizations, we can extract s
     <img src="Images/Graphics/Special Defensiveness.png" width="412px"/> 
 </div>
 
+Veamos ahora algunos diagramas de sectores conteniendo información sobre algunos atributos de Pokémon curiosos:
+
+<div align="center">
+    <img src="Images/Graphics/EvoStages.png" width="412px"/>
+    <img src="Images/Graphics/Gender.png" width="412px"/> 
+</div>
+
+<div align="center">
+    <img src="Images/Graphics/LevelingRate.png" width="412px"/>
+    <img src="Images/Graphics/Rarity.png" width="412px"/> 
+</div>
 
 ### Best Pokémons, stat-wise
 
