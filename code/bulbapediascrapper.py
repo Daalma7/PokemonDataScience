@@ -281,7 +281,7 @@ def getPokemonData(name, inputUrl):
     readenhidden = None
 
     newname = ' '.join((''.join(name.title().split('(')[::-1])).split(')'))               # Remove parenthesis and give better ordering (Genesect, Darmanitan)
-    newname = ' '.join(list(OrderedDict.fromkeys(newname.split()[::-1]))[::-1])                   # Adress inconsistencies in some Pokémon Names (Groudon, Kyogre, Rotom, Kyurem...)
+    newname = ' '.join(list(OrderedDict.fromkeys(newname.split()[::-1]))[::-1])                   # Address inconsistencies in some Pokémon Names (Groudon, Kyogre, Rotom, Kyurem...)
     newname = newname[:-1] + newname[-1].lower()                                                   # F.I. Farfetch'D => Farfetch'd
 
     # Individual Fixes
