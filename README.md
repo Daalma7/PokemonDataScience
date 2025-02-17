@@ -381,6 +381,7 @@ As we can see, there are some classes where most of the examples have been corre
 
 ## Credits
 **Author: David Villar Martos** (https://github.com/Daalma7)
+**Contributors: David Villar Martos**
 
 All the Pokémon images used for this study were extracted from the following sources:
 - Showdown (https://play.pokemonshowdown.com/sprites/)
